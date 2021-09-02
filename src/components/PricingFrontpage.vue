@@ -23,18 +23,16 @@
             your team.
           </p>
         </div>
-        <div class="pt-24 lg:flex flex-row ">
+        <div class="pt-24 lg:flex flex-row">
           <!-- Basic Card -->
           <div
             class="
-
               w-70
               pb-20
               text-center
               rounded-3xl
               pr-10
               p-8
-        
               bg-gray-100
               text-white
               border-4
