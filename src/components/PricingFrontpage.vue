@@ -23,7 +23,7 @@
             your team.
           </p>
         </div>
-        <div class="pt-24 flex laptop:flex-row phone:flex-col">
+        <div class="pt-24 flex flex-row">
           <!-- Basic Card -->
           <div
             class="w-96 p-8 bg-white text-center rounded-3xl pr-16 shadow-xl"
