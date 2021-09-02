@@ -107,7 +107,7 @@
                   class="
                     w-full
                     py-4
-                    bg-blue-600
+                    bg-indigo-600
                     hover:bg-indigo-700
                     mt-8
                     rounded-xl
@@ -217,7 +217,7 @@
                   class="
                     w-full
                     py-4
-                    bg-blue-600
+                    bg-indigo-600
                     hover:bg-indigo-700
                     mt-8
                     rounded-xl
@@ -342,7 +342,7 @@
                   class="
                     w-full
                     py-4
-                    bg-blue-600
+                    bg-indigo-600
                     hover:bg-indigo-700
                     mt-8
                     rounded-xl
