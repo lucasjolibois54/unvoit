@@ -13,7 +13,7 @@
       <div class="">
         <div class="text-center font-semibold">
           <h1 class="text-5xl">
-            <span class="text-blue-700 tracking-wide">Pricing </span>
+            <span class="text-indigo-700 tracking-wide">Pricing </span>
             <span>plan</span>
           </h1>
           <p
@@ -23,10 +23,10 @@
             your team.
           </p>
         </div>
-        <div class="pt-24 flex flex-row">
+        <div class="pt-24 lg:flex flex-row">
           <!-- Basic Card -->
           <div
-            class="w-96 p-8 bg-white text-center rounded-3xl pr-16 shadow-xl"
+            class="w-96 p-8 bg-white text-center rounded-3xl pl-16 shadow-xl"
           >
             <h1 class="text-black font-semibold text-2xl">Basic</h1>
             <p class="pt-2 tracking-wide">
@@ -103,17 +103,19 @@
           <!-- StartUp Card -->
           <div
             class="
-              w-80
+            w-96 
+            pb-20 
+            text-center
+            rounded-3xl 
+            pr-16 
               p-8
               bg-gray-900
-              text-center
-              rounded-3xl
               text-white
               border-4
               shadow-xl
               border-white
               transform
-              scale-125
+              scale-110
             "
           >
             <h1 class="text-white font-semibold text-2xl">Startup</h1>
