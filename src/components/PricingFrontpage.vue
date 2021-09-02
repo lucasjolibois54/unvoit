@@ -7,81 +7,8 @@
           Every plan includes 15 day free trial
         </p>
       </div>
-      <div class="mt-8">
-        <div class="flex justify-between">
-          <div>
-            <p class="text-sm text-gray-600">
-              For more details on all our pricing visit
-              <span class="underline cursor-pointer text-blue-600">here</span>
-            </p>
-          </div>
-          <div class="flex space-x-16">
-            <div class="flex">
-              <span class="font-semibold inline mr-4">Plan</span>
-              <span
-                class="
-                  px-4
-                  py-1
-                  rounded-md
-                  text-sm
-                  bg-gray-300
-                  flex
-                  items-center
-                  cursor-pointer
-                "
-                >Monthly
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-4 w-4 ml-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </span>
-            </div>
-            <div class="flex">
-              <span class="font-semibold inline mr-4">Select currency</span>
-              <span
-                class="
-                  px-4
-                  py-1
-                  rounded-md
-                  text-sm
-                  bg-gray-300
-                  flex
-                  items-center
-                  cursor-pointer
-                "
-                >$ USD
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-4 w-4 ml-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </span>
-            </div>
-          </div>
-        </div>
-        <div></div>
-      </div>
       <hr class="mt-10" />
-      <div class="md:flex space-x-10 pt-10">
+      <div class="md:flex md:space-x-10 sm:px-10">
         <div class="py-12">
           <div
             class="
