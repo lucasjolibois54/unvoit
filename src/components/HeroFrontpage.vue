@@ -130,7 +130,7 @@
                     md:px-10
                   "
                 >
-                  Live demo
+                  Contact us
                 </a>
               </div>
             </div>
