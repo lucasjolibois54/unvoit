@@ -9,7 +9,7 @@
     rel="stylesheet"
   />
   <body class="font-sans bg-gray-100">
-    <div class="min-h-screen flex justify-center items-center">
+    <div class="min-h-screen flex justify-center items-center py-20">
       <div class="">
         <div class="text-center font-semibold">
           <h1 class="text-5xl">
@@ -23,16 +23,18 @@
             your team.
           </p>
         </div>
-        <div class="pt-24 lg:flex flex-row">
+        <div class="pt-24 lg:flex flex-row ">
           <!-- Basic Card -->
           <div
             class="
+
               w-70
-              pb-9
+              pb-20
               text-center
               rounded-3xl
               pr-10
               p-8
+        
               bg-gray-100
               text-white
               border-4
@@ -116,7 +118,7 @@
           <div
             class="
               w-70
-              pb-9
+              pb-20
               text-center
               rounded-3xl
               pr-10
@@ -231,7 +233,7 @@
           <div
             class="
               w-70
-              pb-9
+              pb-20
               text-center
               rounded-3xl
               pr-10
