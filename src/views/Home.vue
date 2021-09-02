@@ -1,8 +1,8 @@
 <template>
   <HeaderFrontpage />
   <HeroFrontpage />
-  <PricingFrontpage />
   <FrontPageWhoWeAre />
+  <PricingFrontpage />
 </template>
 
 <script>
