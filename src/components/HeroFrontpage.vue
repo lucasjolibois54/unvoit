@@ -59,10 +59,10 @@
                 md:text-6xl
               "
             >
-              <span class="block xl:inline">STOP fraud, </span>
+              <span class="block xl:inline">Stop fraud, </span>
               {{ " " }}
               <br />
-              <span class="block text-indigo-600 xl:inline">use UNVOIT</span>
+              <span class="block text-indigo-600 xl:inline">use UNVOIT.</span>
             </h1>
             <p
               class="
