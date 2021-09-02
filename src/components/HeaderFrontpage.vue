@@ -17,7 +17,7 @@
         <div class="flex justify-start lg:w-0 lg:flex-1">
           <router-link to="/">
             <span class="sr-only">Workflow</span>
-            <div class="flex h-1 w-">
+            <div class="flex h-1 w-1">
               <span
                 class="absolute inline-flex rounded-full h-3 w-3 bg-indigo-500"
               ></span>
