@@ -4,11 +4,17 @@
       <div class="mt-10 text-center">
         <h1 class="text-4xl font-bold text-gray-800">Pricing plans</h1>
         <p class="text-lg mt-3 font-semibold">
-          Every plan includes 30 day free trial
+          Every plan includes 15 day free trial
         </p>
       </div>
       <div class="mt-8">
         <div class="flex justify-between">
+          <div>
+            <p class="text-sm text-gray-600">
+              For more details on all our pricing visit
+              <span class="underline cursor-pointer text-blue-600">here</span>
+            </p>
+          </div>
           <div class="flex space-x-16">
             <div class="flex">
               <span class="font-semibold inline mr-4">Plan</span>
