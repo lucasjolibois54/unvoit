@@ -1,152 +1,306 @@
 <template>
-  <div class="min-h-screen bg-gray-100 overflow-auto">
-    <div class="container mx-auto max-w-4xl">
-      <div class="mt-10 text-center">
-        <h1 class="text-4xl font-bold text-gray-800">Pricing plans</h1>
-        <p class="text-lg mt-3 font-semibold">
-          Every plan includes 15 day free trial
-        </p>
-      </div>
-      <hr class="mt-10" />
-      <div class="md:flex md:space-x-10 px-6">
-        <div class="py-12">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+  <body class="font-sans bg-gray-100">
+    <div class="min-h-screen flex justify-center items-center">
+      <div class="">
+        <div class="text-center font-semibold">
+          <h1 class="text-5xl">
+            <span class="text-blue-700 tracking-wide">Pricing </span>
+            <span>plan</span>
+          </h1>
+          <p
+            class="pt-6 text-xl text-gray-400 font-normal w-full px-8 md:w-full"
+          >
+            Choose a plan that works best for you and<br />
+            your team.
+          </p>
+        </div>
+        <div class="pt-24 flex flex-row">
+          <!-- Basic Card -->
+          <div
+            class="w-96 p-8 bg-white text-center rounded-3xl pr-16 shadow-xl"
+          >
+            <h1 class="text-black font-semibold text-2xl">Basic</h1>
+            <p class="pt-2 tracking-wide">
+              <span class="text-gray-400 align-top">$ </span>
+              <span class="text-3xl font-semibold">0.00</span>
+              <span class="text-gray-400 font-medium">/ month</span>
+            </p>
+            <hr class="mt-4 border-1" />
+            <div class="pt-8">
+              <p class="font-semibold text-gray-400 text-left">
+                <span class="material-icons align-middle"> done </span>
+                <span class="pl-2">
+                  Unlimited <span class="text-black">postings</span>
+                </span>
+              </p>
+              <p class="font-semibold text-gray-400 text-left pt-5">
+                <span class="material-icons align-middle"> done </span>
+                <span class="pl-2">
+                  Invoices <span class="text-black">+ invoice designer</span>
+                </span>
+              </p>
+              <p class="font-semibold text-gray-400 text-left pt-5">
+                <span class="material-icons align-middle"> done </span>
+                <span class="pl-2">
+                  Bill <span class="text-black">management</span>
+                </span>
+              </p>
+
+              <p class="font-semibold text-gray-400 text-left pt-5">
+                <span class="material-icons align-middle"> done </span>
+                <span class="pl-2">
+                  VAT <span class="text-black">financial accounting</span>
+                </span>
+              </p>
+
+              <p class="font-semibold text-gray-400 text-left pt-5">
+                <span class="material-icons align-middle"> done </span>
+                <span class="pl-2">
+                  Full <span class="text-black">support 24/7</span>
+                </span>
+              </p>
+
+              <p class="font-semibold text-gray-400 text-left pt-5">
+                <span class="material-icons align-middle"> done </span>
+                <span class="pl-2">
+                  Appendix's <span class="text-black">in cloud</span>
+                </span>
+              </p>
+
+              <p class="font-semibold text-gray-400 text-left pt-5">
+                <span class="material-icons align-middle"> done </span>
+                <span class="pl-2">
+                  All <span class="text-black">integrations</span>
+                </span>
+              </p>
+
+              <p class="font-semibold text-gray-400 text-left pt-5">
+                <span class="material-icons align-middle"> done </span>
+                <span class="pl-2">
+                  Personal <span class="text-black">accountant</span>
+                </span>
+              </p>
+
+              <a href="#" class="">
+                <p class="w-full py-4 bg-blue-600 mt-8 rounded-xl text-white">
+                  <span class="font-medium"> Choose Plan </span>
+                  <span class="pl-2 material-icons align-middle text-sm">
+                    east
+                  </span>
+                </p>
+              </a>
+            </div>
+          </div>
+          <!-- StartUp Card -->
           <div
             class="
-              bg-white
-              pt-4
-              rounded-xl
-              space-y-6
-              overflow-hidden
-              transition-all
-              duration-500
-              transform
-              hover:-translate-y-6
-              hover:scale-105
+              w-80
+              p-8
+              bg-gray-900
+              text-center
+              rounded-3xl
+              text-white
+              border-4
               shadow-xl
-              hover:shadow-2xl
-              cursor-pointer
+              border-white
+              transform
+              scale-125
             "
           >
-            <div class="px-8 flex justify-between items-center">
-              <h4 class="text-xl font-bold text-gray-800">0$/ month</h4>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5 text-gray-700"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+            <h1 class="text-white font-semibold text-2xl">Startup</h1>
+            <p class="pt-2 tracking-wide">
+              <span class="text-gray-400 align-top">$ </span>
+              <span class="text-3xl font-semibold">35</span>
+              <span class="text-gray-400 font-medium">/ month</span>
+            </p>
+            <hr class="mt-4 border-1 border-gray-600" />
+            <div class="pt-8">
+              <p class="font-semibold text-gray-400 text-left">
+                <span class="material-icons align-middle"> done </span>
+                <span class="pl-2">
+                  Unlimited <span class="text-white">postings</span>
+                </span>
+              </p>
+              <p class="font-semibold text-gray-400 text-left pt-5">
+                <span class="material-icons align-middle"> done </span>
+                <span class="pl-2">
+                  Invoices <span class="text-white">+ invoice designer</span>
+                </span>
+              </p>
+              <p class="font-semibold text-gray-400 text-left pt-5">
+                <span class="material-icons align-middle"> done </span>
+                <span class="pl-2">
+                  Bill <span class="text-white">management</span>
+                </span>
+              </p>
+
+              <p class="font-semibold text-gray-400 text-left pt-5">
+                <span class="material-icons align-middle"> done </span>
+                <span class="pl-2">
+                  VAT <span class="text-white">financial accounting</span>
+                </span>
+              </p>
+
+              <p class="font-semibold text-gray-400 text-left pt-5">
+                <span class="material-icons align-middle"> done </span>
+                <span class="pl-2">
+                  Full <span class="text-white">support 24/7</span>
+                </span>
+              </p>
+
+              <p class="font-semibold text-gray-400 text-left pt-5">
+                <span class="material-icons align-middle"> done </span>
+                <span class="pl-2">
+                  Appendix's <span class="text-white">in cloud</span>
+                </span>
+              </p>
+
+              <p class="font-semibold text-gray-400 text-left pt-5">
+                <span class="material-icons align-middle"> done </span>
+                <span class="pl-2">
+                  All <span class="text-white">integrations</span>
+                </span>
+              </p>
+
+              <p class="font-semibold text-gray-400 text-left pt-5">
+                <span class="material-icons align-middle"> done </span>
+                <span class="pl-2">
+                  Personal <span class="text-white">accountant</span>
+                </span>
+              </p>
+
+              <p class="font-semibold text-gray-400 text-left pt-5">
+                <span class="material-icons align-middle"> done </span>
+                <span class="pl-2">
+                  Advanced
+                  <span class="text-white underline"
+                    >blockchain technology</span
+                  >
+                </span>
+              </p>
+
+              <a href="#" class="">
+                <p class="w-full py-4 bg-blue-600 mt-8 rounded-xl text-white">
+                  <span class="font-medium"> Choose Plan </span>
+                  <span class="pl-2 material-icons align-middle text-sm">
+                    east
+                  </span>
+                </p>
+              </a>
+            </div>
+            <div class="absolute top-4 right-4">
+              <p
+                class="
+                  bg-blue-700
+                  font-semibold
+                  px-4
+                  py-1
+                  rounded-full
+                  uppercase
+                  text-xs
+                "
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-            </div>
-            <h1 class="text-4xl text-center font-bold">Free</h1>
-            <p class="px-4 text-center text-sm">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem
-            </p>
-            <ul class="text-center">
-              <li>
-                <a href="#" class="font-semibold">It is a long established</a>
-              </li>
-              <li>
-                <a href="#" class="font-semibold">It is a long established</a>
-              </li>
-              <li>
-                <a href="#" class="font-semibold">It is a long established</a>
-              </li>
-            </ul>
-            <div class="text-center bg-gray-200">
-              <button class="inline-block my-6 font-bold text-gray-800">
-                Get started today
-              </button>
+                Popular
+              </p>
             </div>
           </div>
-        </div>
-        <div class="py-12">
+          <!-- Enterprise Card -->
           <div
-            class="
-              bg-white
-              pt-4
-              rounded-xl
-              space-y-6
-              overflow-hidden
-              transition-all
-              duration-500
-              transform
-              hover:-translate-y-6
-              -translate-y-2
-              scale-105
-              shadow-xl
-              hover:shadow-2xl
-              cursor-pointer
-            "
+            class="w-96 p-8 bg-white text-center rounded-3xl pl-16 shadow-xl"
           >
-            <div class="px-8 flex justify-between items-center">
-              <h4 class="text-xl font-bold text-gray-800">Blockchain</h4>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5 text-pink-600"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              />
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-              />
-            </div>
-            <h1 class="text-4xl text-center font-bold">35$/ month</h1>
-            <p class="px-4 text-center text-sm">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem
+            <h1 class="text-black font-semibold text-2xl">Enterprise</h1>
+            <p class="pt-2 tracking-wide">
+              <span class="text-gray-400 align-top">$ </span>
+              <span class="text-3xl font-semibold">420</span>
+              <span class="text-gray-400 font-medium">/ year</span>
             </p>
-            <ul class="text-center">
-              <li>
-                <a href="#" class="font-semibold">It is a long established</a>
-              </li>
-              <li>
-                <a href="#" class="font-semibold">It is a long established</a>
-              </li>
-              <li>
-                <a href="#" class="font-semibold">It is a long established</a>
-              </li>
-            </ul>
-            <div class="text-center bg-pink-600">
-              <button class="inline-block my-6 font-bold text-white">
-                Get started today
-              </button>
+            <hr class="mt-4 border-1" />
+            <div class="pt-8">
+              <p class="font-semibold text-gray-400 text-left">
+                <span class="material-icons align-middle"> done </span>
+                <span class="pl-2">
+                  Unlimited <span class="text-black">postings</span>
+                </span>
+              </p>
+              <p class="font-semibold text-gray-400 text-left pt-5">
+                <span class="material-icons align-middle"> done </span>
+                <span class="pl-2">
+                  Invoices <span class="text-black">+ invoice designer</span>
+                </span>
+              </p>
+              <p class="font-semibold text-gray-400 text-left pt-5">
+                <span class="material-icons align-middle"> done </span>
+                <span class="pl-2">
+                  Bill <span class="text-black">management</span>
+                </span>
+              </p>
+
+              <p class="font-semibold text-gray-400 text-left pt-5">
+                <span class="material-icons align-middle"> done </span>
+                <span class="pl-2">
+                  VAT <span class="text-black">financial accounting</span>
+                </span>
+              </p>
+
+              <p class="font-semibold text-gray-400 text-left pt-5">
+                <span class="material-icons align-middle"> done </span>
+                <span class="pl-2">
+                  Full <span class="text-black">support 24/7</span>
+                </span>
+              </p>
+
+              <p class="font-semibold text-gray-400 text-left pt-5">
+                <span class="material-icons align-middle"> done </span>
+                <span class="pl-2">
+                  Appendix's <span class="text-black">in cloud</span>
+                </span>
+              </p>
+
+              <p class="font-semibold text-gray-400 text-left pt-5">
+                <span class="material-icons align-middle"> done </span>
+                <span class="pl-2">
+                  All <span class="text-black">integrations</span>
+                </span>
+              </p>
+
+              <p class="font-semibold text-gray-400 text-left pt-5">
+                <span class="material-icons align-middle"> done </span>
+                <span class="pl-2">
+                  Personal <span class="text-black">accountant</span>
+                </span>
+              </p>
+
+              <p class="font-semibold text-gray-400 text-left pt-5">
+                <span class="material-icons align-middle"> done </span>
+                <span class="pl-2">
+                  Advanced
+                  <span class="text-black underline"
+                    >blockchain technology</span
+                  >
+                </span>
+              </p>
+
+              <a href="#" class="">
+                <p class="w-full py-4 bg-blue-600 mt-8 rounded-xl text-white">
+                  <span class="font-medium"> Choose Plan </span>
+                  <span class="pl-2 material-icons align-middle text-sm">
+                    east
+                  </span>
+                </p>
+              </a>
             </div>
           </div>
-        </div>
-        <div class="py-12">
-          <div
-            class="
-              bg-white
-              pt-4
-              rounded-xl
-              space-y-6
-              overflow-hidden
-              transition-all
-              duration-500
-              transform
-              hover:-translate-y-6
-              hover:scale-105
-              shadow-xl
-              hover:shadow-2xl
-              cursor-pointer
-            "
-          ></div>
         </div>
       </div>
     </div>
-  </div>
+  </body>
 </template>
