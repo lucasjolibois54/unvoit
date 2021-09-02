@@ -1,6 +1,7 @@
 <template>
   <HeaderFrontpage />
   <HeroFrontpage />
+  <FrontPageWhoWeAre />
   <PricingFrontpage />
 </template>
 
@@ -8,6 +9,7 @@
 import HeaderFrontpage from "@/components/HeaderFrontpage.vue";
 import HeroFrontpage from "@/components/HeroFrontpage.vue";
 import PricingFrontpage from "@/components/PricingFrontpage.vue";
+import FrontPageWhoWeAre from "@/components/FrontPageWhoWeAre.vue";
 
 export default {
   name: "Home",
@@ -15,6 +17,7 @@ export default {
     HeaderFrontpage,
     HeroFrontpage,
     PricingFrontpage,
+    FrontPageWhoWeAre,
   },
 };
 </script>
