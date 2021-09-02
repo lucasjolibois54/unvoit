@@ -235,7 +235,6 @@
               <p
                 class="
                   bg-blue-700
-                  hover:bg-indigo-700
                   font-semibold
                   px-4
                   py-1
