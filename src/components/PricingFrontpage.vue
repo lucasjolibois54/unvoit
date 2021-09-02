@@ -103,7 +103,17 @@
               </p>
 
               <a href="#" class="">
-                <p class="w-full py-4 bg-blue-600 mt-8 rounded-xl text-white">
+                <p
+                  class="
+                    w-full
+                    py-4
+                    bg-blue-600
+                    hover:bg-indigo-700
+                    mt-8
+                    rounded-xl
+                    text-white
+                  "
+                >
                   <span class="font-medium"> Choose Plan </span>
                   <span class="pl-2 material-icons align-middle text-sm">
                     east
@@ -203,7 +213,17 @@
               </p>
 
               <a href="#" class="">
-                <p class="w-full py-4 bg-blue-600 mt-8 rounded-xl text-white">
+                <p
+                  class="
+                    w-full
+                    py-4
+                    bg-blue-600
+                    hover:bg-indigo-700
+                    mt-8
+                    rounded-xl
+                    text-white
+                  "
+                >
                   <span class="font-medium"> Choose Plan </span>
                   <span class="pl-2 material-icons align-middle text-sm">
                     east
@@ -215,6 +235,7 @@
               <p
                 class="
                   bg-blue-700
+                  hover:bg-indigo-700
                   font-semibold
                   px-4
                   py-1
@@ -318,7 +339,17 @@
               </p>
 
               <a href="#" class="">
-                <p class="w-full py-4 bg-blue-600 mt-8 rounded-xl text-white">
+                <p
+                  class="
+                    w-full
+                    py-4
+                    bg-blue-600
+                    hover:bg-indigo-700
+                    mt-8
+                    rounded-xl
+                    text-white
+                  "
+                >
                   <span class="font-medium"> Choose Plan </span>
                   <span class="pl-2 material-icons align-middle text-sm">
                     east
