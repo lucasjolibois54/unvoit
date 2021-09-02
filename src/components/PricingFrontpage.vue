@@ -26,13 +26,24 @@
         <div class="pt-24 lg:flex flex-row">
           <!-- Basic Card -->
           <div
-            class="w-96 p-8 bg-white text-center rounded-3xl pl-16 shadow-xl"
+            class="            
+            w-70
+            pb-9 
+            text-center
+            rounded-3xl 
+            pr-10
+              p-8
+              bg-gray-700
+              text-white
+              border-4
+              shadow-xl
+              border-white
+              transform
+              scale-120"
           >
             <h1 class="text-black font-semibold text-2xl">Basic</h1>
             <p class="pt-2 tracking-wide">
-              <span class="text-gray-400 align-top">$ </span>
-              <span class="text-3xl font-semibold">0.00</span>
-              <span class="text-gray-400 font-medium">/ month</span>
+              <span class="text-3xl text-black font-semibold">Free</span>
             </p>
             <hr class="mt-4 border-1" />
             <div class="pt-8">
@@ -103,11 +114,11 @@
           <!-- StartUp Card -->
           <div
             class="
-            w-96 
-            pb-20 
+            w-70
+            pb-9 
             text-center
             rounded-3xl 
-            pr-16 
+            pr-10
               p-8
               bg-gray-900
               text-white
@@ -115,7 +126,7 @@
               shadow-xl
               border-white
               transform
-              scale-110
+              scale-120
             "
           >
             <h1 class="text-white font-semibold text-2xl">Startup</h1>
@@ -217,7 +228,20 @@
           </div>
           <!-- Enterprise Card -->
           <div
-            class="w-96 p-8 bg-white text-center rounded-3xl pl-16 shadow-xl"
+            class="            
+            w-70
+            pb-9 
+            text-center
+            rounded-3xl 
+            pr-10
+              p-8
+              bg-indigo-700
+              text-white
+              border-4
+              shadow-xl
+              border-white
+              transform
+              scale-120"
           >
             <h1 class="text-black font-semibold text-2xl">Enterprise</h1>
             <p class="pt-2 tracking-wide">
