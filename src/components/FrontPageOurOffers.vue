@@ -10,7 +10,7 @@
             uppercase
           "
         >
-          Transactions
+          Invoice management & transactions
         </h2>
         <p
           class="
