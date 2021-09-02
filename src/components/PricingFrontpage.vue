@@ -8,7 +8,7 @@
         </p>
       </div>
       <hr class="mt-10" />
-      <div class="md:flex md:space-x-10 sm:px-10">
+      <div class="md:flex md:space-x-10 px-6">
         <div class="py-12">
           <div
             class="
