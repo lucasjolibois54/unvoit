@@ -75,7 +75,7 @@
         <div></div>
       </div>
       <hr class="mt-10" />
-      <div class="flex space-x-10 pt-10">
+      <div class="md:flex space-x-10 pt-10">
         <div class="py-12">
           <div
             class="
