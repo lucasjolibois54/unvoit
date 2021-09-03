@@ -53,10 +53,8 @@
               class="
                 text-4xl
                 tracking-tight
-                font-extrabold
+                font-light
                 text-gray-900
-                sm:text-5xl
-                md:text-6xl
               "
             >
               <span class="block xl:inline ">What are</span>
@@ -73,7 +71,7 @@
                 sm:max-w-xl
                 sm:mx-auto
                 md:mt-5
-                md:text-xl
+                md:text-x5
                 lg:mx-0
               "
             >
@@ -89,7 +87,8 @@ a chain of data known as the “blockchain.”
  All new information that follows that freshly 
 added block is compiled into a newly formed 
 block that will then also be added to the chain 
-once filled.
+once filled. 
+                                              
             </p>
             <div
               class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start"
