@@ -94,13 +94,48 @@
 <script>
 const people = [
   {
-    name: "Jane Cooper",
-    title: "Regional Paradigm Technician",
+    name: "Andreas Erik Eriksen",
+    title: "Senior Dictator of UNVOIT",
     department: "Optimization",
-    role: "Admin",
-    email: "jane.cooper@example.com",
+    role: "$728.99",
+    email: "andreas.eriksen@example.com",
+    image: "https://avatars.githubusercontent.com/u/47341968?v=4",
+  },
+  {
+    name: "Borat Sagdiyev",
+    title: "Global ambassador for Kazakhstan",
+    department: "Public Relations",
+    role: "$287",
+    email: "borat.wuawua@example.com",
     image:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Borat_in_Cologne.jpg/220px-Borat_in_Cologne.jpg",
+  },
+  {
+    name: "Eva Shaw",
+    title: "Regional Sales",
+    department: "Marketing",
+    role: "$872",
+    email: "eva.shaw@example.com",
+    image:
+      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60",
+  },
+  {
+    name: "Jayden Hunt",
+    title: "React Native Consultant",
+    department: "Development",
+    role: "$3940",
+    email: "jayden.hunt@example.com",
+    image:
+      "https://images.unsplash.com/photo-1583123810408-23e7b5d1af9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60",
+  },
+  {
+    name: "Julia Cunningham",
+    title: "Chief Creative Officer",
+    department: "Board of Members",
+    role: "$468",
+    email: "julia.cunningham@example.com",
+    image:
+      "https://images.unsplash.com/photo-1596698472600-46fe5cb12624?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60",
   },
 ];
 
