@@ -88,14 +88,10 @@
 
 <script>
 const features = [
+  { name: "Secure invoice system", description: "" },
   {
-    name: "SAecure invoice system",
-    description: "Designed by Good Goods, Inc.",
-  },
-  {
-    name: "Usable for all businesses",
-    description:
-      "Solid walnut base with rare earth magnets and powder coated steel card cover",
+    name: "Usable for alle businesses",
+    description: "",
   },
   { name: "Blockchain techonoly", description: '6.25" x 3.55" x 1.15"' },
   {
@@ -108,8 +104,7 @@ const features = [
   },
   {
     name: "Up to date features",
-    description:
-      "Made from natural materials. Grain and color vary with each item.",
+    description: "",
   },
 ];
 
