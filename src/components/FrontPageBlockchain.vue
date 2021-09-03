@@ -87,8 +87,7 @@ a chain of data known as the “blockchain.”
  All new information that follows that freshly 
 added block is compiled into a newly formed 
 block that will then also be added to the chain 
-once filled. 
-                                              
+once filled.
             </p>
             <div
               class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start"
@@ -102,8 +101,8 @@ once filled.
     </div>
     <div class="lg:absolute lg:inset-y-0 lg:right-10 lg:w-1/2">
       <img
-        class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-        src="https://res.cloudinary.com/aeeux/image/upload/v1630421601/Diget66/previewed_nv20ka.png"
+        class="h-72 w-85 object-cover sm:h-72 md:h-52 lg:w-85 lg:h-72 mx-auto"
+        src="../assets/images/image.svg"
         alt=""
       />
     </div>
