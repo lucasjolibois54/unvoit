@@ -23,7 +23,7 @@
             your team.
           </p>
         </div>
-        <div class="pt-24 lg:flex flex-row">
+        <div class="pt-10 lg:flex flex-row">
           <!-- Basic Card -->
           <div
             class="
