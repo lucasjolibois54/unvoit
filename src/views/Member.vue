@@ -1,8 +1,8 @@
 <template>
   <div v-if="!mobile" class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8">
     <NavSoftware />
-    <HeadingSoftware />
-    <TablesSoftware class="px-6 py-6" />
+    <HeadingSoftware class="px-6 py-14" />
+    <TablesSoftware class="px-6 py-2" />
   </div>
 
   <div v-else class="grid w-full min-h-screen bg-gray-900 place-content-center">
