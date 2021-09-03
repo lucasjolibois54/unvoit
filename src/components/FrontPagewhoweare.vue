@@ -88,19 +88,19 @@
 
 <script>
 const features = [
-  { name: "Origin", description: "Designed by Good Goods, Inc." },
+  { name: "Secure invoice system", description: "" },
   {
-    name: "Material",
+    name: "Usable for alle businesses",
     description:
-      "Solid walnut base with rare earth magnets and powder coated steel card cover",
+      "",
   },
-  { name: "Dimensions", description: '6.25" x 3.55" x 1.15"' },
-  { name: "Finish", description: "Hand sanded and finished with natural oil" },
-  { name: "Includes", description: "Wood card tray and 3 refill packs" },
+  { name: "Blockchain technology", description: '' },
+  { name: "Good user experience", description: "" },
+  { name: "Financial management", description: "" },
   {
-    name: "Considerations",
+    name: "Up to date features",
     description:
-      "Made from natural materials. Grain and color vary with each item.",
+      "",
   },
 ];
 
