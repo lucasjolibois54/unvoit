@@ -6,6 +6,7 @@
   <FrontPagewhoweare />
   <FrontPageBlockchain />
   <FrontPageContactForm />
+  <Footer />
 </template>
 
 <script>
@@ -16,6 +17,7 @@ import FrontPageOurOffers from "@/components/FrontPageOurOffers.vue";
 import FrontPagewhoweare from "@/components/FrontPagewhoweare.vue";
 import FrontPageContactForm from "@/components/FrontPageContactForm.vue";
 import FrontPageBlockchain from "@/components/FrontPageBlockchain.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
   name: "Home",
@@ -27,6 +29,7 @@ export default {
     FrontPagewhoweare,
     FrontPageContactForm,
     FrontPageBlockchain,
+    Footer,
   },
 };
 </script>
