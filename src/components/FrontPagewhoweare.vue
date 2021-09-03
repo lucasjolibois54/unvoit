@@ -98,7 +98,11 @@ const features = [
   { name: "Good user experience", description: "Our system is easy to use and logically set up, so you don't have to waste more time than necessary." },
   { name: "Financial management", description: "You can control all financial-related things with our system - mostly automatic, so you can focus more on building your business." },
   {
-    name: "Up to date features",
+    name: "Blockchain techonoly",
+    description: "We use blockchain technology to protect your you and data.",
+  },
+  {
+    name: "Amazing user experience",
     description:
       "We always have the newest features available, including all the best integrations on the market.",
   },
