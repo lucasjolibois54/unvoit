@@ -27,7 +27,7 @@
             sm:text-4xl
           "
         >
-          Who are <span class="block text-indigo-600 xl:inline">are?</span>
+          Who are <span class="block text-indigo-600 xl:inline">we?</span>
         </h2>
         <p class="mt-4 text-gray-500">
           We’re a highly skilled team, based in Copenhagen; We have developed
