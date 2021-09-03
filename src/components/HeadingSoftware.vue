@@ -5,38 +5,17 @@
       <h2
         class="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate"
       >
-        Back End Developer
+        Invoices
       </h2>
       <div
         class="mt-1 flex flex-col sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-6"
       >
         <div class="mt-2 flex items-center text-sm text-gray-500">
-          <BriefcaseIcon
+          <SpeakerphoneIcon
             class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
             aria-hidden="true"
           />
-          Full-time
-        </div>
-        <div class="mt-2 flex items-center text-sm text-gray-500">
-          <LocationMarkerIcon
-            class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
-            aria-hidden="true"
-          />
-          Remote
-        </div>
-        <div class="mt-2 flex items-center text-sm text-gray-500">
-          <CurrencyDollarIcon
-            class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
-            aria-hidden="true"
-          />
-          $120k &ndash; $140k
-        </div>
-        <div class="mt-2 flex items-center text-sm text-gray-500">
-          <CalendarIcon
-            class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
-            aria-hidden="true"
-          />
-          Closing on January 9, 2020
+          Manage your invoices
         </div>
       </div>
     </div>
@@ -44,36 +23,19 @@
       <span class="hidden sm:block">
         <button
           type="button"
-          class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white transition duration-300 ease-in-out hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
         >
-          <PencilIcon
-            class="-ml-1 mr-2 h-5 w-5 text-gray-500"
-            aria-hidden="true"
-          />
-          Edit
+          Filter
         </button>
       </span>
 
       <span class="hidden sm:block ml-3">
         <button
           type="button"
-          class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 transition duration-300 ease-in-out hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
         >
-          <LinkIcon
-            class="-ml-1 mr-2 h-5 w-5 text-gray-500"
-            aria-hidden="true"
-          />
-          View
-        </button>
-      </span>
-
-      <span class="sm:ml-3">
-        <button
-          type="button"
-          class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-        >
-          <CheckIcon class="-ml-1 mr-2 h-5 w-5" aria-hidden="true" />
-          Publish
+          <LinkIcon class="-ml-1 mr-2 h-5 w-5 text-white" aria-hidden="true" />
+          Create Invoice
         </button>
       </span>
 
@@ -107,7 +69,7 @@
                   active ? 'bg-gray-100' : '',
                   'block px-4 py-2 text-sm text-gray-700',
                 ]"
-                >Edit</a
+                >Filter</a
               >
             </MenuItem>
             <MenuItem v-slot="{ active }">
@@ -117,7 +79,7 @@
                   active ? 'bg-gray-100' : '',
                   'block px-4 py-2 text-sm text-gray-700',
                 ]"
-                >View</a
+                >Create Invoice</a
               >
             </MenuItem>
           </MenuItems>
@@ -129,14 +91,9 @@
 
 <script>
 import {
-  BriefcaseIcon,
-  CalendarIcon,
-  CheckIcon,
+  SpeakerphoneIcon,
   ChevronDownIcon,
-  CurrencyDollarIcon,
   LinkIcon,
-  LocationMarkerIcon,
-  PencilIcon,
 } from "@heroicons/vue/solid";
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/vue";
 
@@ -146,14 +103,9 @@ export default {
     MenuButton,
     MenuItem,
     MenuItems,
-    BriefcaseIcon,
-    CalendarIcon,
-    CheckIcon,
+    SpeakerphoneIcon,
     ChevronDownIcon,
-    CurrencyDollarIcon,
     LinkIcon,
-    LocationMarkerIcon,
-    PencilIcon,
   },
 };
 </script>
