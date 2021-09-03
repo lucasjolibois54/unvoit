@@ -10,7 +10,7 @@
             uppercase
           "
         >
-          Transactions
+          Invoice management & transactions
         </h2>
         <p
           class="
@@ -23,11 +23,12 @@
             sm:text-4xl
           "
         >
-          A better way to send money
+          A better way to manage & send money
         </p>
         <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-          Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam
-          voluptatum cupiditate veritatis in accusamus quisquam.
+          Improve the way you manage your invoices for your business and the way
+          your customers pay their bill through custom invoice links that they
+          can pay through, through our software. You can start today for free!
         </p>
       </div>
 
@@ -85,27 +86,27 @@ import {
 
 const features = [
   {
-    name: "Competitive exchange rates",
+    name: "Economic overview over your business",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+      "User experience based software giving a good economicly overview over your invoices for your business.",
     icon: GlobeAltIcon,
   },
   {
     name: "No hidden fees",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+      "We have the best prices in the industri. You can start managing your business for completely free, no hidden fees. You can always upgrade to a plan based subscription if you need to be able to send invoice requests.",
     icon: ScaleIcon,
   },
   {
     name: "Transfers are instant",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+      "Using blockchains your cusotmers payments will get payed instantly and securely.",
     icon: LightningBoltIcon,
   },
   {
-    name: "Mobile notifications",
+    name: "Support from professionals",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+      "If you need guidance through your journey managing your business using our software, you can get completely free cusomter support 24/7.",
     icon: AnnotationIcon,
   },
 ];

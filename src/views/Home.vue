@@ -1,15 +1,21 @@
 <template>
   <HeaderFrontpage />
   <HeroFrontpage />
-  <FrontPageWhoWeAre />
+  <FrontPageOurOffers />
   <PricingFrontpage />
+  <FrontPagewhoweare />
+  <FrontPageBlockchain />
+  <FrontPageContactForm />
 </template>
 
 <script>
 import HeaderFrontpage from "@/components/HeaderFrontpage.vue";
 import HeroFrontpage from "@/components/HeroFrontpage.vue";
 import PricingFrontpage from "@/components/PricingFrontpage.vue";
-import FrontPageWhoWeAre from "@/components/FrontPageWhoWeAre.vue";
+import FrontPageOurOffers from "@/components/FrontPageOurOffers.vue";
+import FrontPagewhoweare from "@/components/FrontPagewhoweare.vue";
+import FrontPageContactForm from "@/components/FrontPageContactForm.vue";
+import FrontPageBlockchain from "@/components/FrontPageBlockchain.vue";
 
 export default {
   name: "Home",
@@ -17,7 +23,10 @@ export default {
     HeaderFrontpage,
     HeroFrontpage,
     PricingFrontpage,
-    FrontPageWhoWeAre,
+    FrontPageOurOffers,
+    FrontPagewhoweare,
+    FrontPageContactForm,
+    FrontPageBlockchain,
   },
 };
 </script>

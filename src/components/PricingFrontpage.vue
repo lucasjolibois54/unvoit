@@ -9,7 +9,7 @@
     rel="stylesheet"
   />
   <body class="font-sans bg-gray-100">
-    <div class="min-h-screen flex justify-center items-center">
+    <div class="min-h-screen flex justify-center items-center py-20">
       <div class="">
         <div class="text-center font-semibold">
           <h1 class="text-5xl">
@@ -23,23 +23,24 @@
             your team.
           </p>
         </div>
-        <div class="pt-24 lg:flex flex-row">
+        <div class="pt-10 lg:flex flex-row">
           <!-- Basic Card -->
           <div
-            class="            
-            w-70
-            pb-9 
-            text-center
-            rounded-3xl 
-            pr-10
+            class="
+              w-70
+              pb-20
+              text-center
+              rounded-3xl
+              pr-10
               p-8
-              bg-gray-700
+              bg-gray-100
               text-white
               border-4
               shadow-xl
               border-white
               transform
-              scale-120"
+              scale-120
+            "
           >
             <h1 class="text-black font-semibold text-2xl">Basic</h1>
             <p class="pt-2 tracking-wide">
@@ -102,7 +103,17 @@
               </p>
 
               <a href="#" class="">
-                <p class="w-full py-4 bg-blue-600 mt-8 rounded-xl text-white">
+                <p
+                  class="
+                    w-full
+                    py-4
+                    bg-indigo-600
+                    hover:bg-indigo-700
+                    mt-8
+                    rounded-xl
+                    text-white
+                  "
+                >
                   <span class="font-medium"> Choose Plan </span>
                   <span class="pl-2 material-icons align-middle text-sm">
                     east
@@ -114,11 +125,11 @@
           <!-- StartUp Card -->
           <div
             class="
-            w-70
-            pb-9 
-            text-center
-            rounded-3xl 
-            pr-10
+              w-70
+              pb-20
+              text-center
+              rounded-3xl
+              pr-10
               p-8
               bg-gray-900
               text-white
@@ -202,7 +213,17 @@
               </p>
 
               <a href="#" class="">
-                <p class="w-full py-4 bg-blue-600 mt-8 rounded-xl text-white">
+                <p
+                  class="
+                    w-full
+                    py-4
+                    bg-indigo-600
+                    hover:bg-indigo-700
+                    mt-8
+                    rounded-xl
+                    text-white
+                  "
+                >
                   <span class="font-medium"> Choose Plan </span>
                   <span class="pl-2 material-icons align-middle text-sm">
                     east
@@ -228,20 +249,21 @@
           </div>
           <!-- Enterprise Card -->
           <div
-            class="            
-            w-70
-            pb-9 
-            text-center
-            rounded-3xl 
-            pr-10
+            class="
+              w-70
+              pb-20
+              text-center
+              rounded-3xl
+              pr-10
               p-8
-              bg-indigo-700
-              text-white
+              bg-gray-100
+              text-black
               border-4
               shadow-xl
               border-white
               transform
-              scale-120"
+              scale-120
+            "
           >
             <h1 class="text-black font-semibold text-2xl">Enterprise</h1>
             <p class="pt-2 tracking-wide">
@@ -316,7 +338,17 @@
               </p>
 
               <a href="#" class="">
-                <p class="w-full py-4 bg-blue-600 mt-8 rounded-xl text-white">
+                <p
+                  class="
+                    w-full
+                    py-4
+                    bg-indigo-600
+                    hover:bg-indigo-700
+                    mt-8
+                    rounded-xl
+                    text-white
+                  "
+                >
                   <span class="font-medium"> Choose Plan </span>
                   <span class="pl-2 material-icons align-middle text-sm">
                     east
