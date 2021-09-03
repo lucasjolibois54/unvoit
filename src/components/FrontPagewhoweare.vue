@@ -62,22 +62,22 @@
       </div>
       <div class="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
         <img
-          src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-01.jpg"
+          src="https://www.inky.com/hubfs/finance-03-500x500.png"
           alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
           class="bg-gray-100 rounded-lg"
         />
         <img
-          src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-02.jpg"
+          src="https://chorusintel.com/wp-content/uploads/fly-images/438/Hero-%E2%80%93-Financial-500x500-cc.jpg"
           alt="Top down view of walnut card tray with embedded magnets and card groove."
           class="bg-gray-100 rounded-lg"
         />
         <img
-          src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-03.jpg"
+          src="https://www.brookes.co.za/wp-content/uploads/2020/04/Image-blocks_500-x-500-02.jpg"
           alt="Side of walnut card tray with card groove and recessed card area."
           class="bg-gray-100 rounded-lg"
         />
         <img
-          src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-04.jpg"
+          src="https://i1.sndcdn.com/artworks-000592074107-q4477r-t500x500.jpg"
           alt="Walnut card tray filled with cards and card angled in dedicated groove."
           class="bg-gray-100 rounded-lg"
         />
