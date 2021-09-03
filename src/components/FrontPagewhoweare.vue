@@ -88,23 +88,33 @@
 
 <script>
 const features = [
-  { name: "Secure invoice system", description: "" },
+  {
+    name: "Secure invoice system",
+    description:
+      "Our system is extremly secure as we use some of the best security methods to protect our users on the platform.",
+  },
   {
     name: "Usable for alle businesses",
-    description: "",
+    description:
+      "Our system can be used for any business. We have two plans in which you can decide which one to get depending on your needs.",
   },
-  { name: "Blockchain techonoly", description: '6.25" x 3.55" x 1.15"' },
+  {
+    name: "Blockchain techonoly",
+    description: "We use blockchain technology to protect your you and data.",
+  },
   {
     name: "Amazing user experience",
-    description: "Hand sanded and finished with natural oil",
+    description:
+      "Our system is based og high-end, modern and easy to use user experience.",
   },
   {
     name: "Financial management",
-    description: "Wood card tray and 3 refill packs",
+    description:
+      "We have a free never seen before high-end and mordern financial management system for you and your business.",
   },
   {
     name: "Up to date features",
-    description: "",
+    description: "We keep our system updated, and add all the newest features",
   },
 ];
 
