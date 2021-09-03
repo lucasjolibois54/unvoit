@@ -88,19 +88,18 @@
 
 <script>
 const features = [
-  { name: "Origin", description: "Designed by Good Goods, Inc." },
+  { name: "Secure invoice system", description: "We use contracts as a part of our invoice system to avoid mistakes and fraud between companies and customers." },
   {
-    name: "Material",
+    name: "Usable for all companies",
     description:
-      "Solid walnut base with rare earth magnets and powder coated steel card cover",
+      "It doesn't matter whether you're a start-up company, a freelancer, or represents a huge company. We got all the features you will ever need, and have different plans available.",
   },
-  { name: "Dimensions", description: '6.25" x 3.55" x 1.15"' },
-  { name: "Finish", description: "Hand sanded and finished with natural oil" },
-  { name: "Includes", description: "Wood card tray and 3 refill packs" },
+  { name: "Blockchain technology", description: "With blockchain technology, we can automatically spot if any error occurs doing sent invoices/payments, based on contracts between both parts." },
+  { name: "Good user experience", description: "Our system is easy to use and logically set up, so you don't have to waste more time than necessary." },
+  { name: "Financial management", description: "You can control all financial-related things with our system - mostly automatic, so you can focus more on building your business." },
   {
-    name: "Considerations",
-    description:
-      "Made from natural materials. Grain and color vary with each item.",
+    name: "Up to date features",
+    description: "We always have the newest features available, including all the best integrations on the market.",
   },
 ];
 
