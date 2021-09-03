@@ -1,6 +1,6 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <div>
+  <div v-if="!mobile">
     <Disclosure as="nav" class="bg-white" v-slot="{ open }">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
@@ -167,6 +167,15 @@
       </div>
     </main>
   </div>
+
+  <div v-else class="grid w-full min-h-screen bg-gray-900 place-content-center">
+    <h2 class="text-3xl font-bold text-gray-100 text center md:text-6xl">
+      Sorry, this app is not supported on Mobile Devices
+    </h2>
+    <p class="text-2xl text-gray-100 text center md:text-6xl">
+      To use this app, please use a Computer or Tablet
+    </p>
+  </div>
 </template>
 
 <script>
@@ -204,6 +213,25 @@ const userNavigation = [
 ];
 
 export default {
+  data() {
+    return {
+      mobile: null,
+    };
+  },
+  created() {
+    this.checkScreen();
+    window.addEventListener("resize", this.checkScreen);
+  },
+  methods: {
+    checkScreen() {
+      const windowWidth = window.innerWidth;
+      if (windowWidth <= 750) {
+        this.mobile = true;
+        return;
+      }
+      this.mobile = false;
+    },
+  },
   components: {
     Disclosure,
     DisclosureButton,
@@ -226,3 +254,18 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.mobile-message {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #141625;
+  color: #fff;
+}
+
+p {
+  margin-top: 16px;
+}
+</style>
