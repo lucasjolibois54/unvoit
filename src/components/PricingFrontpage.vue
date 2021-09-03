@@ -14,7 +14,7 @@
         <div class="text-center font-semibold">
           <h1 class="text-5xl">
             <span class="text-indigo-700 tracking-wide">Pricing </span>
-            <span>plan</span>
+            <span>plans</span>
           </h1>
           <p
             class="pt-6 text-xl text-gray-400 font-normal w-full px-8 md:w-full"
@@ -23,7 +23,7 @@
             your team.
           </p>
         </div>
-        <div class="pt-24 lg:flex flex-row">
+        <div class="pt-10 lg:flex flex-row">
           <!-- Basic Card -->
           <div
             class="
