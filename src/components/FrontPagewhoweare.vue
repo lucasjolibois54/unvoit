@@ -88,19 +88,19 @@
 
 <script>
 const features = [
-  { name: "Secure invoice system", description: "" },
+  { name: "Secure invoice system", description: "We use contracts as a part of our invoice system to avoid mistakes and fraud between companies and customers." },
   {
-    name: "Usable for alle businesses",
+    name: "Usable for all companies",
     description:
-      "",
+      "It doesn't matter whether you're a start-up company, a freelancer, or represents a huge company. We got all the features you will ever need.",
   },
-  { name: "Blockchain technology", description: '' },
-  { name: "Good user experience", description: "" },
-  { name: "Financial management", description: "" },
+  { name: "Blockchain technology", description: "With blockchain technology, we can automatically spot if any error occurs doing sent invoices/payments, based on contracts between both parts." },
+  { name: "Good user experience", description: "Our system is easy to use and logically set up, so you don't have to waste more time than necessary." },
+  { name: "Financial management", description: "You can control all financial-related things with our system - mostly automatic, so you can focus more on building your business." },
   {
     name: "Up to date features",
     description:
-      "",
+      "We always have the newest features available, including all the best integrations on the market.",
   },
 ];
 
