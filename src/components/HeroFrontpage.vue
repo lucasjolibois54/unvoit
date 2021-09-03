@@ -77,7 +77,7 @@
                 lg:mx-0
               "
             >
-              Manage your invoices safely and keep track on your business'
+              Manage your invoices safely and keep track on your<br> business'
               economy.
             </p>
             <div
