@@ -49,18 +49,11 @@
           "
         >
           <div class="sm:text-center lg:text-left">
-            <h1
-              class="
-                text-4xl
-                tracking-tight
-                font-light
-                text-gray-900
-              "
-            >
-              <span class="block xl:inline ">What are</span>
+            <h1 class="text-4xl tracking-tight font-light text-gray-900">
+              <span class="block xl:inline">What are</span>
               {{ "" }}
-              
-              <span class="block text-indigo-600 xl:inline">blockhains?</span>
+
+              <span class="block text-indigo-600 xl:inline">blockchains?</span>
             </h1>
             <p
               class="
@@ -75,26 +68,18 @@
                 lg:mx-0
               "
             >
-              One key difference between a typical 
-database and a blockchain is the way 
-the data is structured. A blockchain 
-collects information together in groups, 
-also known as blocks, that hold sets of 
-information. Blocks have certain storage 
-capacities and, when filled, are chained 
-onto the previously filled block, forming 
-a chain of data known as the “blockchain.”
- All new information that follows that freshly 
-added block is compiled into a newly formed 
-block that will then also be added to the chain 
-once filled.
+              One key difference between a typical database and a blockchain is
+              the way the data is structured. A blockchain collects information
+              together in groups, also known as blocks, that hold sets of
+              information. Blocks have certain storage capacities and, when
+              filled, are chained onto the previously filled block, forming a
+              chain of data known as the “blockchain.” All new information that
+              follows that freshly added block is compiled into a newly formed
+              block that will then also be added to the chain once filled.
             </p>
             <div
               class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start"
-            >
-            
-              
-            </div>
+            ></div>
           </div>
         </main>
       </div>
