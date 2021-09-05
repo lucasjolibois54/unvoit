@@ -2,6 +2,7 @@
   <div v-if="!mobile">
     <Banner />
     <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8 ">
+      <InvoiceModal />
       <NavSoftware class="px-6 pb-10" />
       <HeadingSoftware class="px-6 py-14 pt-24" />
       <TablesSoftware class="px-6 py-2" />
@@ -23,6 +24,7 @@ import NavSoftware from "@/components/NavSoftware.vue";
 import HeadingSoftware from "@/components/HeadingSoftware.vue";
 import TablesSoftware from "@/components/TablesSoftware.vue";
 import Banner from "@/components/Banner.vue";
+import InvoiceModal from "@/components/InvoiceModal.vue";
 
 export default {
   data() {
@@ -50,6 +52,7 @@ export default {
     HeadingSoftware,
     TablesSoftware,
     Banner,
+    InvoiceModal,
   },
 };
 </script>
