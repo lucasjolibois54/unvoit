@@ -31,7 +31,7 @@
                   scope="col"
                   class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
                 >
-                  Role
+                  Amount
                 </th>
                 <th scope="col" class="relative px-6 py-3">
                   <span class="sr-only">Edit</span>
@@ -73,7 +73,7 @@
                   </span>
                 </td>
                 <td class="px-5 py-4 whitespace-nowrap text-sm text-gray-500">
-                  {{ person.role }}
+                  {{ person.amount }}
                 </td>
                 <td
                   class="px-3 py-4 whitespace-nowrap text-right text-sm font-medium"
@@ -97,7 +97,7 @@ const people = [
     name: "Andreas Erik Eriksen",
     title: "Senior Dictator of UNVOIT",
     department: "Optimization",
-    role: "$728.99",
+    amount: "$728.99",
     email: "andreas.eriksen@example.com",
     image: "https://avatars.githubusercontent.com/u/47341968?v=4",
   },
@@ -105,7 +105,7 @@ const people = [
     name: "Borat Sagdiyev",
     title: "Global ambassador for Kazakhstan",
     department: "Public Relations",
-    role: "$287",
+    amount: "$287",
     email: "borat.wuawua@example.com",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Borat_in_Cologne.jpg/220px-Borat_in_Cologne.jpg",
@@ -114,7 +114,7 @@ const people = [
     name: "Eva Shaw",
     title: "Regional Sales",
     department: "Marketing",
-    role: "$872",
+    amount: "$872",
     email: "eva.shaw@example.com",
     image:
       "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60",
@@ -123,7 +123,7 @@ const people = [
     name: "Jayden Hunt",
     title: "React Native Consultant",
     department: "Development",
-    role: "$3940",
+    amount: "$3940",
     email: "jayden.hunt@example.com",
     image:
       "https://images.unsplash.com/photo-1583123810408-23e7b5d1af9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60",
@@ -132,7 +132,7 @@ const people = [
     name: "Julia Cunningham",
     title: "Chief Creative Officer",
     department: "Board of Members",
-    role: "$468",
+    amount: "$468",
     email: "julia.cunningham@example.com",
     image:
       "https://images.unsplash.com/photo-1596698472600-46fe5cb12624?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60",
