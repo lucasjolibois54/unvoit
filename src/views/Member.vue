@@ -1,7 +1,7 @@
 <template>
-  <div v-if="!mobile" class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8">
-    <NavSoftware />
-    <HeadingSoftware class="px-6 py-14" />
+  <div v-if="!mobile" class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8 ">
+    <NavSoftware class="px-6 pb-10" />
+    <HeadingSoftware class="px-6 py-14 pt-24" />
     <TablesSoftware class="px-6 py-2" />
   </div>
 
