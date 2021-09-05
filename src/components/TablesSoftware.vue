@@ -38,8 +38,12 @@
                 </th>
               </tr>
             </thead>
-            <tbody class="bg-white divide-y divide-gray-200">
-              <tr v-for="person in people" :key="person.email">
+            <tbody class="bg-white divide-y divide-gray-200 ">
+              <tr
+                class="hover:bg-indigo-200 transition duration-300 ease-in-out"
+                v-for="person in people"
+                :key="person.email"
+              >
                 <td class="px-1 py-4 whitespace-nowrap">
                   <div class="flex items-center">
                     <div class="flex-shrink-0 h-10 w-10">
