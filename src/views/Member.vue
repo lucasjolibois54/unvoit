@@ -1,4 +1,5 @@
 <template>
+  <Banner />
   <div v-if="!mobile" class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8 ">
     <NavSoftware class="px-6 pb-10" />
     <HeadingSoftware class="px-6 py-14 pt-24" />
@@ -19,6 +20,7 @@
 import NavSoftware from "@/components/NavSoftware.vue";
 import HeadingSoftware from "@/components/HeadingSoftware.vue";
 import TablesSoftware from "@/components/TablesSoftware.vue";
+import Banner from "@/components/Banner.vue";
 
 export default {
   data() {
@@ -45,6 +47,7 @@ export default {
     NavSoftware,
     HeadingSoftware,
     TablesSoftware,
+    Banner,
   },
 };
 </script>
