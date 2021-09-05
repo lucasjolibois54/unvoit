@@ -1,9 +1,11 @@
 <template>
-  <Banner />
-  <div v-if="!mobile" class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8 ">
-    <NavSoftware class="px-6 pb-10" />
-    <HeadingSoftware class="px-6 py-14 pt-24" />
-    <TablesSoftware class="px-6 py-2" />
+  <div v-if="!mobile">
+    <Banner />
+    <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8 ">
+      <NavSoftware class="px-6 pb-10" />
+      <HeadingSoftware class="px-6 py-14 pt-24" />
+      <TablesSoftware class="px-6 py-2" />
+    </div>
   </div>
 
   <div v-else class="grid w-full min-h-screen bg-gray-900 place-content-center">
