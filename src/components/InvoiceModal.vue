@@ -1,5 +1,10 @@
 <template>
-  <TransitionRoot as="template" :show="open">
+  <TransitionRoot
+    @click="checkClick"
+    ref="invoiceWrap"
+    as="template"
+    :show="open"
+  >
     <Dialog
       as="div"
       class="fixed z-10 inset-0 overflow-y-auto"
@@ -40,20 +45,22 @@
           <div class="sticky inline-block">
             <div class="py-24 justify-center mx-auto text-center w-full">
               <div class="">
-                <form action="#" method="POST">
+                <form @submit.prevent="submitForm">
                   <div class="shadow overflow-hidden sm:rounded-t-md">
                     <div class="bg-white sm:p-6">
                       <div class="grid grid-cols-6 gap-6">
                         <div class="col-span-6 sm:col-span-3">
                           <label
-                            for="first-name"
+                            for="clientName"
                             class="block text-sm font-medium text-gray-700"
                             >Client's Full Name</label
                           >
                           <input
+                            v-model="clientName"
+                            required
                             type="text"
-                            name="first-name"
-                            id="first-name"
+                            name="clientName"
+                            id="clientName"
                             autocomplete="given-name"
                             class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                           />
@@ -61,14 +68,16 @@
 
                         <div class="col-span-6 sm:col-span-3">
                           <label
-                            for="last-name"
+                            for="clientEmail"
                             class="block text-sm font-medium text-gray-700"
                             >Email Address</label
                           >
                           <input
+                            v-model="clientEmail"
+                            required
                             type="text"
-                            name="email-address"
-                            id="email-address"
+                            name="clientEmail"
+                            id="clientEmail"
                             autocomplete="email"
                             class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                           />
@@ -76,13 +85,15 @@
 
                         <div class="col-span-6 sm:col-span-3">
                           <label
-                            for="country"
+                            for="clientCountry"
                             class="block text-sm font-medium text-gray-700"
                             >Country / Region</label
                           >
                           <select
-                            id="country"
-                            name="country"
+                            v-model="clientCountry"
+                            required
+                            id="clientCountry"
+                            name="clientCountry"
                             autocomplete="country"
                             class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                           >
@@ -94,14 +105,16 @@
 
                         <div class="col-span-6 sm:col-span-3">
                           <label
-                            for="street-address"
+                            for="clientAddress"
                             class="block text-sm font-medium text-gray-700"
                             >Street address</label
                           >
                           <input
+                            v-model="clientAddress"
+                            required
                             type="text"
-                            name="street-address"
-                            id="street-address"
+                            name="clientAddress"
+                            id="clientAddress"
                             autocomplete="street-address"
                             class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                           />
@@ -109,42 +122,48 @@
 
                         <div class="col-span-6 sm:col-span-6 lg:col-span-2">
                           <label
-                            for="city"
+                            for="clientCity"
                             class="block text-sm font-medium text-gray-700"
                             >City</label
                           >
                           <input
+                            v-model="clientCity"
+                            required
                             type="text"
-                            name="city"
-                            id="city"
+                            name="clientCity"
+                            id="clientCity"
                             class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                           />
                         </div>
 
                         <div class="col-span-6 sm:col-span-3 lg:col-span-2">
                           <label
-                            for="state"
+                            for="clientState"
                             class="block text-sm font-medium text-gray-700"
                             >State / Province</label
                           >
                           <input
+                            v-model="clientState"
+                            required
                             type="text"
-                            name="state"
-                            id="state"
+                            name="clientState"
+                            id="clientState"
                             class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                           />
                         </div>
 
                         <div class="col-span-6 sm:col-span-3 lg:col-span-2">
                           <label
-                            for="postal-code"
+                            for="clientPostalCode"
                             class="block text-sm font-medium text-gray-700"
                             >ZIP / Postal</label
                           >
                           <input
+                            v-model="clientPostalCode"
+                            required
                             type="text"
-                            name="postal-code"
-                            id="postal-code"
+                            name="clientPostalCode"
+                            id="clientPostalCode"
                             autocomplete="postal-code"
                             class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                           />
@@ -164,14 +183,16 @@
                       <div class="grid grid-cols-6 gap-6">
                         <div class="col-span-6 sm:col-span-3">
                           <label
-                            for="invoice-date"
+                            for="clientInvoiceDate"
                             class="block text-sm font-medium text-gray-700"
                             >Invoice Date</label
                           >
                           <input
+                            v-model="clientInvoiceDate"
+                            required
                             type="text"
-                            name="invoice-date"
-                            id="invoice-date"
+                            name="clientInvoiceDate"
+                            id="clientInvoiceDate"
                             autocomplete="invoice-date"
                             class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                           />
@@ -179,14 +200,16 @@
 
                         <div class="col-span-6 sm:col-span-3">
                           <label
-                            for="payment-due"
+                            for="clientPaymentDue"
                             class="block text-sm font-medium text-gray-700"
                             >Payment Due</label
                           >
                           <input
+                            v-model="clientPaymentDue"
+                            required
                             type="text"
-                            name="payment-due"
-                            id="payment-due"
+                            name="clientPaymentDue"
+                            id="clientPaymentDue"
                             autocomplete="payment-due"
                             class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                           />
@@ -194,13 +217,15 @@
 
                         <div class="col-span-6 sm:col-span-3">
                           <label
-                            for="payment-terms"
+                            for="clientPaymentTerms"
                             class="block text-sm font-medium text-gray-700"
                             >Payment Terms</label
                           >
                           <select
-                            id="payment-terms"
-                            name="payment-terms"
+                            v-model="clientPaymentTerms"
+                            required
+                            id="clientPaymentTerms"
+                            name="clientPaymentTerms"
                             class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                           >
                             <option>30 Days</option>
@@ -210,14 +235,16 @@
 
                         <div class="col-span-6">
                           <label
-                            for="description"
+                            for="productDescription"
                             class="block text-sm font-medium text-gray-700"
-                            >Description</label
+                            >Product Description</label
                           >
                           <input
+                            v-model="productDescription"
+                            required
                             type="text"
-                            name="description"
-                            id="description"
+                            name="productDescription"
+                            id="productDescription"
                             class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-5"
                           />
                         </div>
@@ -375,21 +402,18 @@ export default {
   name: "invoiceModal",
   data() {
     return {
-      billerStreetAddress: null,
-      billerCity: null,
-      billerZipCode: null,
-      billerCountry: null,
       clientName: null,
       clientEmail: null,
-      clientStreetAddress: null,
-      clientCity: null,
-      clientZipCode: null,
       clientCountry: null,
+      clientAddress: null,
+      clientCity: null,
+      clientState: null,
+      clientPostalCode: null,
       invoiceDateUnix: null,
-      invoiceDate: null,
-      paymentTerms: null,
+      clientInvoiceDate: null,
       paymentDueDateUnix: null,
-      paymentDueDate: null,
+      clientPaymentDueDate: null,
+      clientPaymentTerms: null,
       productDescription: null,
       invoicePending: null,
       invoiceDraft: null,
