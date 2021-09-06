@@ -521,7 +521,10 @@ import { mapMutations } from "vuex";
 import { ref } from "vue";
 
 //firebase
+import dotenv from "dotenv";
 import db from "../main";
+require("firebase/auth");
+dotenv.config();
 
 //Icons
 import { TrashIcon } from "@heroicons/vue/outline";
