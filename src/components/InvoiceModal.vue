@@ -470,26 +470,31 @@
                       </div>
                     </div>
                     <div
-                      class="px-4 py-3 bg-gray-50 sm:px-6 space-x-5 text-right"
+                      class="px-4 py-3 bg-gray-50 sm:px-6 space-x-3 text-right"
                     >
                       <button
+                        @click="saveDraft"
                         type="submit"
-                        class=" inline-flex justify-center py-2 px-4 border border-transparent transition duration-300 ease-in-out shadow-sm text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                      >
-                        Discard
-                      </button>
-                      <button
-                        type="submit"
-                        class="inline-flex justify-center py-2 px-4 border border-transparent transition duration-300 ease-in-out shadow-sm text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        class=" inline-flex justify-center py-2 px-4 border border-transparent transition duration-300 ease-in-out shadow-sm text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                       >
                         Save Draft
                       </button>
                       <button
+                        @click="publishInvoice"
                         type="submit"
-                        class=" inline-flex justify-center py-2 px-4 border border-transparent transition duration-300 ease-in-out shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        class="inline-flex justify-center py-2 px-4 border border-transparent transition duration-300 ease-in-out shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                       >
                         Send Invoice
                       </button>
+                      <div>
+                        <button
+                          @click="closeInvoice"
+                          type="submit"
+                          class="text-base inline-flex underline mt-3 py-2 px-4 border border-transparent transition duration-300 ease-in-out font-medium text-red-600 hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        >
+                          Discard
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </form>
