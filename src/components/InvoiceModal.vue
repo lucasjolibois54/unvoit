@@ -47,6 +47,109 @@
               <div class="">
                 <form @submit.prevent="submitForm">
                   <div class="shadow overflow-hidden sm:rounded-t-md">
+                    <h2
+                      class="px-5 py-2 text-2xl font-medium text-left text-gray-700 bg-gray-100"
+                    >
+                      Bill From
+                    </h2>
+                    <div class="bg-white sm:p-6">
+                      <div class="grid grid-cols-6 gap-6">
+                        <div class="col-span-6 sm:col-span-3">
+                          <label
+                            for="clientAddress"
+                            class="block text-sm font-medium text-gray-700"
+                            >Street address</label
+                          >
+                          <input
+                            v-model="clientAddress"
+                            required
+                            type="text"
+                            name="clientAddress"
+                            id="clientAddress"
+                            autocomplete="street-address"
+                            class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                          />
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                          <label
+                            for="clientCountry"
+                            class="block text-sm font-medium text-gray-700"
+                            >Country / Region</label
+                          >
+                          <select
+                            v-model="clientCountry"
+                            required
+                            id="clientCountry"
+                            name="clientCountry"
+                            autocomplete="country"
+                            class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                          >
+                            <option>United States</option>
+                            <option>Canada</option>
+                            <option>Mexico</option>
+                          </select>
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-6 lg:col-span-2">
+                          <label
+                            for="clientCity"
+                            class="block text-sm font-medium text-gray-700"
+                            >City</label
+                          >
+                          <input
+                            v-model="clientCity"
+                            required
+                            type="text"
+                            name="clientCity"
+                            id="clientCity"
+                            class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                          />
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                          <label
+                            for="clientState"
+                            class="block text-sm font-medium text-gray-700"
+                            >State / Province</label
+                          >
+                          <input
+                            v-model="clientState"
+                            required
+                            type="text"
+                            name="clientState"
+                            id="clientState"
+                            class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                          />
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                          <label
+                            for="clientPostalCode"
+                            class="block text-sm font-medium text-gray-700"
+                            >ZIP / Postal</label
+                          >
+                          <input
+                            v-model="clientPostalCode"
+                            required
+                            type="text"
+                            name="clientPostalCode"
+                            id="clientPostalCode"
+                            autocomplete="postal-code"
+                            class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Bill to -->
+
+                  <div class="shadow overflow-hidden">
+                    <h2
+                      class="px-5 py-2 text-2xl font-medium text-left text-gray-700 bg-gray-100"
+                    >
+                      Bill To
+                    </h2>
                     <div class="bg-white sm:p-6">
                       <div class="grid grid-cols-6 gap-6">
                         <div class="col-span-6 sm:col-span-3">
