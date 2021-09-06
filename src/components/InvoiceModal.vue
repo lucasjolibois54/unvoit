@@ -286,16 +286,16 @@
                       <div class="grid grid-cols-6 gap-6">
                         <div class="col-span-6 sm:col-span-3">
                           <label
-                            for="clientInvoiceDate"
+                            for="invoiceDate"
                             class="block text-sm font-medium text-gray-700"
                             >Invoice Date</label
                           >
                           <input
-                            v-model="clientInvoiceDate"
+                            v-model="invoiceDate"
                             disabled
                             type="text"
-                            name="clientInvoiceDate"
-                            id="clientInvoiceDate"
+                            name="invoiceDate"
+                            id="invoiceDate"
                             autocomplete="invoice-date"
                             class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                           />
@@ -303,16 +303,16 @@
 
                         <div class="col-span-6 sm:col-span-3">
                           <label
-                            for="clientPaymentDueDate"
+                            for="paymentDueDate"
                             class="block text-sm font-medium text-gray-700"
                             >Payment Due</label
                           >
                           <input
-                            v-model="clientPaymentDueDate"
+                            v-model="paymentDueDate"
                             disabled
                             type="text"
-                            name="clientPaymentDueDate"
-                            id="clientPaymentDueDate"
+                            name="paymentDueDate"
+                            id="paymentDueDate"
                             autocomplete="payment-due"
                             class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                           />
@@ -320,15 +320,15 @@
 
                         <div class="col-span-6 sm:col-span-3">
                           <label
-                            for="clientPaymentTerms"
+                            for="paymentTerms"
                             class="block text-sm font-medium text-gray-700"
                             >Payment Terms</label
                           >
                           <select
-                            v-model="clientPaymentTerms"
+                            v-model="paymentTerms"
                             required
-                            id="clientPaymentTerms"
-                            name="clientPaymentTerms"
+                            id="paymentTerms"
+                            name="paymentTerms"
                             class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                           >
                             <option value="30">Net 30 Days</option>
@@ -518,15 +518,6 @@ import {
   TransitionRoot,
 } from "@headlessui/vue";
 
-const items = [
-  {
-    name: "Development",
-    qty: "5",
-    price: "$60",
-    total: "$300",
-  },
-];
-
 export default {
   components: {
     Dialog,
@@ -539,12 +530,12 @@ export default {
 
     return {
       open,
-      items,
     };
   },
   name: "invoiceModal",
   data() {
     return {
+      dateOptions: { year: "numeric", month: "short", day: "numeric" },
       //biller
       billerAddress: null,
       billerCountry: null,
@@ -560,10 +551,10 @@ export default {
       clientState: null,
       clientPostalCode: null,
       invoiceDateUnix: null,
-      clientInvoiceDate: null,
+      invoiceDate: null,
       paymentDueDateUnix: null,
-      clientPaymentDueDate: null,
-      clientPaymentTerms: null,
+      paymentDueDate: null,
+      paymentTerms: null,
       productDescription: null,
       invoicePending: null,
       invoiceDraft: null,
@@ -571,11 +562,30 @@ export default {
       invoiceTotal: 0,
     };
   },
+  created() {
+    //get current date for invoice date field
+    this.invoiceDateUnix = Date.now();
+    this.invoiceDate = new Date(this.invoiceDateUnix).toLocaleDateString(
+      "en-us",
+      this.dateOptions
+    );
+  },
   methods: {
     ...mapMutations(["TOGGLE_INVOICE"]),
 
     closeInvoice() {
       this.TOGGLE_INVOICE();
+    },
+  },
+  watch: {
+    paymentTerms() {
+      const futureDate = new Date();
+      this.paymentDueDateUnix = futureDate.setDate(
+        futureDate.getDate() + parseInt(this.paymentTerms)
+      );
+      this.paymentDueDate = new Date(
+        this.paymentDueDateUnix
+      ).toLocaleDateString("en-us", this.dateOptions);
     },
   },
 };
