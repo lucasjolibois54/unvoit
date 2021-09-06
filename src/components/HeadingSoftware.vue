@@ -153,6 +153,8 @@
 </template>
 
 <script>
+import { mapMutations } from "vuex";
+
 import {
   SpeakerphoneIcon,
   ChevronDownIcon,
@@ -175,7 +177,10 @@ export default {
   },
 
   methods: {
-    createInvoice() {},
+    ...mapMutations(["TOGGLE_INVOICE"]),
+    createInvoice() {
+      this.TOGGLE_INVOICE();
+    },
   },
 };
 </script>
