@@ -56,31 +56,31 @@
                       <div class="grid grid-cols-6 gap-6">
                         <div class="col-span-6 sm:col-span-3">
                           <label
-                            for="clientAddress"
+                            for="billerAddress"
                             class="block text-sm font-medium text-gray-700"
                             >Street address</label
                           >
                           <input
-                            v-model="clientAddress"
+                            v-model="billerAddress"
                             required
                             type="text"
-                            name="clientAddress"
-                            id="clientAddress"
+                            name="billerAddress"
+                            id="billerAddress"
                             autocomplete="street-address"
                             class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                           />
                         </div>
                         <div class="col-span-6 sm:col-span-3">
                           <label
-                            for="clientCountry"
+                            for="billerCountry"
                             class="block text-sm font-medium text-gray-700"
                             >Country / Region</label
                           >
                           <select
-                            v-model="clientCountry"
+                            v-model="billerCountry"
                             required
-                            id="clientCountry"
-                            name="clientCountry"
+                            id="billerCountry"
+                            name="billerCountry"
                             autocomplete="country"
                             class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                           >
@@ -92,48 +92,48 @@
 
                         <div class="col-span-6 sm:col-span-6 lg:col-span-2">
                           <label
-                            for="clientCity"
+                            for="billerCity"
                             class="block text-sm font-medium text-gray-700"
                             >City</label
                           >
                           <input
-                            v-model="clientCity"
+                            v-model="billerCity"
                             required
                             type="text"
-                            name="clientCity"
-                            id="clientCity"
+                            name="billerCity"
+                            id="billerCity"
                             class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                           />
                         </div>
 
                         <div class="col-span-6 sm:col-span-3 lg:col-span-2">
                           <label
-                            for="clientState"
+                            for="billerState"
                             class="block text-sm font-medium text-gray-700"
                             >State / Province</label
                           >
                           <input
-                            v-model="clientState"
+                            v-model="billerState"
                             required
                             type="text"
-                            name="clientState"
-                            id="clientState"
+                            name="billerState"
+                            id="billerState"
                             class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                           />
                         </div>
 
                         <div class="col-span-6 sm:col-span-3 lg:col-span-2">
                           <label
-                            for="clientPostalCode"
+                            for="billerPostalCode"
                             class="block text-sm font-medium text-gray-700"
                             >ZIP / Postal</label
                           >
                           <input
-                            v-model="clientPostalCode"
+                            v-model="billerPostalCode"
                             required
                             type="text"
-                            name="clientPostalCode"
-                            id="clientPostalCode"
+                            name="billerPostalCode"
+                            id="billerPostalCode"
                             autocomplete="postal-code"
                             class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                           />
@@ -505,6 +505,13 @@ export default {
   name: "invoiceModal",
   data() {
     return {
+      //biller
+      billerAddress: null,
+      billerCountry: null,
+      billerCity: null,
+      billerState: null,
+      billerPostalCode: null,
+      //client
       clientName: null,
       clientEmail: null,
       clientCountry: null,
