@@ -2,7 +2,24 @@
   <div v-if="!mobile">
     <Banner />
     <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8 ">
-      <InvoiceModal v-if="invoiceModal" />
+      <TransitionRoot
+        @click="checkClick"
+        ref="invoiceWrap"
+        as="template"
+        :show="open"
+      >
+        <TransitionChild
+          as="template"
+          enter="ease-out duration-300"
+          enter-from="opacity-0"
+          enter-to="opacity-100"
+          leave="ease-in duration-200"
+          leave-from="opacity-100"
+          leave-to="opacity-0"
+        >
+          <InvoiceModal v-if="invoiceModal" />
+        </TransitionChild>
+      </TransitionRoot>
       <NavSoftware class="px-6 pb-10" />
       <HeadingSoftware class="px-6 py-14 pt-24" />
       <TablesSoftware class="px-6 py-2" />
@@ -63,4 +80,16 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+/* animated invoice */
+
+.invoice-enter-active,
+.invoice-leave-active {
+  transition: 0.8s ease all;
+}
+
+.invoice-enter-from,
+.invoice-leave-to {
+  transform: translateX(-700px);
+}
+</style>
