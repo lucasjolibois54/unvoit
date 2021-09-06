@@ -3,8 +3,8 @@
   <footer class="flex justify-center px-4 text-gray-100 bg-gray-800">
     <div class="container py-6">
       <h1 class="text-center text-lg font-bold lg:text-2xl">
-        Join our mailing system so that you never have to manage<br />
-        your invoices alone & get weekly business management tips.
+        Subscribe so that you never have to manage your invoices<br />
+        alone & get weekly business management tips.
       </h1>
 
       <div class="flex justify-center mt-6">
