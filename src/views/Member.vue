@@ -2,7 +2,7 @@
   <div v-if="!mobile">
     <Banner />
     <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8 ">
-      <InvoiceModal />
+      <InvoiceModal v-if="invoiceModal" />
       <NavSoftware class="px-6 pb-10" />
       <HeadingSoftware class="px-6 py-14 pt-24" />
       <TablesSoftware class="px-6 py-2" />
@@ -20,6 +20,9 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
+
+//components
 import NavSoftware from "@/components/NavSoftware.vue";
 import HeadingSoftware from "@/components/HeadingSoftware.vue";
 import TablesSoftware from "@/components/TablesSoftware.vue";
@@ -45,6 +48,9 @@ export default {
       }
       this.mobile = false;
     },
+  },
+  computed: {
+    ...mapState(["invoiceModal"]),
   },
   name: "Member",
   components: {
