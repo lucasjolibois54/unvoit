@@ -1,4 +1,4 @@
-<template>
+TrashIconTrashIcon<template>
   <TransitionRoot
     @click="checkClick"
     ref="invoiceWrap"
@@ -368,7 +368,7 @@
                                   >
                                     <button
                                       @click="addItem"
-                                      type="#"
+                                      type="submit"
                                       class="inline-flex justify-center py-2 px-4 border border-transparent transition duration-300 ease-in-out shadow-sm text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                     >
                                       Add Item
@@ -403,13 +403,6 @@
                                         >
                                           Total
                                         </th>
-                                        <button
-                                          @click="deleteInvoiceItem(item.id)"
-                                          type="submit"
-                                          class=" inline-flex justify-center px-2 border border-transparent transition duration-300 ease-in-out shadow-sm text-sm font-medium rounded-full text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                                        >
-                                          -
-                                        </button>
                                       </tr>
                                     </thead>
                                     <tbody
@@ -458,6 +451,17 @@
                                                 item.qty * item.price)
                                             }}
                                           </span>
+                                        </td>
+                                        <td class="whitespace-nowrap">
+                                          <TrashIcon
+                                            :class="[
+                                              'transition duration-300 ease-in-out',
+                                              'text-red-600',
+                                              'cursor-pointer',
+                                              'ml-2 h-auto w-6 hover:text-black',
+                                            ]"
+                                            @click="deleteInvoiceItem(item.id)"
+                                          />
                                         </td>
                                       </tr>
                                     </tbody>
@@ -512,6 +516,9 @@ import { uid } from "uid";
 import { mapMutations } from "vuex";
 import { ref } from "vue";
 
+//Icons
+import { TrashIcon } from "@heroicons/vue/outline";
+
 import {
   Dialog,
   DialogOverlay,
@@ -525,6 +532,7 @@ export default {
     DialogOverlay,
     TransitionChild,
     TransitionRoot,
+    TrashIcon,
   },
   setup() {
     const open = ref(true);
@@ -586,6 +594,12 @@ export default {
         price: "",
         total: "",
       });
+    },
+
+    deleteInvoiceItem(id) {
+      this.invoiceItemList = this.invoiceItemList.filter(
+        (item) => item.id !== id
+      );
     },
   },
   watch: {
