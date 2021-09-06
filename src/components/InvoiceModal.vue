@@ -520,6 +520,9 @@ import { uid } from "uid";
 import { mapMutations } from "vuex";
 import { ref } from "vue";
 
+//firebase
+import db from "../main";
+
 //Icons
 import { TrashIcon } from "@heroicons/vue/outline";
 
@@ -606,6 +609,13 @@ export default {
       );
     },
 
+    calInvoiceTotal() {
+      this.invoiceTotal = 0;
+      this.invoiceItemList.forEach((item) => {
+        this.invoiceTotal += item.total;
+      });
+    },
+
     publishInvoice() {
       this.invoicePending = true;
     },
@@ -614,9 +624,50 @@ export default {
       this.invoiceDraft = true;
     },
 
-    async uploadInvoice() {},
+    async uploadInvoice() {
+      if (this.invoiceItemList.length <= 0) {
+        alert("Please ensure you filled out work items!");
+        return;
+      }
 
-    submitForm() {},
+      this.calInvoiceTotal();
+
+      const dataBase = db.collection("invoices").doc();
+
+      await dataBase.set({
+        invoiceId: uid(6),
+        //biller
+        billerAddress: this.billerAddress,
+        billerCountry: this.billerCountry,
+        billerCity: this.billerCity,
+        billerState: this.billerState,
+        billerPostalCode: this.billerPostalCode,
+        //client
+        clientName: this.clientName,
+        clientEmail: this.clientEmail,
+        clientCountry: this.clientCountry,
+        clientAddress: this.clientAddress,
+        clientCity: this.clientCity,
+        clientState: this.clientState,
+        clientPostalCode: this.clientPostalCode,
+        invoiceDateUnix: this.invoiceDateUnix,
+        invoiceDate: this.invoiceDate,
+        paymentDueDateUnix: this.paymentDueDateUnix,
+        paymentDueDate: this.paymentDueDate,
+        paymentTerms: this.paymentTerms,
+        productDescription: this.productDescription,
+        invoicePending: this.invoicePending,
+        invoiceDraft: this.invoiceDraft,
+        invoiceItemList: this.invoiceItemList,
+        invoiceTotal: this.invoiceTotal,
+      });
+
+      this.TOGGLE_INVOICE();
+    },
+
+    submitForm() {
+      this.uploadInvoice();
+    },
   },
   watch: {
     paymentTerms() {
