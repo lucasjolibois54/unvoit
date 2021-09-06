@@ -412,7 +412,7 @@ TrashIconTrashIcon<template>
                                         v-for="(item, index) in invoiceItemList"
                                         :key="index"
                                       >
-                                        <td class="px-6 py-4 whitespace-nowrap">
+                                        <td class=" py-4 whitespace-nowrap">
                                           <div class="flex items-center">
                                             <div class="ml-4">
                                               <div
@@ -426,9 +426,10 @@ TrashIconTrashIcon<template>
                                             </div>
                                           </div>
                                         </td>
-                                        <td class=" whitespace-nowrap">
+                                        <td class="py-4 whitespace-nowrap">
                                           <div class="text-sm text-gray-900">
                                             <input
+                                              class="w-20"
                                               type="text"
                                               v-model="item.qty"
                                             />
@@ -438,11 +439,12 @@ TrashIconTrashIcon<template>
                                           class="whitespace-nowrap text-sm text-gray-500"
                                         >
                                           <input
+                                            class="md:w-full w-20"
                                             type="text"
                                             v-model="item.price"
                                           />
                                         </td>
-                                        <td class="whitespace-nowrap">
+                                        <td class="px-6 py-4 whitespace-nowrap">
                                           <span
                                             class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800"
                                           >
@@ -452,7 +454,9 @@ TrashIconTrashIcon<template>
                                             }}
                                           </span>
                                         </td>
-                                        <td class="whitespace-nowrap">
+                                        <td
+                                          class="-px-6 py-4 whitespace-nowrap"
+                                        >
                                           <TrashIcon
                                             :class="[
                                               'transition duration-300 ease-in-out',
@@ -601,6 +605,18 @@ export default {
         (item) => item.id !== id
       );
     },
+
+    publishInvoice() {
+      this.invoicePending = true;
+    },
+
+    saveDraft() {
+      this.invoiceDraft = true;
+    },
+
+    async uploadInvoice() {},
+
+    submitForm() {},
   },
   watch: {
     paymentTerms() {
