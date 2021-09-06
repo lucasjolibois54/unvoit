@@ -283,7 +283,7 @@
                         aria-hidden="true"
                       />
                       <div class="ml-4">
-                        <p class="text-base font-medium text-gray-900">
+                        <p class="text-base font-medium text-gray-600">
                           {{ item.name }}
                         </p>
                         <p class="mt-1 text-sm text-gray-500">
