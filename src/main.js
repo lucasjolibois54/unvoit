@@ -20,6 +20,6 @@ const firebaseConfig = {
   // Initialize Firebase
   const firebaseApp = firebase.initializeApp(firebaseConfig);
   
+  createApp(App).use(store).use(router).mount('#app')
 
-export default firebaseApp.firestore();
-createApp(App).use(store).use(router).mount('#app')
+export default firebaseApp.firestore()
