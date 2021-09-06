@@ -367,8 +367,8 @@
                                     class="px-4 py-3 bg-gray-50 text-left sm:px-6"
                                   >
                                     <button
-                                      @click="addNewInvoice"
-                                      type="submit"
+                                      @click="addItem"
+                                      type="#"
                                       class="inline-flex justify-center py-2 px-4 border border-transparent transition duration-300 ease-in-out shadow-sm text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                     >
                                       Add Item
@@ -508,6 +508,7 @@
 </template>
 
 <script>
+import { uid } from "uid";
 import { mapMutations } from "vuex";
 import { ref } from "vue";
 
@@ -575,6 +576,16 @@ export default {
 
     closeInvoice() {
       this.TOGGLE_INVOICE();
+    },
+
+    addItem() {
+      this.invoiceItemList.push({
+        id: uid(),
+        itemName: "",
+        qty: "",
+        price: "",
+        total: "",
+      });
     },
   },
   watch: {
