@@ -292,7 +292,7 @@
                           >
                           <input
                             v-model="clientInvoiceDate"
-                            required
+                            disabled
                             type="text"
                             name="clientInvoiceDate"
                             id="clientInvoiceDate"
@@ -303,16 +303,16 @@
 
                         <div class="col-span-6 sm:col-span-3">
                           <label
-                            for="clientPaymentDue"
+                            for="clientPaymentDueDate"
                             class="block text-sm font-medium text-gray-700"
                             >Payment Due</label
                           >
                           <input
-                            v-model="clientPaymentDue"
-                            required
+                            v-model="clientPaymentDueDate"
+                            disabled
                             type="text"
-                            name="clientPaymentDue"
-                            id="clientPaymentDue"
+                            name="clientPaymentDueDate"
+                            id="clientPaymentDueDate"
                             autocomplete="payment-due"
                             class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                           />
@@ -331,8 +331,8 @@
                             name="clientPaymentTerms"
                             class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                           >
-                            <option>30 Days</option>
-                            <option>60 days</option>
+                            <option value="30">Net 30 Days</option>
+                            <option value="60">Net 60 days</option>
                           </select>
                         </div>
 
@@ -367,6 +367,7 @@
                                     class="px-4 py-3 bg-gray-50 text-left sm:px-6"
                                   >
                                     <button
+                                      @click="addNewInvoice"
                                       type="submit"
                                       class="inline-flex justify-center py-2 px-4 border border-transparent transition duration-300 ease-in-out shadow-sm text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                     >
@@ -402,14 +403,21 @@
                                         >
                                           Total
                                         </th>
+                                        <button
+                                          @click="deleteInvoiceItem(item.id)"
+                                          type="submit"
+                                          class=" inline-flex justify-center px-2 border border-transparent transition duration-300 ease-in-out shadow-sm text-sm font-medium rounded-full text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                        >
+                                          -
+                                        </button>
                                       </tr>
                                     </thead>
                                     <tbody
                                       class="bg-white divide-y divide-gray-200"
                                     >
                                       <tr
-                                        v-for="item in items"
-                                        :key="item.name"
+                                        v-for="(item, index) in invoiceItemList"
+                                        :key="index"
                                       >
                                         <td class="px-6 py-4 whitespace-nowrap">
                                           <div class="flex items-center">
@@ -417,26 +425,38 @@
                                               <div
                                                 class="text-sm font-medium text-gray-900"
                                               >
-                                                {{ item.name }}
+                                                <input
+                                                  type="text"
+                                                  v-model="item.ItemName"
+                                                />
                                               </div>
                                             </div>
                                           </div>
                                         </td>
                                         <td class=" whitespace-nowrap">
                                           <div class="text-sm text-gray-900">
-                                            {{ item.qty }}
+                                            <input
+                                              type="text"
+                                              v-model="item.qty"
+                                            />
                                           </div>
                                         </td>
                                         <td
                                           class="whitespace-nowrap text-sm text-gray-500"
                                         >
-                                          {{ item.price }}
+                                          <input
+                                            type="text"
+                                            v-model="item.price"
+                                          />
                                         </td>
                                         <td class="whitespace-nowrap">
                                           <span
                                             class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800"
                                           >
-                                            {{ item.total }}
+                                            ${{
+                                              (item.total =
+                                                item.qty * item.price)
+                                            }}
                                           </span>
                                         </td>
                                       </tr>
@@ -449,10 +469,24 @@
                         </div>
                       </div>
                     </div>
-                    <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+                    <div
+                      class="px-4 py-3 bg-gray-50 sm:px-6 space-x-5 text-right"
+                    >
                       <button
                         type="submit"
-                        class="inline-flex justify-center py-2 px-4 border border-transparent transition duration-300 ease-in-out shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        class=" inline-flex justify-center py-2 px-4 border border-transparent transition duration-300 ease-in-out shadow-sm text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                      >
+                        Discard
+                      </button>
+                      <button
+                        type="submit"
+                        class="inline-flex justify-center py-2 px-4 border border-transparent transition duration-300 ease-in-out shadow-sm text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                      >
+                        Save Draft
+                      </button>
+                      <button
+                        type="submit"
+                        class=" inline-flex justify-center py-2 px-4 border border-transparent transition duration-300 ease-in-out shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                       >
                         Send Invoice
                       </button>
