@@ -1,4 +1,4 @@
-TrashIconTrashIcon<template>
+<template>
   <TransitionRoot
     @click="checkClick"
     ref="invoiceWrap"
