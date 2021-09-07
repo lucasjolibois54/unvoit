@@ -20,7 +20,7 @@
             font-extrabold
             tracking-tight
             text-gray-900
-            sm:text-4xl
+            lg:text-5xl
           "
         >
           A better way to manage & send money
