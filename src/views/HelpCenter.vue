@@ -1,7 +1,21 @@
 <template>
-  <h2>HELLO</h2>
+  <Banner />
+  <Navbar />
+  <Faq />
 </template>
 
-<script></script>
+<script>
+import Banner from "@/components/others/Banner.vue";
+import Navbar from "@/components/helpcenter/Navbar.vue";
+import Faq from "@/components/helpcenter/Faq.vue";
+
+export default {
+  components: {
+    Banner,
+    Navbar,
+    Faq,
+  },
+};
+</script>
 
 <style scoped></style>
