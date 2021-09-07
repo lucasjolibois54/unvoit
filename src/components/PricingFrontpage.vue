@@ -1,4 +1,5 @@
 <template>
+<<<<<<< Updated upstream
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -22,6 +23,86 @@
             Choose a plan that works best for you and<br />
             your team.
           </p>
+=======
+  <div class="min-h-screen bg-gray-100 overflow-auto">
+    <div class="container mx-auto max-w-4xl">
+      <div class="mt-10 text-center">
+        <h1 class="text-4xl font-bold text-gray-800">Pricing plans</h1>
+        <p class="text-lg mt-3 font-semibold">
+          Every plan includes a 30 day free trial.
+        </p>
+      </div>
+      <div class="mt-8">
+        <div class="flex justify-between">
+          <div>
+            <p class="text-sm text-gray-600">
+              For more details on all our pricing visit
+              <span class="underline cursor-pointer text-blue-600">here</span>
+            </p>
+          </div>
+          <div class="flex space-x-16">
+            <div class="flex">
+              <span class="font-semibold inline mr-4">Plan</span>
+              <span
+                class="
+                  px-4
+                  py-1
+                  rounded-md
+                  text-sm
+                  bg-gray-300
+                  flex
+                  items-center
+                  cursor-pointer
+                "
+                >Monthly
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4 ml-2"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </span>
+            </div>
+            <div class="flex">
+              <span class="font-semibold inline mr-4">Select currency</span>
+              <span
+                class="
+                  px-4
+                  py-1
+                  rounded-md
+                  text-sm
+                  bg-gray-300
+                  flex
+                  items-center
+                  cursor-pointer
+                "
+                >$ USD
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4 ml-2"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+>>>>>>> Stashed changes
         </div>
         <div class="pt-10 lg:flex flex-row">
           <!-- Basic Card -->
