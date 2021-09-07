@@ -1,6 +1,6 @@
 <template>
     
-  <div class=" bg-white border-b-2 p-4 flex">
+  <div class=" bg-white border-b-2 p-2 flex">
       <router-link to="/">
             <span class="sr-only">Workflow</span>
             <div class="flex h-1 w-1">
@@ -21,15 +21,15 @@
               >
               </span>
             </div>
-            <h2 class="text-4xl font-extrabold h-8 w-auto sm:h-10">UNVOIT</h2>
+            <h2 class="text-xl font-extrabold h-8 w-auto sm:h-10 ml-60 mt-1">UNVOIT</h2>
           </router-link>
-    <SearchIcon class="h-auto w-8 text-red-600 mr-4" />
+    <SearchIcon class="h-10 w-8 text-grey-600 ml-20" />
     <input
-      class="w-full p-2 border-0 border-b"
+      class="w-full h-10 p-2 border-0 border-b mr-40 text-sm"
       type="text"
-      placeholder="Try 'Los Angeles'"
+      placeholder="Search"
     />
-    <Menu as="div" class="relative inline-block text-left">
+    <Menu as="div" class="relative inline-block text-left mr-16">
       <div>
         <MenuButton
           class="
@@ -39,8 +39,9 @@
             rounded-md
             border border-gray-300
             shadow-sm
+            mt-2
             px-4
-            py-2
+            py-1
             bg-white
             text-sm
             font-medium
