@@ -1,17 +1,15 @@
 <template>
-<br>
-<br>
-<h1 class=" font-extrabold text-center text-4xl">
-    F&Q
-</h1>
-<br>
-<p class="font-regular text-center">
-    Here you can find the most frequently asked questions our costumers wants to know
-</p>
+  <br />
+  <br />
+  <h1 class="font-extrabold text-center text-4xl">FAQ</h1>
+  <br />
+  <p class="font-regular text-center">
+    Here you can find the most frequently asked questions our costumers wants to
+    know
+  </p>
   <div>
     <section class="text-gray-700">
       <div class="container px-5 py-24 mx-auto">
-        
         <div
           class="flex flex-wrap text-white lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2"
         >
