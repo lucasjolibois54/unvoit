@@ -33,11 +33,7 @@
       <div class="flex md:justify-end w-full md:w-1/2 -mt-5">
         <div class="bg-dots">
           <div class="shadow-2xl max-w-md z-10 rounded-full mt-6 ml-4">
-            <img
-              alt="card img"
-              class="rounded-t"
-              src="/assets/images/helpcenter.svg"
-            />
+            <img :src="require('@/assets/images/helpcenter.svg')" />
             <div class="text-2xl p-10 bg-white">
               <img
                 alt="quote"
