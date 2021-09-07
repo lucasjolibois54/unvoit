@@ -1,29 +1,4 @@
 <template>
-<<<<<<< Updated upstream
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet"
-  />
-  <body class="font-sans bg-gray-100">
-    <div class="min-h-screen flex justify-center items-center py-20">
-      <div class="">
-        <div class="text-center font-semibold">
-          <h1 class="text-5xl">
-            <span class="text-indigo-700 tracking-wide">Pricing </span>
-            <span>plans</span>
-          </h1>
-          <p
-            class="pt-6 text-xl text-gray-400 font-normal w-full px-8 md:w-full"
-          >
-            Choose a plan that works best for you and<br />
-            your team.
-          </p>
-=======
   <div class="min-h-screen bg-gray-100 overflow-auto">
     <div class="container mx-auto max-w-4xl">
       <div class="mt-10 text-center">
@@ -102,7 +77,6 @@
               </span>
             </div>
           </div>
->>>>>>> Stashed changes
         </div>
         <div class="pt-10 lg:flex flex-row">
           <!-- Basic Card -->
