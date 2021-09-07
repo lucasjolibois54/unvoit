@@ -23,11 +23,11 @@
 import { mapState } from "vuex";
 
 //components
-import NavSoftware from "@/components/NavSoftware.vue";
-import HeadingSoftware from "@/components/HeadingSoftware.vue";
-import TablesSoftware from "@/components/TablesSoftware.vue";
-import Banner from "@/components/Banner.vue";
-import InvoiceModal from "@/components/InvoiceModal.vue";
+import NavSoftware from "@/components/software/NavSoftware.vue";
+import HeadingSoftware from "@/components/software/HeadingSoftware.vue";
+import TablesSoftware from "@/components/software/TablesSoftware.vue";
+import Banner from "@/components/others/Banner.vue";
+import InvoiceModal from "@/components/software/InvoiceModal.vue";
 
 export default {
   data() {

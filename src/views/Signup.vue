@@ -187,7 +187,7 @@
 
 <script>
 import firebase from "firebase/app";
-import HeaderFrontpage from "@/components/HeaderFrontpage.vue";
+import HeaderFrontpage from "@/components/frontpage/HeaderFrontpage.vue";
 
 export default {
   data() {

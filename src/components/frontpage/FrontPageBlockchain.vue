@@ -87,7 +87,7 @@
     <div class="lg:absolute lg:inset-y-0 lg:right-10 lg:w-1/2">
       <img
         class="h-72 w-85 object-cover sm:h-72 md:h-52 lg:w-85 lg:h-72 mx-auto"
-        src="../assets/images/image.svg"
+        src="/assets/images/image.svg"
         alt=""
       />
     </div>

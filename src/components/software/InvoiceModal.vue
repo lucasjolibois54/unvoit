@@ -522,7 +522,7 @@ import { ref } from "vue";
 
 //firebase
 import dotenv from "dotenv";
-import db from "../main";
+import db from "../../main";
 require("firebase/auth");
 dotenv.config();
 
