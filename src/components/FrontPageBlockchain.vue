@@ -49,7 +49,7 @@
           "
         >
           <div class="sm:text-center lg:text-left">
-            <h1 class="text-4xl tracking-tight font-light text-gray-900">
+            <h1 class="text-5xl tracking-tight font-bold text-gray-900">
               <span class="block xl:inline">What are</span>
               {{ "" }}
 
