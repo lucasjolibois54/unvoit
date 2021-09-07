@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Member from '../views/Member.vue'
+import HelpCenter from '../views/HelpCenter.vue'
 import firebase from 'firebase/app';
 
 const routes = [
@@ -32,6 +33,11 @@ const routes = [
     meta: {
       requiresAuth: true
     }
+  },
+  {
+    path: '/HelpCenter',
+    name: 'HelpCenter',
+    component: HelpCenter,
   },
 ]
 
