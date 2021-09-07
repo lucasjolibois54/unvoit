@@ -1,5 +1,5 @@
 <template>
-  <div class="m-auto max-w-6xl p-12">
+  <div class="m-auto max-w-6xl p-12 pt-30">
     <div class="flex flex-col md:flex-row">
       <div class="md:w-1/2 max-w-md flex flex-col justify-center">
         <div class="md:text-5xl text-2xl uppercase font-black">
@@ -37,7 +37,7 @@
             <div class="text-2xl p-10 bg-white">
               <img
                 alt="quote"
-                class="float-left mr-1"
+                class="float-left mr-1 color-indigo-700"
                 src="https://assets-global.website-files.com/5b5a66e9f3166b36708705fa/5cf8fb1f994fb7168d0d66fb_quote-intro.svg"
               />
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
