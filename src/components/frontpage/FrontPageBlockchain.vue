@@ -49,12 +49,17 @@
           "
         >
           <div class="sm:text-center lg:text-left">
-            <h1 class="text-5xl tracking-tight font-bold text-gray-900">
-              <span class="block xl:inline">What are</span>
-              {{ "" }}
-
-              <span class="block text-indigo-600 xl:inline">blockchains?</span>
-            </h1>
+        <h2
+          class="
+            text-3xl
+            font-extrabold
+            tracking-tight
+            text-gray-900
+            lg:text-5xl
+          "
+        >
+          What are <span class="block text-indigo-600 xl:inline">blockchains?</span>
+        </h2>
             <p
               class="
                 mt-3
