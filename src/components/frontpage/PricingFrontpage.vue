@@ -12,10 +12,17 @@
     <div class="min-h-screen flex justify-center items-center py-20">
       <div class="">
         <div class="text-center font-semibold">
-          <h1 class="text-5xl">
-            <span class="text-indigo-700 tracking-wide">Pricing </span>
-            <span>plans</span>
-          </h1>
+          <h2
+          class="
+            text-3xl
+            font-extrabold
+            tracking-tight
+            text-gray-900
+            lg:text-5xl
+          "
+        >
+          Pricing <span class="block text-indigo-600 xl:inline">plans</span>
+        </h2>
           <p
             class="pt-6 text-xl text-gray-400 font-normal w-full px-8 md:w-full"
           >
