@@ -44,7 +44,7 @@
             grid grid-cols-1
             gap-x-6 gap-y-10
             sm:grid-cols-2
-            sm:gap-y-16
+            sm:gap-y-8
             lg:gap-x-8
           "
         >
