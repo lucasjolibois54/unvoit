@@ -12,19 +12,17 @@
         >
           Invoice management & transactions
         </h2>
-        <p
+        <h2
           class="
-            mt-2
             text-3xl
-            leading-8
             font-extrabold
             tracking-tight
             text-gray-900
             lg:text-5xl
           "
         >
-          A better way to manage & send money
-        </p>
+          A better way to manage <span class="block text-indigo-600 xl:inline">& send money</span>
+        </h2>
         <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
           Improve the way you manage your invoices for your business and the way
           your customers pay their bill through custom invoice links that they
