@@ -1,27 +1,27 @@
 <template>
   <div v-if="!mobile">
-    <div v-if="invoicesLoaded">
-      <Banner />
-      <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8 ">
-        <Modal v-if="modalActive" />
-        <InvoiceModal v-if="invoiceModal" />
-        <NavSoftware class="px-6 pb-10" />
-        <HeadingSoftware class="px-6 py-14 pt-24" />
-        <TablesSoftware class="px-6 py-2" />
-      </div>
+    <Banner />
+    <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8 ">
+      <Modal v-if="modalActive" />
+      <InvoiceModal v-if="invoiceModal" />
+      <NavSoftware class="px-6 pb-10" />
+      <HeadingSoftware class="px-6 py-14 pt-24" />
+      <TableHeader> </TableHeader>
+      <Invoice
+        v-for="(invoice, index) in invoiceData"
+        :invoice="invoice"
+        :key="index"
+      />
     </div>
+  </div>
 
-    <div
-      v-else
-      class="grid w-full min-h-screen bg-gray-900 place-content-center"
-    >
-      <h2 class="text-3xl font-bold text-gray-100 text center md:text-6xl">
-        Sorry, this app is not supported on Mobile Devices
-      </h2>
-      <p class="text-2xl text-gray-100 text center md:text-6xl">
-        To use this app, please use a Computer or Tablet
-      </p>
-    </div>
+  <div v-else class="grid w-full min-h-screen bg-gray-900 place-content-center">
+    <h2 class="text-3xl font-bold text-gray-100 text center md:text-6xl">
+      Sorry, this app is not supported on Mobile Devices
+    </h2>
+    <p class="text-2xl text-gray-100 text center md:text-6xl">
+      To use this app, please use a Computer or Tablet
+    </p>
   </div>
 </template>
 
@@ -31,9 +31,10 @@ import { mapState, mapActions } from "vuex";
 //components
 import NavSoftware from "@/components/software/NavSoftware.vue";
 import HeadingSoftware from "@/components/software/HeadingSoftware.vue";
-import TablesSoftware from "@/components/software/TablesSoftware.vue";
 import InvoiceModal from "@/components/software/InvoiceModal.vue";
 import Modal from "@/components/others/Modal.vue";
+import TableHeader from "@/components/software/TableHeader.vue";
+import Invoice from "@/components/software/Invoice.vue";
 
 //other components
 import Banner from "@/components/others/Banner.vue";
@@ -63,15 +64,18 @@ export default {
   },
   computed: {
     ...mapState(["invoiceModal", "modalActive", "invoicesLoaded"]),
+
+    ...mapState(["invoiceData"]),
   },
   name: "Member",
   components: {
     NavSoftware,
     HeadingSoftware,
-    TablesSoftware,
     Banner,
     InvoiceModal,
     Modal,
+    TableHeader,
+    Invoice,
   },
 };
 </script>
