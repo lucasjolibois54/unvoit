@@ -64,9 +64,7 @@
               </span>
               {{ " " }}
 
-              <span class="block text-indigo-600 xl:inline">
-                why not do it smartly!</span
-              >
+              <span class="block text-indigo-600 xl:inline"> be smarter!</span>
             </h1>
             <p
               class="
@@ -107,6 +105,12 @@
                     md:py-4
                     md:text-lg
                     md:px-10
+                    transition
+                    duration-500
+                    ease-in-out
+                    transform
+                    hover:-translate-y-1
+                    hover:scale-105
                   "
                 >
                   Get started
@@ -132,6 +136,12 @@
                     md:py-4
                     md:text-lg
                     md:px-10
+                    transition
+                    duration-500
+                    ease-in-out
+                    transform
+                    hover:-translate-y-1
+                    hover:scale-105
                   "
                 >
                   Contact us
