@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto py-10 flex justify-center h-screen">
+  <div class="container pr-80 mx-auto py-10 flex justify-left h-screen">
     <div class="w-4/12 pl-4 h-full flex flex-col">
       <div
         class="
@@ -733,5 +733,20 @@
 </template>
 
 <style scoped>
+  #journal-scroll::-webkit-scrollbar {
+            width: 4px;
+            cursor: pointer;
+            /*background-color: rgba(229, 231, 235, var(--bg-opacity));*/
 
+        }
+        #journal-scroll::-webkit-scrollbar-track {
+            background-color: rgba(229, 231, 235, var(--bg-opacity));
+            cursor: pointer;
+            /*background: red;*/
+        }
+        #journal-scroll::-webkit-scrollbar-thumb {
+            cursor: pointer;
+            background-color: #a0aec0;
+            /*outline: 1px solid slategrey;*/
+        }
 </style>
