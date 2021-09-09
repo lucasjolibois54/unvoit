@@ -21,7 +21,7 @@ export default createStore({
     },
     INVOICES_LOADED(state) {
       state.invoicesLoaded = true;
-    }
+    },
   },
   actions: {
     //check to make sure that the iteration of the doc running through doesnt already exist by using the "some"-method
@@ -67,5 +67,5 @@ export default createStore({
     },
   },
   modules: {
-  }
+  },
 });
