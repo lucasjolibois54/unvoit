@@ -119,6 +119,12 @@
                     mt-8
                     rounded-xl
                     text-white
+                    transition
+                    duration-500
+                    ease-in-out
+                    transform
+                    hover:-translate-y-1
+                    hover:scale-105
                   "
                 >
                   <span class="font-medium"> Choose Plan </span>
@@ -229,6 +235,12 @@
                     mt-8
                     rounded-xl
                     text-white
+                    transition
+                    duration-500
+                    ease-in-out
+                    transform
+                    hover:-translate-y-1
+                    hover:scale-105
                   "
                 >
                   <span class="font-medium"> Choose Plan </span>
@@ -354,6 +366,12 @@
                     mt-8
                     rounded-xl
                     text-white
+                    transition
+                    duration-500
+                    ease-in-out
+                    transform
+                    hover:-translate-y-1
+                    hover:scale-105
                   "
                 >
                   <span class="font-medium"> Choose Plan </span>
