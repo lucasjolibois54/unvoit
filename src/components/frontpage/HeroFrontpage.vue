@@ -60,7 +60,7 @@
               "
             >
               <span class="block xl:inline"
-                >Every business has to deal with economic & invoices,
+                >Every business has to deal with economics & invoices,
               </span>
               {{ " " }}
 
