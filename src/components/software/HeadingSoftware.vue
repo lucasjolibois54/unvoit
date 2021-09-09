@@ -1,10 +1,5 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <Invoice
-    v-for="(invoice, index) in invoiceData"
-    :invoice="invoice"
-    :key="index"
-  />
   <div class="lg:flex lg:items-center lg:justify-between">
     <div class="flex-1 min-w-0">
       <h2
@@ -159,7 +154,6 @@
 
 <script>
 import { mapMutations, mapState } from "vuex";
-import Invoice from "@/components/software/Invoice.vue";
 
 import {
   SpeakerphoneIcon,
@@ -180,7 +174,6 @@ export default {
     SpeakerphoneIcon,
     ChevronDownIcon,
     LinkIcon,
-    Invoice,
   },
 
   methods: {
