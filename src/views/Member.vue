@@ -2,6 +2,7 @@
   <div v-if="!mobile">
     <Banner />
     <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8 ">
+      <CvrSearch />
       <Modal v-if="modalActive" />
       <InvoiceModal v-if="invoiceModal" />
       <NavSoftware class="px-6 pb-10" />
@@ -35,6 +36,7 @@ import InvoiceModal from "@/components/software/InvoiceModal.vue";
 import Modal from "@/components/others/Modal.vue";
 import TableHeader from "@/components/software/TableHeader.vue";
 import Invoice from "@/components/software/Invoice.vue";
+import CvrSearch from "@/components/software/CvrSearch.vue";
 
 //other components
 import Banner from "@/components/others/Banner.vue";
@@ -76,6 +78,7 @@ export default {
     Modal,
     TableHeader,
     Invoice,
+    CvrSearch,
   },
 };
 </script>
