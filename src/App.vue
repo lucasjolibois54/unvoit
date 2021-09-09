@@ -3,13 +3,24 @@
     <transition name="fade">
       <div
         id="pagetop"
-        class=" bg-indigo-200 fixed z-10 p-3 rounded-full shadow-xl bottom-10 right-10 animate-bounce"
+        class="
+          bg-indigo-200
+          fixed
+          z-10
+          p-3
+          rounded-full
+          shadow-xl
+          bottom-10
+          right-10
+          animate-bounce
+          cursor-pointer
+        "
         v-show="scY > 300"
         @click="toTop"
       >
         <div>
           <svg
-            class="w-8 h-8"
+            class="w-8 h-8 cursor-pointer"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"

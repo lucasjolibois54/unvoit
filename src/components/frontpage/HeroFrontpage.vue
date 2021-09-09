@@ -51,18 +51,20 @@
           <div class="sm:text-center lg:text-left">
             <h1
               class="
-                text-4xl
+                text-3xl
                 tracking-tight
                 font-extrabold
                 text-gray-900
-                sm:text-5xl
-                md:text-6xl
+                sm:text-4xl
+                md:text-5xl
               "
             >
-              <span class="block xl:inline">Stop fraud, </span>
+              <span class="block xl:inline"
+                >Every business has to deal with economics & invoices,
+              </span>
               {{ " " }}
-              <br />
-              <span class="block text-indigo-600 xl:inline">use UNVOIT.</span>
+
+              <span class="block text-indigo-600 xl:inline"> be smarter!</span>
             </h1>
             <p
               class="
@@ -77,8 +79,8 @@
                 lg:mx-0
               "
             >
-              Manage your invoices safely and keep track on your<br> business'
-              economy.
+              Manage your invoices safely and keep track on your business'
+              economy all for free, no hidden fees.
             </p>
             <div
               class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start"
@@ -103,6 +105,12 @@
                     md:py-4
                     md:text-lg
                     md:px-10
+                    transition
+                    duration-500
+                    ease-in-out
+                    transform
+                    hover:-translate-y-1
+                    hover:scale-105
                   "
                 >
                   Get started
@@ -128,6 +136,12 @@
                     md:py-4
                     md:text-lg
                     md:px-10
+                    transition
+                    duration-500
+                    ease-in-out
+                    transform
+                    hover:-translate-y-1
+                    hover:scale-105
                   "
                 >
                   Contact us
