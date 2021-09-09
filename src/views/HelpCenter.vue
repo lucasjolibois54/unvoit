@@ -1,24 +1,23 @@
 <template>
   <Banner />
   <Navbar />
-  <HelpCenterHero />
-  <Faq />
-  
+  <Support />
+  <FrequentlyAskedQusetions />
 </template>
 
 <script>
 import Banner from "@/components/others/Banner.vue";
 import Navbar from "@/components/helpcenter/Navbar.vue";
-import Faq from "@/components/helpcenter/Faq.vue";
-import HelpCenterHero from "@/components/helpcenter/HelpCenterHero";
+import Support from "@/components/helpcenter/Support.vue";
+import FrequentlyAskedQusetions from "@/components/helpcenter/FrequentlyAskedQusetions.vue";
 
 
 export default {
   components: {
     Banner,
     Navbar,
-    Faq,
-    HelpCenterHero,
+    Support,
+    FrequentlyAskedQusetions,
   },
 };
 </script>
