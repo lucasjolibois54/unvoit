@@ -18,6 +18,7 @@
                 appearance-none
                 text-gray-700 text-sm
                 focus:outline-none
+                border-none
               "
               placeholder="Enter your e-mail"
             />
