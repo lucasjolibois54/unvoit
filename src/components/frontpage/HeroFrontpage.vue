@@ -60,12 +60,12 @@
               "
             >
               <span class="block xl:inline"
-                >Every business has to deal with economic
+                >Every business has to deal with economic & invoices,
               </span>
               {{ " " }}
-              <br />
-              <span class="block text-indigo-600 xl:inline"
-                >& invoices, why not do it smartly!</span
+
+              <span class="block text-indigo-600 xl:inline">
+                why not do it smartly!</span
               >
             </h1>
             <p
@@ -81,8 +81,8 @@
                 lg:mx-0
               "
             >
-              Manage your invoices safely and keep track on your<br />
-              business' economy.
+              Manage your invoices safely and keep track on your business'
+              economy all for free, no hidden fees.
             </p>
             <div
               class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start"
