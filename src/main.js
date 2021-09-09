@@ -5,6 +5,10 @@ import './assets/tailwind.css'
 import store from './store'
 import "firebase/firestore"
 
+//Axios
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+
 import firebase from 'firebase/app';
 
 const firebaseConfig = {
@@ -20,6 +24,6 @@ const firebaseConfig = {
   // Initialize Firebase
   const firebaseApp = firebase.initializeApp(firebaseConfig);
   
-  createApp(App).use(store).use(router).mount('#app')
+  createApp(App).use(store).use(router).use(VueAxios, axios).mount('#app')
 
 export default firebaseApp.firestore()
