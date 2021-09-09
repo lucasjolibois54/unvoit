@@ -19,6 +19,7 @@ import FrontPageContactForm from "@/components/frontpage/FrontPageContactForm.vu
 import FrontPageBlockchain from "@/components/frontpage/FrontPageBlockchain.vue";
 import Footer from "@/components/others/Footer.vue";
 
+
 export default {
   name: "Home",
   components: {
