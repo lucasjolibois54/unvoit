@@ -2,10 +2,16 @@
   <div v-if="!mobile">
     <Banner />
     <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8 ">
+      <Modal v-if="modalActive" />
       <InvoiceModal v-if="invoiceModal" />
       <NavSoftware class="px-6 pb-10" />
       <HeadingSoftware class="px-6 py-14 pt-24" />
-      <TablesSoftware class="px-6 py-2" />
+      <TableHeader> </TableHeader>
+      <Invoice
+        v-for="(invoice, index) in invoiceData"
+        :invoice="invoice"
+        :key="index"
+      />
     </div>
   </div>
 
@@ -20,14 +26,18 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
+import { mapState, mapActions } from "vuex";
 
 //components
 import NavSoftware from "@/components/software/NavSoftware.vue";
 import HeadingSoftware from "@/components/software/HeadingSoftware.vue";
-import TablesSoftware from "@/components/software/TablesSoftware.vue";
-import Banner from "@/components/others/Banner.vue";
 import InvoiceModal from "@/components/software/InvoiceModal.vue";
+import Modal from "@/components/others/Modal.vue";
+import TableHeader from "@/components/software/TableHeader.vue";
+import Invoice from "@/components/software/Invoice.vue";
+
+//other components
+import Banner from "@/components/others/Banner.vue";
 
 export default {
   data() {
@@ -36,10 +46,13 @@ export default {
     };
   },
   created() {
+    this.GET_INVOICES();
     this.checkScreen();
     window.addEventListener("resize", this.checkScreen);
   },
   methods: {
+    ...mapActions(["GET_INVOICES"]),
+
     checkScreen() {
       const windowWidth = window.innerWidth;
       if (windowWidth <= 750) {
@@ -50,15 +63,19 @@ export default {
     },
   },
   computed: {
-    ...mapState(["invoiceModal"]),
+    ...mapState(["invoiceModal", "modalActive", "invoicesLoaded"]),
+
+    ...mapState(["invoiceData"]),
   },
   name: "Member",
   components: {
     NavSoftware,
     HeadingSoftware,
-    TablesSoftware,
     Banner,
     InvoiceModal,
+    Modal,
+    TableHeader,
+    Invoice,
   },
 };
 </script>
