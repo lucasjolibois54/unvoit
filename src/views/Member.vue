@@ -7,12 +7,31 @@
       <InvoiceModal v-if="invoiceModal" />
       <NavSoftware class="px-6 pb-10" />
       <HeadingSoftware class="px-6 py-14 pt-24" />
-      <TableHeader> </TableHeader>
-      <Invoice
-        v-for="(invoice, index) in invoiceData"
-        :invoice="invoice"
-        :key="index"
-      />
+      <TableHeader />
+      <div v-if="invoiceData.length > 0">
+        <Invoice
+          v-for="(invoice, index) in invoiceData"
+          :invoice="invoice"
+          :key="index"
+        />
+      </div>
+      <div v-else class="empty flex flex-col">
+        <img
+          class="mx-24 h-48 w-auto mt-16"
+          :src="require('@/assets/images/illustration_addinvoice.svg')"
+        />
+        <h3
+          class="px-6 py-3 text-center text-md font-semibold text-black tracking-wider"
+        >
+          There is nothing here
+        </h3>
+        <p
+          class="px-6 text-center text-xs font-medium text-black tracking-wider"
+        >
+          Click the Create Invoice button and<br />
+          get started
+        </p>
+      </div>
     </div>
   </div>
 
