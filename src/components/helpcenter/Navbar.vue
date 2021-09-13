@@ -46,6 +46,7 @@
           xl:mx-8
         "
       >
+      <!-- Searchbar -->
         <button
           type="button"
           class="
@@ -110,6 +111,7 @@
         </button>
       </div>
 
+      <!-- Dropdown -->
       <Menu as="div" class="relative inline-block text-left">
         <div>
           <MenuButton
