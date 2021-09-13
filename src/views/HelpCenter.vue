@@ -4,6 +4,7 @@
   <Navbar />
   <Scrollbar />
   <Algolia />
+  <FAQ />
 </div>
 </template>
 
@@ -12,6 +13,7 @@ import Banner from "@/components/others/Banner.vue";
 import Navbar from "@/components/helpcenter/Navbar.vue";
 import Scrollbar from "@/components/helpcenter/Scrollbar.vue";
 import Algolia from "@/components/helpcenter/Algolia.vue";
+import FAQ from "@/components/helpcenter/FAQ.vue";
 
 
 
@@ -22,6 +24,7 @@ export default {
     Navbar,
     Scrollbar,
     Algolia,
+    FAQ,
   },
 };
 </script>
