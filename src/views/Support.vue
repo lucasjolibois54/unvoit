@@ -5,7 +5,7 @@
 
 <script>
 import HeaderSupport from "@/components/support/HeaderSupport.vue";
-import Footer from "@/components/other/Footer.vue";
+import Footer from "@/components/others/Footer.vue";
 export default {
   name: "Support",
   components: {
