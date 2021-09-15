@@ -84,6 +84,7 @@
                             <option>United States</option>
                             <option>Canada</option>
                             <option>Mexico</option>
+                            <option>Denmark</option>
                           </select>
                         </div>
 
@@ -200,6 +201,7 @@
                             <option>United States</option>
                             <option>Canada</option>
                             <option>Mexico</option>
+                            <option>Denmark</option>
                           </select>
                         </div>
 
