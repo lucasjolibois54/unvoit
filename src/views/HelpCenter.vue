@@ -1,24 +1,31 @@
 <template>
   <Banner />
+<div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8 ">
   <Navbar />
-  <HelpCenterHero />
-  <Faq />
-  
+  <Scrollbar />
+  <Algolia />
+  <FAQ />
+</div>
 </template>
 
 <script>
+
 import Banner from "@/components/others/Banner.vue";
 import Navbar from "@/components/helpcenter/Navbar.vue";
-import Faq from "@/components/helpcenter/Faq.vue";
-import HelpCenterHero from "@/components/helpcenter/HelpCenterHero";
+import Scrollbar from "@/components/helpcenter/Scrollbar.vue";
+import Algolia from "@/components/helpcenter/Algolia.vue";
+import FAQ from "@/components/helpcenter/FAQ.vue";
+
+
 
 
 export default {
   components: {
     Banner,
     Navbar,
-    Faq,
-    HelpCenterHero,
+    Scrollbar,
+    Algolia,
+    FAQ,
   },
 };
 </script>

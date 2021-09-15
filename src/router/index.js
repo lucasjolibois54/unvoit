@@ -1,7 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Member from '../views/Member.vue'
-import HelpCenter from '../views/HelpCenter.vue'
+import InvoicePage from '../views/InvoicePage.vue';
+import HelpCenter from '../views/HelpCenter.vue';
+import Support from '../views/Support.vue'
 import firebase from 'firebase/app';
 
 const routes = [
@@ -35,9 +37,22 @@ const routes = [
     }
   },
   {
+    path: "/invoice/:invoiceId",
+    name: 'Invoice',
+    component: InvoicePage,
+    meta: {
+      requiresAuth: true
+    }
+  },
+  {
     path: '/HelpCenter',
     name: 'HelpCenter',
     component: HelpCenter,
+  },
+  {
+    path: '/Support',
+    name: 'Support',
+    component: Support,
   },
 ]
 

@@ -1,6 +1,6 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <div class="z-0 relative bg-white overflow-hidden">
+  <div class="z-0 relative overflow-hidden">
     <div class="max-w-7xl mx-auto">
       <div
         class="
