@@ -45,6 +45,18 @@
                   <Loader v-show="loading" />
                   <div class="shadow overflow-hidden sm:rounded-t-md">
                     <h2
+                      v-if="!editInvoice"
+                      class="px-5 py-4 uppercase text-center text-2xl font-medium text-white bg-gray-900"
+                    >
+                      New Invoice
+                    </h2>
+                    <h2
+                      v-else
+                      class="px-5 py-4 uppercase text-center text-2xl font-medium text-white bg-gray-900"
+                    >
+                      Edit Invoice
+                    </h2>
+                    <h2
                       class="px-5 py-2 text-2xl font-medium text-left text-gray-700 bg-gray-100"
                     >
                       Bill From
@@ -481,6 +493,7 @@
                       class="px-4 py-3 bg-gray-50 sm:px-6 space-x-3 text-right"
                     >
                       <button
+                        v-if="!editInvoice"
                         @click="saveDraft"
                         type="submit"
                         class=" inline-flex justify-center py-2 px-4 border border-transparent transition duration-300 ease-in-out shadow-sm text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
@@ -488,11 +501,20 @@
                         Save Draft
                       </button>
                       <button
+                        v-if="!editInvoice"
                         @click="publishInvoice"
                         type="submit"
                         class="inline-flex justify-center py-2 px-4 border border-transparent transition duration-300 ease-in-out shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                       >
                         Send Invoice
+                      </button>
+                      <button
+                        v-if="editInvoice"
+                        @click="publishInvoice"
+                        type="submit"
+                        class="inline-flex justify-center py-2 px-4 border border-transparent transition duration-300 ease-in-out shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                      >
+                        Update
                       </button>
                       <div>
                         <button
@@ -517,7 +539,7 @@
 
 <script>
 import { uid } from "uid";
-import { mapMutations } from "vuex";
+import { mapMutations, mapState } from "vuex";
 import { ref } from "vue";
 
 //components
@@ -595,7 +617,7 @@ export default {
     );
   },
   methods: {
-    ...mapMutations(["TOGGLE_INVOICE", "TOGGLE_MODAL"]),
+    ...mapMutations(["TOGGLE_INVOICE", "TOGGLE_MODAL", "TOGGLE_EDIT_INVOICE"]),
 
     checkClick(e) {
       if (e.target == this.$refs.invoiceWrap) {
@@ -606,6 +628,9 @@ export default {
 
     closeInvoice() {
       this.TOGGLE_INVOICE();
+      if (this.editInvoice) {
+        this.TOGGLE_EDIT_INVOICE();
+      }
     },
 
     addItem() {
@@ -687,6 +712,9 @@ export default {
     submitForm() {
       this.uploadInvoice();
     },
+  },
+  computed: {
+    ...mapState(["editInvoice"]),
   },
   watch: {
     paymentTerms() {
