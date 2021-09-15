@@ -609,12 +609,43 @@ export default {
     };
   },
   created() {
-    //get current date for invoice date field
-    this.invoiceDateUnix = Date.now();
-    this.invoiceDate = new Date(this.invoiceDateUnix).toLocaleDateString(
-      "en-us",
-      this.dateOptions
-    );
+    if (!this.editInvoice) {
+      //get current date for invoice date field
+      this.invoiceDateUnix = Date.now();
+      this.invoiceDate = new Date(this.invoiceDateUnix).toLocaleDateString(
+        "en-us",
+        this.dateOptions
+      );
+    }
+
+    if (this.editInvoice) {
+      const currentInvoice = this.currentInvoiceArray[0];
+      this.docId = currentInvoice.docId;
+      //biller
+      this.billerAddress = currentInvoice.billerAddress;
+      this.billerCountry = currentInvoice.billerCountry;
+      this.billerCity = currentInvoice.billerCity;
+      this.billerState = currentInvoice.billerState;
+      this.billerPostalCode = currentInvoice.billerPostalCode;
+      //client
+      this.clientName = currentInvoice.clientName;
+      this.clientEmail = currentInvoice.clientEmail;
+      this.clientCountry = currentInvoice.clientCountry;
+      this.clientAddress = currentInvoice.clientAddress;
+      this.clientCity = currentInvoice.clientCity;
+      this.clientState = currentInvoice.clientState;
+      this.clientPostalCode = currentInvoice.clientPostalCode;
+      this.invoiceDateUnix = currentInvoice.invoiceDateUnix;
+      this.invoiceDate = currentInvoice.invoiceDate;
+      this.paymentDueDateUnix = currentInvoice.paymentDueDateUnix;
+      this.paymentDueDate = currentInvoice.paymentDueDate;
+      this.paymentTerms = currentInvoice.paymentTerms;
+      this.productDescription = currentInvoice.productDescription;
+      this.invoicePending = currentInvoice.invoicePending;
+      this.invoiceDraft = currentInvoice.invoiceDraft;
+      this.invoiceItemList = currentInvoice.invoiceItemList;
+      this.invoiceTotal = currentInvoice.invoiceTotal;
+    }
   },
   methods: {
     ...mapMutations(["TOGGLE_INVOICE", "TOGGLE_MODAL", "TOGGLE_EDIT_INVOICE"]),
@@ -714,7 +745,7 @@ export default {
     },
   },
   computed: {
-    ...mapState(["editInvoice"]),
+    ...mapState(["editInvoice", "currentInvoiceArray"]),
   },
   watch: {
     paymentTerms() {
