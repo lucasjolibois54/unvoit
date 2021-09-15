@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import Member from '../views/Member.vue'
 import InvoicePage from '../views/InvoicePage.vue';
 import HelpCenter from '../views/HelpCenter.vue';
+import Support from '../views/Support.vue'
 import firebase from 'firebase/app';
 
 const routes = [
@@ -47,6 +48,11 @@ const routes = [
     path: '/HelpCenter',
     name: 'HelpCenter',
     component: HelpCenter,
+  },
+  {
+    path: '/Support',
+    name: 'Support',
+    component: Support,
   },
 ]
 
