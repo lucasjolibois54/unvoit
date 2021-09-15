@@ -18,6 +18,7 @@
                 appearance-none
                 text-gray-700 text-sm
                 focus:outline-none
+                border-none
               "
               placeholder="Enter your e-mail"
             />
@@ -32,6 +33,12 @@
                 font-semibold
                 uppercase
                 lg:w-auto
+                transition
+                duration-500
+                ease-in-out
+                transform
+                hover:scale-105
+                hover:bg-indigo-700
               "
             >
               subscribe
@@ -44,14 +51,73 @@
 
       <div class="flex flex-col items-center justify-between mt-6 md:flex-row">
         <div>
-          <a href="#" class="text-xl font-bold">UNVOIT</a>
+          <a
+            href="#"
+            class="
+              text-xl
+              font-bold
+              transition
+              duration-500
+              ease-in-out
+              transform
+              hover:text-indigo-500
+            "
+            >UNVOIT</a
+          >
         </div>
         <div class="flex mt-4 md:m-0">
           <div class="-mx-4">
-            <a href="#" class="px-4 text-sm">Our offers</a>
-            <a href="#" class="px-4 text-sm">Pricing</a>
-            <a href="#" class="px-4 text-sm">About us</a>
-            <a href="#" class="px-4 text-sm">Sign up</a>
+            <a
+              href="#"
+              class="
+                px-4
+                text-sm
+                transition
+                duration-500
+                ease-in-out
+                transform
+                hover:text-indigo-500
+              "
+              >Our offers</a
+            >
+            <a
+              href="#"
+              class="
+                px-4
+                text-sm
+                transition
+                duration-500
+                ease-in-out
+                transform
+                hover:text-indigo-500
+              "
+              >Pricing</a
+            >
+            <a
+              href="#"
+              class="
+                px-4
+                text-smtransition
+                duration-500
+                ease-in-out
+                transform
+                hover:text-indigo-500
+              "
+              >About us</a
+            >
+            <a
+              href="#"
+              class="
+                px-4
+                text-sm
+                transition
+                duration-500
+                ease-in-out
+                transform
+                hover:text-indigo-500
+              "
+              >Sign up</a
+            >
           </div>
         </div>
       </div>

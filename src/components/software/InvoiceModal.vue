@@ -5,11 +5,7 @@
     as="template"
     :show="open"
   >
-    <Dialog
-      as="div"
-      class="fixed z-10 inset-0 overflow-y-auto"
-      @close="open = false"
-    >
+    <Dialog as="div" class="fixed z-10 inset-0 overflow-y-auto">
       <div
         class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0"
       >
@@ -46,6 +42,7 @@
             <div class="py-24 justify-center mx-auto text-center w-full">
               <div class="">
                 <form @submit.prevent="submitForm">
+                  <Loader v-show="loading" />
                   <div class="shadow overflow-hidden sm:rounded-t-md">
                     <h2
                       class="px-5 py-2 text-2xl font-medium text-left text-gray-700 bg-gray-100"
@@ -367,8 +364,9 @@
                                     class="px-4 py-3 bg-gray-50 text-left sm:px-6"
                                   >
                                     <button
-                                      @click="addItem"
-                                      type="submit"
+                                      @click.prevent="addItem"
+                                      required
+                                      type="button"
                                       class="inline-flex justify-center py-2 px-4 border border-transparent transition duration-300 ease-in-out shadow-sm text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                     >
                                       Add Item
@@ -497,7 +495,7 @@
                       <div>
                         <button
                           @click="closeInvoice"
-                          type="submit"
+                          type="button"
                           class="text-base inline-flex underline mt-3 py-2 px-4 border border-transparent transition duration-300 ease-in-out font-medium text-red-600 hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                         >
                           Discard
@@ -519,6 +517,9 @@
 import { uid } from "uid";
 import { mapMutations } from "vuex";
 import { ref } from "vue";
+
+//components
+import Loader from "@/components/others/Loader.vue";
 
 //firebase
 import dotenv from "dotenv";
@@ -543,6 +544,7 @@ export default {
     TransitionChild,
     TransitionRoot,
     TrashIcon,
+    Loader,
   },
   setup() {
     const open = ref(true);
@@ -555,6 +557,7 @@ export default {
   data() {
     return {
       dateOptions: { year: "numeric", month: "short", day: "numeric" },
+      loading: null,
       //biller
       billerAddress: null,
       billerCountry: null,
@@ -590,7 +593,14 @@ export default {
     );
   },
   methods: {
-    ...mapMutations(["TOGGLE_INVOICE"]),
+    ...mapMutations(["TOGGLE_INVOICE", "TOGGLE_MODAL"]),
+
+    checkClick(e) {
+      if (e.target == this.$refs.invoiceWrap) {
+        this.TOGGLE_MODAL();
+      }
+      console.log("checkClick");
+    },
 
     closeInvoice() {
       this.TOGGLE_INVOICE();
@@ -633,6 +643,8 @@ export default {
         return;
       }
 
+      this.loading = true;
+
       this.calInvoiceTotal();
 
       const dataBase = db.collection("invoices").doc();
@@ -664,6 +676,8 @@ export default {
         invoiceItemList: this.invoiceItemList,
         invoiceTotal: this.invoiceTotal,
       });
+
+      this.loading = false;
 
       this.TOGGLE_INVOICE();
     },
