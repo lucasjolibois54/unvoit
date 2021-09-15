@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <h1>Bitcoin Price Index</h1>
     <div>{{ info }}</div>
     <div v-for="item in info" :key="item.name">
       {{ item.name }}
