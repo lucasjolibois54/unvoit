@@ -1,12 +1,23 @@
 <template>
   <div v-if="currentInvoice" class="invoice-view container">
-    <router-link class="nav-link flex" :to="{ name: 'Home' }">
-      <h3>Go back</h3>
-    </router-link>
+      <div class="px-4 py-5 sm:px-6">
+        <router-link :to="{ name: 'Member' }">
+          <h3 class="px-2 py-4 bg-black text-white">Go back</h3>
+        </router-link>
+        <h3 class="text-lg leading-6 font-medium text-gray-900">
+          Invoice ID:
+          <p class="text-black">#{{ currentInvoice.invoiceId }}</p>
+        </h3>
+      </div>
+  
     <!-- Header -->
-    <div class="header flex">
-      <div class="left flex">
-        <span>Status</span>
+    <div class="px-4 py-5 sm:px-6">
+      <h3 class="text-lg leading-6 font-medium text-gray-900">
+        Status
+      </h3>
+      <h3 class="text-lg leading-6 font-medium text-gray-900">
+        
+
         <div
           class="status-button flex"
           :class="{
@@ -19,84 +30,92 @@
           <span v-if="currentInvoice.invoiceDraft">Draft</span>
           <span v-if="currentInvoice.invoicePending">Pending</span>
         </div>
-      </div>
-      <div class="right flex">
-        <button @click="toggleEditInvoice(currentInvoice.docId)">Edit</button>
-        <button @click="deleteInvoice(currentInvoice.docId)">Delete</button>
-        <button
-          v-if="currentInvoice.invoicePending"
-          @click="updateStatusToPaid(currentInvoice.docId)"
-        >
-          Mark as Paid
-        </button>
-        <button
-          v-if="currentInvoice.invoiceDraft || currentInvoice.invoicePaid"
-          @click="updateStatusToPending"
-          class=""
-        >
-          Mark as Pending
-        </button>
-      </div>
+      </h3>
+      <button
+        class="mt-1 max-w-2xl text-sm text-gray-500 px-10"
+        @click="toggleEditInvoice(currentInvoice.docId)"
+      >
+        Edit
+      </button>
+      <button
+        class="mt-1 max-w-2xl text-sm text-gray-500 px-10"
+        @click="deleteInvoice(currentInvoice.docId)"
+      >
+        Delete
+      </button>
+      <button
+        class="mt-1 max-w-2xl text-sm text-gray-500 px-10"
+        v-if="currentInvoice.invoicePending"
+        @click="updateStatusToPaid(currentInvoice.docId)"
+      >
+        Mark as Paid
+      </button>
+      <button
+        class="mt-1 max-w-2xl text-sm text-gray-500 px-10"
+        v-if="currentInvoice.invoiceDraft || currentInvoice.invoicePaid"
+        @click="updateStatusToPending"
+      >
+        Mark as Pending
+      </button>
     </div>
+  </div>
 
-    <!-- Invoice Details -->
-    <div class="invoice-details flex flex-column">
-      <div class="top flex">
-        <div class="left flex">
-          <p><span>#</span>{{ currentInvoice.invoiceId }}</p>
-          <p>{{ currentInvoice.productDescription }}</p>
+  <!-- Tailwind lists -->
+
+  <div class="bg-white shadow overflow-hidden sm:rounded-lg">
+    <div class="border-t border-gray-200">
+      <dl>
+        <div
+          class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"
+        >
+          <dt class="text-sm font-medium text-gray-500">Client Information</dt>
+          <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+            <p>{{ currentInvoice.clientName }}</p>
+            <p>{{ currentInvoice.clientStreetAddress }}</p>
+            <p>{{ currentInvoice.clientEmail }}</p>
+            <p>{{ currentInvoice.clientCountry }}</p>
+            <p>{{ currentInvoice.clientAddress }}</p>
+            <p>{{ currentInvoice.clientCity }}</p>
+            <p>{{ currentInvoice.clientState }}</p>
+            <p>{{ currentInvoice.clientPostalCode }}</p>
+          </dd>
         </div>
-        <div class="right flex flex-column">
-          <p>{{ currentInvoice.billerStreetAddress }}</p>
-          <p>{{ currentInvoice.billerCity }}</p>
-          <p>{{ currentInvoice.billerZipCode }}</p>
-          <p>{{ currentInvoice.billerCountry }}</p>
+        <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+          <dt class="text-sm font-medium text-gray-500">Payment Information</dt>
+          <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+            <h4 class="py-2">Invoice Date
+              <p>{{ currentInvoice.invoiceDate }}</p>
+            </h4>
+            <h4 class="py-2">Payment Date
+              <p>{{ currentInvoice.paymentDueDate }}</p>
+            </h4>
+          </dd>
         </div>
-      </div>
-      <div class="middle">
-        <div class="payment flex flex-column">
-          <h4>Invoice Date</h4>
-          <p>{{ currentInvoice.invoiceDate }}</p>
-          <h4>Payment Date</h4>
-          <p>{{ currentInvoice.paymentDueDate }}</p>
+        <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+          <dt class="text-sm font-medium text-gray-500">Description</dt>
+          <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+            {{ currentInvoice.productDescription }}
+          </dd>
         </div>
-        <div class="bill flex flex-column">
-          <h4>Bill to</h4>
-          <p>{{ currentInvoice.clientName }}</p>
-          <p>{{ currentInvoice.clientStreetAddress }}</p>
-          <p>{{ currentInvoice.clientCity }}</p>
-          <p>{{ currentInvoice.clientZipCode }}</p>
-          <p>{{ currentInvoice.clientCountry }}</p>
-        </div>
-        <div class="send-to flex flex-column">
-          <h4>Sent To</h4>
-          <p>{{ currentInvoice.clientEmail }}</p>
-        </div>
-      </div>
-      <div class="bottom flex flex-column">
-        <div class="billing-items">
-          <div class="heading flex">
-            <p>Item Name</p>
-            <p>Qty</p>
-            <p>Price</p>
-            <p>Total</p>
-          </div>
+        <div
+          class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"
+        >
+          <dt class="text-sm font-medium text-gray-500">Billing Items</dt>
+          <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
           <div
             v-for="(item, index) in currentInvoice.invoiceItemList"
             :key="index"
-            class="item flex"
+            class=""
           >
-            <p>{{ item.itemName }}</p>
-            <p>{{ item.qty }}</p>
-            <p>{{ item.price }}</p>
-            <p>{{ item.total }}</p>
+            <p class="py-2 px-2">{{ item.ItemName }}</p>
+            <p class="py-2 px-2">Qty:{{ item.qty }}</p>
+            <p class="py-2 px-2">Price: ${{ item.price }}</p>
+            <p class="py-2 px-2">Total: ${{ item.total }}</p>
           </div>
+          </dd>
         </div>
-        <div class="total flex">
-          <p>Amount Due</p>
-          <p>{{ currentInvoice.invoiceTotal }}</p>
-        </div>
-      </div>
+
+      </dl>
     </div>
   </div>
 </template>
@@ -106,6 +125,9 @@ import { mapMutations, mapState } from "vuex";
 
 export default {
   name: "invoiceView",
+  components: {
+    
+  },
   data() {
     return {
       currentInvoice: null,
