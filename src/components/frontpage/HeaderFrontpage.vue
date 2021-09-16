@@ -17,25 +17,36 @@
         <div class="flex justify-start lg:w-0 lg:flex-1">
           <router-link to="/">
             <span class="sr-only">Workflow</span>
-            <div class="flex h-1 w-1">
-              <span
-                class="absolute inline-flex rounded-full h-3 w-3 bg-indigo-500"
-              ></span>
-              <span
-                class="
-                  animate-ping
-                  absolute
-                  inline-flex
-                  h-3
-                  w-3
-                  rounded-full
-                  bg-indigo-400
-                  opacity-75
-                "
-              >
-              </span>
+            <div class="flex h-10">
+              <h2 class="text-4xl font-extrabold w-auto h-8 flex">
+                UNVOIT
+                <div class="mt-5">
+                  <span
+                    class="
+                      absolute
+                      inline-flex
+                      rounded-full
+                      h-3
+                      w-3
+                      bg-black
+                    "
+                  ></span>
+                  <span
+                    class="
+                      animate-ping
+                      absolute
+                      inline-flex
+                      h-3
+                      w-3
+                      rounded-full
+                      bg-gray-400
+                      opacity-75
+                    "
+                  >
+                  </span>
+                </div>
+              </h2>
             </div>
-            <h2 class="text-4xl font-extrabold h-8 w-auto sm:h-10">UNVOIT</h2>
           </router-link>
         </div>
         <div class="-mr-2 -my-2 md:hidden">
