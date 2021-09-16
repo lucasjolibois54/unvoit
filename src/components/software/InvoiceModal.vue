@@ -4,7 +4,6 @@
     ref="invoiceWrap"
     as="template"
     :show="open"
-    class="z-1000"
   >
     <Dialog as="div" class="fixed inset-0 overflow-y-auto">
       <div
