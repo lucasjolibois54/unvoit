@@ -581,7 +581,6 @@ export default {
   data() {
     return {
       dateOptions: { year: "numeric", month: "short", day: "numeric" },
-      docId: null,
       loading: null,
       //biller
       billerAddress: null,
@@ -698,7 +697,7 @@ export default {
 
     async uploadInvoice() {
       if (this.invoiceItemList.length <= 0) {
-        alert("Please fill out work items!");
+        alert("Please ensure you filled out work items!");
         return;
       }
 
@@ -742,10 +741,6 @@ export default {
     },
 
     submitForm() {
-      if (this.editInvoice) {
-        this.updateInvoice();
-        return;
-      }
       this.uploadInvoice();
     },
   },
