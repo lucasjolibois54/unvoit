@@ -1,5 +1,4 @@
 <template>
-<InvoiceModal v-if="invoiceModal" />
   <div v-if="currentInvoice" class="invoice-view container">
     <div class="px-4 py-5 sm:px-6">
       <router-link :to="{ name: 'Member' }">
@@ -162,9 +161,7 @@ export default {
     },
   },
   computed: {
-    ...mapState(["currentInvoiceArray", "invoiceModal"]),
-
-    ...mapState(["invoiceData"]),
+    ...mapState(["currentInvoiceArray"]),
   },
 };
 </script>
