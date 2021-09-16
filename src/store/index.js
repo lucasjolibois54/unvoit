@@ -1,7 +1,11 @@
 import { createStore } from 'vuex'
 
 //firebase
+import dotenv from "dotenv";
 import db from "../main";
+require("firebase/auth");
+dotenv.config();
+
 export default createStore({
   state: {
     invoiceData: [],
