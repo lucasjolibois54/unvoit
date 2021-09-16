@@ -58,7 +58,7 @@
         <button
           class="mt-1 max-w-2xl text-sm text-white bg-yellow-500  px-3 py-1 rounded-md"
           v-if="currentInvoice.invoiceDraft || currentInvoice.invoicePaid"
-          @click="updateStatusToPending"
+          @click="updateStatusToPending(currentInvoice.docId)"
         >
           Mark as Pending
         </button>
@@ -150,7 +150,11 @@ export default {
       "TOGGLE_INVOICE",
     ]),
 
-    ...mapActions(["DELETE_INVOICE"]),
+    ...mapActions([
+      "DELETE_INVOICE",
+      "UPDATE_STATUS_PAID",
+      "UPDATE_STATUS_PENDING",
+    ]),
 
     getCurrentInvoice() {
       this.SET_CURRENT_INVOICE(this.$route.params.invoiceId);
@@ -165,6 +169,14 @@ export default {
     async deleteInvoice(docId) {
       await this.DELETE_INVOICE(docId);
       this.$router.push({ name: "Member" });
+    },
+
+    updateStatusToPaid(docId) {
+      this.UPDATE_STATUS_PAID(docId);
+    },
+
+    updateStatusToPending(docId) {
+      this.UPDATE_STATUS_PENDING(docId);
     },
   },
   computed: {
