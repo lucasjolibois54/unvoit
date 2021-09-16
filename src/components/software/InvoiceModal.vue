@@ -539,7 +539,7 @@
 
 <script>
 import { uid } from "uid";
-import { mapMutations, mapState, mapActions } from "vuex";
+import { mapMutations, mapState } from "vuex";
 import { ref } from "vue";
 
 //components
@@ -651,8 +651,6 @@ export default {
   methods: {
     ...mapMutations(["TOGGLE_INVOICE", "TOGGLE_MODAL", "TOGGLE_EDIT_INVOICE"]),
 
-    ...mapActions(["GET_INVOICES"]),
-
     checkClick(e) {
       if (e.target == this.$refs.invoiceWrap) {
         this.TOGGLE_MODAL();
@@ -741,9 +739,6 @@ export default {
       this.loading = false;
 
       this.TOGGLE_INVOICE();
-
-      //Fetches the changes immediately instead of having to refresh
-      this.GET_INVOICES();
     },
 
     submitForm() {
