@@ -5,7 +5,7 @@
     as="template"
     :show="open"
   >
-    <Dialog as="div" class="fixed z-10 inset-0 overflow-y-auto">
+    <Dialog as="div" class="fixed inset-0 overflow-y-auto">
       <div
         class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0"
       >
@@ -539,7 +539,7 @@
 
 <script>
 import { uid } from "uid";
-import { mapMutations, mapState } from "vuex";
+import { mapMutations, mapState, mapActions } from "vuex";
 import { ref } from "vue";
 
 //components
@@ -650,6 +650,8 @@ export default {
   methods: {
     ...mapMutations(["TOGGLE_INVOICE", "TOGGLE_MODAL", "TOGGLE_EDIT_INVOICE"]),
 
+    ...mapActions(["GET_INVOICES"]),
+
     checkClick(e) {
       if (e.target == this.$refs.invoiceWrap) {
         this.TOGGLE_MODAL();
@@ -738,6 +740,8 @@ export default {
       this.loading = false;
 
       this.TOGGLE_INVOICE();
+
+      this.GET_INVOICES();
     },
 
     submitForm() {

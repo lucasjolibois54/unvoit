@@ -15,7 +15,8 @@
             class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
             aria-hidden="true"
           />
-          Manage your invoices
+          Manage your
+          <span class="text-black px-1">{{ invoiceData.length }}</span> invoices
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 <template>
+      <InvoiceModal v-if="invoiceModal" />
   <div id="app" v-cloak>
     <transition name="fade">
       <div
@@ -41,12 +42,24 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
+
+import InvoiceModal from '@/components/software/InvoiceModal.vue'
+
 export default {
   data() {
     return {
       scTimer: 0,
       scY: 0,
     };
+  },
+  components: {
+    InvoiceModal,
+  },
+  computed: {
+    ...mapState(["invoiceModal"]),
+
+    ...mapState(["invoiceData"]),
   },
   mounted() {
     window.addEventListener("scroll", this.handleScroll);
