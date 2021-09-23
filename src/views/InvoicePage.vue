@@ -40,7 +40,7 @@
           class="mt-1 max-w-2xl text-sm text-white bg-indigo-500 px-3 py-1 rounded-md"
           @click="toggleEditInvoice"
         >
-          Edit
+          Duplicate
         </button>
         <button
           class="mt-1 max-w-2xl text-sm text-white bg-red-500 px-3 py-1 rounded-md"
