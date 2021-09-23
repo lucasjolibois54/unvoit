@@ -1,5 +1,5 @@
 <template>
-      <InvoiceModal v-if="invoiceModal" />
+  <InvoiceModal v-if="invoiceModal" />
   <div id="app" v-cloak>
     <transition name="fade">
       <div
@@ -44,7 +44,7 @@
 <script>
 import { mapState } from "vuex";
 
-import InvoiceModal from '@/components/software/InvoiceModal.vue'
+import InvoiceModal from "@/components/software/InvoiceModal.vue";
 
 export default {
   data() {
@@ -65,7 +65,7 @@ export default {
     window.addEventListener("scroll", this.handleScroll);
   },
   methods: {
-    handleScroll: function () {
+    handleScroll: function() {
       if (this.scTimer) return;
       this.scTimer = setTimeout(() => {
         this.scY = window.scrollY;
@@ -73,7 +73,7 @@ export default {
         this.scTimer = 0;
       }, 100);
     },
-    toTop: function () {
+    toTop: function() {
       window.scrollTo({
         top: 0,
         behavior: "smooth",
