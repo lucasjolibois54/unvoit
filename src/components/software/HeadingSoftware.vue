@@ -102,6 +102,7 @@
           Create Invoice
         </button>
       </span>
+      <UploadFiles />
 
       <!-- Dropdown -->
       <Menu as="span" class="ml-3 relative sm:hidden">
@@ -156,6 +157,9 @@
 <script>
 import { mapMutations, mapState } from "vuex";
 
+//components
+import UploadFiles from "@/components/software/blockchain/UploadFiles.vue";
+
 import {
   SpeakerphoneIcon,
   ChevronDownIcon,
@@ -175,6 +179,7 @@ export default {
     SpeakerphoneIcon,
     ChevronDownIcon,
     LinkIcon,
+    UploadFiles,
   },
 
   methods: {
