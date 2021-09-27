@@ -1,3 +1,100 @@
+<template>
+    <div class="z-0 relative bg-darker-blue overflow-hidden">
+    <div class="max-w-4xl mx-auto">
+      <div
+        class="
+          relative
+          z-10
+          pb-8
+          sm:pb-16
+          md:pb-20
+          lg:max-w-4xl
+          lg:w-full
+          lg:pb-28
+          xl:pb-32
+          ml-28
+        "
+      >
+
+        <main
+          class="
+            mt-10
+            mx-auto
+            max-w-7xl
+            px-4
+            sm:mt-12
+            sm:px-6
+            md:mt-16
+            lg:mt-20
+            lg:px-8
+            xl:mt-28
+          "
+        >
+          <div class="sm:text-center lg:text-left">
+            <h1
+              class="
+                text-3xl
+                font-normal
+                text-light-blue
+                sm:text-4xl
+                md:text-6xl
+              "
+            >
+              <span class="block xl:inline"
+                >In 2021, People are coming together to want:
+              </span>
+
+              <span
+                class="
+                  pt-0
+                  text-6xl
+                  font-normal
+                  block
+                  xl:inline
+                  text-transparent
+                  bg-clip-text bg-gradient-to-br
+                  from-regular-blue
+                  to-regular-green
+                "
+              >
+                More <br>safety, more features, and<br>a better user experience.
+              </span>
+            </h1>
+            <div class="pt-20">
+                 <img
+                    class="w-full object-cover sm:h-72 md:h-96 lg:w-3/4 lg:h-3/4"
+                    :src="require('@/assets/b-globe.png')"
+                     alt=""
+                />
+            </div>
+             <h3
+              class="
+                text-3xl
+                font-normal
+                text-light-blue
+                sm:text-4xl
+                md:text-2xl
+              "
+            >
+              <span class="block xl:inline leading-relaxed"
+                >At Unvoit we focus on just that. 
+                Join us now and experience<br> the impossible. 
+                We have everything that you are seeking for.<br> 
+                We got more features than the usual invoice 
+                management<br> software, it’s more secure and we 
+                focus on putting you in the<br> center, so our 
+                whole system is designed just for you. 
+                You can<br> start today for free, so why wait. 
+                You got nothing to loose.
+              </span>
+             </h3>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+
+</template>
 
 <script></script>
 
