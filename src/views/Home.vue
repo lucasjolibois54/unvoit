@@ -1,6 +1,7 @@
 <template>
   <HeaderFrontpage />
   <HeroFrontpage />
+  <FrontPageHowWorks />
   <FrontPageOurOffers />
   <PricingFrontpage />
   <FrontPagewhoweare />
@@ -15,6 +16,7 @@ import PricingFrontpage from "@/components/frontpage/PricingFrontpage.vue";
 import FrontPageOurOffers from "@/components/frontpage/FrontPageOurOffers.vue";
 import FrontPagewhoweare from "@/components/frontpage/FrontPagewhoweare.vue";
 import FrontPageContactForm from "@/components/frontpage/FrontPageContactForm.vue";
+import FrontPageHowWorks from "@/components/frontpage/FrontPageHowWorks.vue";
 import Footer from "@/components/others/Footer.vue";
 
 export default {
@@ -26,6 +28,7 @@ export default {
     FrontPageOurOffers,
     FrontPagewhoweare,
     FrontPageContactForm,
+    FrontPageHowWorks,
     Footer,
   },
 };
