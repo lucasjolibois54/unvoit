@@ -54,22 +54,39 @@
                 text-3xl
                 tracking-tight
                 font-extrabold
-                text-gray-900
+                text-off-white
                 sm:text-4xl
                 md:text-5xl
               "
             >
               <span class="block xl:inline"
-                >Every business has to deal with economics & invoices,
+                >THE ACCOUNTING PLATFORM YOU NEED
               </span>
+            </h1>
+            <p>
               {{ " " }}
 
-              <span class="block text-indigo-600 xl:inline"> be smarter!</span>
-            </h1>
+              <span
+                class="
+                  pt-0
+                  text-2xl
+                  font-normal
+                  block
+                  xl:inline
+                  text-transparent
+                  bg-clip-text bg-gradient-to-br
+                  from-regular-blue
+                  to-regular-green
+                "
+              >
+                ...and probably deserve
+              </span>
+            </p>
             <p
               class="
                 mt-3
-                text-base text-gray-500
+                pt-4
+                text-base text-off-grey
                 sm:mt-5
                 sm:text-lg
                 sm:max-w-xl
@@ -79,8 +96,8 @@
                 lg:mx-0
               "
             >
-              Manage your invoices safely and keep track on your business'
-              economy all for free, no hidden fees.
+              Take your financial accounting to the next level, and create
+              invoices in a safe inviroment 🔒
             </p>
             <div
               class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start"
@@ -155,7 +172,7 @@
     <div class="lg:absolute lg:inset-y-0 lg:right-10 lg:w-1/2">
       <img
         class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-        src="https://res.cloudinary.com/aeeux/image/upload/v1630421601/Diget66/previewed_nv20ka.png"
+        :src="require('@/assets/hero-tablet.png')"
         alt=""
       />
     </div>

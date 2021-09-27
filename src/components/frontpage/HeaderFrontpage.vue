@@ -8,7 +8,6 @@
           flex
           justify-between
           items-center
-          border-b-2 border-gray-100
           py-6
           md:justify-start
           md:space-x-10
