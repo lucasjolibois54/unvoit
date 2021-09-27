@@ -79,12 +79,13 @@
                   to-regular-green
                 "
               >
-                ...and probably deserve.hero-tablet.png
+                ...and probably deserve
               </span>
             </p>
             <p
               class="
                 mt-3
+                pt-4
                 text-base text-off-grey
                 sm:mt-5
                 sm:text-lg
