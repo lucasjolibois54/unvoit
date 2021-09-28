@@ -40,8 +40,11 @@
                 md:text-6xl
               "
             >
+            <br>
+            <br>
+            <br>
               <span class="block xl:inline"
-                >In 2021, People are coming together to want:
+                >In 2021, people are coming together to want:
               </span>
 
               <span
@@ -57,7 +60,7 @@
                   to-regular-green
                 "
               >
-                More <br>safety, more features, and<br>a better user experience.
+                more safety, more features, and a better user experience.
               </span>
             </h1>
             <div class="pt-20">
