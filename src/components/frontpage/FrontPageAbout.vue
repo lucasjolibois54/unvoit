@@ -1,5 +1,5 @@
 <template>
-    <div class="z-0 relative bg-darker-blue overflow-hidden">
+  <div class="z-0 relative bg-darker-blue overflow-hidden">
     <div class="max-w-4xl mx-auto">
       <div
         class="
@@ -15,7 +15,6 @@
           ml-28
         "
       >
-
         <main
           class="
             mt-10
@@ -40,9 +39,9 @@
                 pr-20
               "
             >
-            <br>
-            <br>
-            <br>
+              <br />
+              <br />
+              <br />
               <span class="block xl:inline"
                 >In 2021, people are coming together to want:
               </span>
@@ -66,16 +65,18 @@
               </span>
             </h1>
             <div class="pt-20">
-                 <img
-                    class="w-full sm:w-full object-cover md:h-96 lg:w-3/4 lg:h-3/4"
-                    :src="require('@/assets/b-globe.png')"
-                     alt=""
-                />
+              <img
+                class="w-full sm:w-full object-cover md:h-96 lg:w-3/4 lg:h-3/4"
+                :src="require('@/assets/b-globe.png')"
+                alt=""
+              />
             </div>
-            <h5 class="text-light-blue absolute bottom-80 -left-96 text-xl hidden">
+            <h5
+              class="text-light-blue absolute bottom-80 -left-96 text-xl hidden"
+            >
               O About Unvoit
             </h5>
-             <h3
+            <h3
               class="
                 text-3xl
                 font-normal
@@ -85,24 +86,21 @@
                 pr-40
               "
             >
-              <span class="block xl:inline leading-relaxed sm:text-4xl sm:text-left"
-                >At Unvoit we focus on just that. 
-                Join us now and experience the impossible. 
-                We have everything that you are seeking for. 
-                We got more features than the usual invoice 
-                management software, it’s more secure and we 
-                focus on putting you in the center, so our 
-                whole system is designed just for you. 
-                You can start today for free, so why wait. 
-                You got nothing to loose.
+              <span
+                class="block xl:inline leading-relaxed sm:text-4xl sm:text-left"
+                >At Unvoit we focus on just that. Join us now and experience the
+                impossible. We have everything that you are seeking for. We got
+                more features than the usual invoice management software, it’s
+                more secure and we focus on putting you in the center, so our
+                whole system is designed just for you. You can start today for
+                free, so why wait. You got nothing to loose.
               </span>
-             </h3>
+            </h3>
           </div>
         </main>
       </div>
     </div>
   </div>
-
 </template>
 
 <script></script>
