@@ -17,7 +17,7 @@
       <h2 class="pl-10 pr-10 text-2xl">
         It goes through a recognition system build upon blockchain, which
         compares the invoice with a digital contract you and your customer have
-        already signed.
+        already signed
       </h2>
     </div>
     <div class="w-full bg-darker-blue pt-10 pb-20 sm:w-2/6">
