@@ -359,7 +359,7 @@ export default {
 
 <style>
 .rounded-lg {
-  border-radius: 25px;
+  border-radius: 30px;
 }
 </style>
 
