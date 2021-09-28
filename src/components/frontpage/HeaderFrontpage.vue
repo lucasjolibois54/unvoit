@@ -1,13 +1,13 @@
 
 <template>
-  <Popover class="z-10 relative bg-darker-blue">
+  <Popover class="z-10 relative bg-darker-blue mb-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div
         class="
           flex
           justify-between
           items-center
-          border-b-2 border-gray-100
+          border-b-2 border-transparent
           py-6
           lg:justify-start
           lg:space-x-10
@@ -73,13 +73,25 @@
         <PopoverGroup as="nav" class="hidden lg:flex space-x-10">
           <a
             href="#"
-            class="text-base font-medium text-gray-500 hover:text-off-grey"
+            class="text-base font-medium text-off-white hover:text-regular-blue"
           >
-            Pricing
+            Home
+          </a>
+          <a
+            href="#"
+            class="text-base font-medium text-off-white hover:text-regular-blue"
+          >
+            About
+          </a>
+          <a
+            href="#"
+            class="text-base font-medium text-off-white hover:text-regular-blue"
+          >
+            Plans
           </a>
 
           <router-link
-            class="text-base font-medium text-gray-500 hover:text-gray-900"
+            class="text-base font-medium text-off-white hover:text-regular-blue"
             to="/Support"
             >Support</router-link
           >
@@ -90,8 +102,13 @@
               whitespace-nowrap
               text-base
               font-medium
-              text-gray-500
-              hover:text-gray-900
+              text-regular-blue
+              hover:border-blue-100
+              hover:text-blue-100
+              border-2 border-regular-blue
+              px-4
+              py-2
+              rounded-full
             "
             to="/signin"
             >Sign in</router-link
@@ -105,14 +122,17 @@
               justify-center
               px-4
               py-2
-              border border-transparent
-              rounded-lg
+              border-2
+              rounded-full
               shadow-sm
               text-base
               font-medium
-              text-white
-              bg-indigo-600
-              hover:bg-indigo-700
+              text-regular-green
+              border-regular-green
+              hover:text-green-100
+              hover:border-green-100
+              bg-transparent
+              hover:bg-transparent
             "
             to="/signup"
             >Sign up</router-link
@@ -287,30 +307,31 @@ import { ChevronDownIcon } from "@heroicons/vue/solid";
 
 const solutions = [
   {
-    name: "Analytics",
+    name: "Home",
     description:
       "Get a better understanding of where your traffic is coming from.",
     href: "#",
     icon: ChartBarIcon,
   },
   {
-    name: "Engagement",
+    name: "About us",
     description: "Speak directly to your customers in a more meaningful way.",
     href: "#",
     icon: CursorClickIcon,
   },
   {
-    name: "Security",
+    name: "Plans",
     description: "Your customers' data will be safe and secure.",
     href: "#",
     icon: ShieldCheckIcon,
   },
   {
-    name: "Integrations",
+    name: "Support",
     description: "Connect with third-party tools that you're already using.",
     href: "#",
     icon: ViewGridIcon,
   },
+
   {
     name: "Automations",
     description:
