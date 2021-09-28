@@ -1,389 +1,210 @@
+<!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet"
-  />
-  <body class="font-sans bg-gray-100">
-    <div class="min-h-screen flex justify-center items-center py-20">
-      <div class="">
-        <div class="text-center font-semibold">
-          <h2
-            class="
-              text-3xl
-              font-extrabold
-              tracking-tight
-              text-gray-900
-              lg:text-5xl
-            "
+  <div class="z-0 relative bg-off-white overflow-hidden pb-10">
+    <div class="max-w-7xl mx-auto">
+      <div
+        class="
+          relative
+          z-10
+          pb-8
+          sm:pb-16
+          md:pb-20
+          lg:max-w-2xl
+          lg:w-full
+          lg:pb-28
+          xl:pb-32
+        "
+      >
+        <svg
+          class="
+            hidden
+            lg:block
+            absolute
+            right-0
+            inset-y-0
+            h-full
+            w-48
+            text-white
+            transform
+            translate-x-1/2
+          "
+          fill="currentColor"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+        ></svg>
+
+        <main
+          class="
+            mt-10
+            mx-auto
+            max-w-7xl
+            px-4
+            sm:mt-12
+            sm:px-6
+            md:mt-16
+            lg:mt-20
+            lg:px-8
+            xl:mt-28
+          "
+        >
+          <div class="sm:text-center lg:text-left">
+            <h1
+              class="
+                text-3xl
+                tracking-tight
+                font-extrabold
+                text-darker-blue
+                sm:text-4xl
+                md:text-5xl
+              "
+            >
+              <span class="block xl:inline"
+                >Choose a plan that fits
+                <span class="text-regular-blue">you</span>
+              </span>
+            </h1>
+
+            <p
+              class="
+                mt-3
+                pt-4
+                text-base text-off-grey
+                sm:mt-5
+                sm:text-lg
+                sm:max-w-xl
+                sm:mx-auto
+                md:mt-5
+                md:text-xl
+                lg:mx-0
+              "
+            >
+              At unvoit we put you first. Join us now and experience out
+              infinite posibilities and features that Unvoit gives you. Start
+              today for free!
+            </p>
+            <div
+              class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start"
+            >
+              <div class="rounded-md shadow"></div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:-right-48 lg:w-4/6">
+      <!--h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full-->
+      <div
+        class="
+          mt-6
+          mb-1
+          flex flex-col
+          bg-white
+          px-8
+          py-6
+          max-w-sm
+          mx-auto
+          rounded-lg
+          shadow-lg
+        "
+      >
+        <div class="mt-1">
+          <a class="pl-14 text-lg text-gray-700 font-weight:400" href="#"
+            >Starter version</a
           >
-            Pricing <span class="block text-indigo-600 xl:inline">plans</span>
-          </h2>
-          <p
-            class="pt-6 text-xl text-gray-400 font-normal w-full px-8 md:w-full"
-          >
-            Choose a plan that works best for you and<br />
-            your team.
-          </p>
         </div>
-        <div class="pt-10 lg:flex flex-row">
-          <!-- Basic Card -->
-          <div
-            class="
-              w-70
-              pb-20
-              text-center
-              rounded-3xl
-              pr-10
-              p-8
-              bg-gray-100
-              text-white
-              border-4
-              shadow-xl
-              border-white
-              transform
-              scale-120
-            "
-          >
-            <h1 class="text-black font-semibold text-2xl">Basic</h1>
-            <p class="pt-2 tracking-wide">
-              <span class="text-3xl text-black font-semibold">Free</span>
-            </p>
-            <hr class="mt-4 border-1" />
-            <div class="pt-8">
-              <p class="font-semibold text-gray-400 text-left">
-                <span class="material-icons align-middle"> done </span>
-                <span class="pl-2">
-                  Unlimited <span class="text-black">postings</span>
-                </span>
-              </p>
-              <p class="font-semibold text-gray-400 text-left pt-5">
-                <span class="material-icons align-middle"> done </span>
-                <span class="pl-2">
-                  Invoices <span class="text-black">+ invoice designer</span>
-                </span>
-              </p>
-              <p class="font-semibold text-gray-400 text-left pt-5">
-                <span class="material-icons align-middle"> done </span>
-                <span class="pl-2">
-                  Bill <span class="text-black">management</span>
-                </span>
-              </p>
-
-              <p class="font-semibold text-gray-400 text-left pt-5">
-                <span class="material-icons align-middle"> done </span>
-                <span class="pl-2">
-                  VAT <span class="text-black">financial accounting</span>
-                </span>
-              </p>
-
-              <p class="font-semibold text-gray-400 text-left pt-5">
-                <span class="material-icons align-middle"> done </span>
-                <span class="pl-2">
-                  Full <span class="text-black">support 24/7</span>
-                </span>
-              </p>
-
-              <p class="font-semibold text-gray-400 text-left pt-5">
-                <span class="material-icons align-middle"> done </span>
-                <span class="pl-2">
-                  Appendix's <span class="text-black">in cloud</span>
-                </span>
-              </p>
-
-              <p class="font-semibold text-gray-400 text-left pt-5">
-                <span class="material-icons align-middle"> done </span>
-                <span class="pl-2">
-                  All <span class="text-black">integrations</span>
-                </span>
-              </p>
-
-              <p class="font-semibold text-gray-400 text-left pt-5">
-                <span class="material-icons align-middle"> done </span>
-                <span class="pl-2">
-                  Personal <span class="text-black">accountant</span>
-                </span>
-              </p>
-
-              <a href="#" class="">
-                <p
-                  class="
-                    w-full
-                    py-4
-                    bg-indigo-600
-                    hover:bg-indigo-700
-                    mt-8
-                    rounded-xl
-                    text-white
-                    transition
-                    duration-500
-                    ease-in-out
-                    transform
-                    hover:-translate-y-1
-                    hover:scale-105
-                  "
-                >
-                  <span class="font-medium"> Choose Plan </span>
-                  <span class="pl-2 material-icons align-middle text-sm">
-                    east
-                  </span>
-                </p>
-              </a>
-            </div>
+        <div class="flex items-center">
+          <img
+            src="https://images.unsplash.com/photo-1502791451862-7bd8c1df43a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            class="w-8 h-8 object-cover rounded-full"
+            alt="avatar"
+          />
+          <div class="mt-1">
+            <a class="pl-6 text-2xl text-gray-700 font-medium" href="#">Free</a>
           </div>
-          <!-- StartUp Card -->
-          <div
-            class="
-              w-70
-              pb-20
-              text-center
-              rounded-3xl
-              pr-10
-              p-8
-              bg-gray-900
-              text-white
-              border-4
-              shadow-xl
-              border-white
-              transform
-              scale-120
-            "
+        </div>
+      </div>
+      <!-- pro version -->
+      <div
+        class="
+          mt-6
+          mb-1
+          flex flex-col
+          bg-white
+          px-8
+          py-6
+          max-w-sm
+          mx-auto
+          rounded-lg
+          shadow-lg
+        "
+      >
+        <div class="mt-1">
+          <a class="pl-14 text-lg text-gray-700 font-weight:400" href="#"
+            >Pro version </a
           >
-            <h1 class="text-white font-semibold text-2xl">Startup</h1>
-            <p class="pt-2 tracking-wide">
-              <span class="text-gray-400 align-top">$ </span>
-              <span class="text-3xl font-semibold">35</span>
-              <span class="text-gray-400 font-medium">/ month</span>
-            </p>
-            <hr class="mt-4 border-1 border-gray-600" />
-            <div class="pt-8">
-              <p class="font-semibold text-gray-400 text-left">
-                <span class="material-icons align-middle"> done </span>
-                <span class="pl-2">
-                  Unlimited <span class="text-white">postings</span>
-                </span>
-              </p>
-              <p class="font-semibold text-gray-400 text-left pt-5">
-                <span class="material-icons align-middle"> done </span>
-                <span class="pl-2">
-                  Invoices <span class="text-white">+ invoice designer</span>
-                </span>
-              </p>
-              <p class="font-semibold text-gray-400 text-left pt-5">
-                <span class="material-icons align-middle"> done </span>
-                <span class="pl-2">
-                  Bill <span class="text-white">management</span>
-                </span>
-              </p>
-
-              <p class="font-semibold text-gray-400 text-left pt-5">
-                <span class="material-icons align-middle"> done </span>
-                <span class="pl-2">
-                  VAT <span class="text-white">financial accounting</span>
-                </span>
-              </p>
-
-              <p class="font-semibold text-gray-400 text-left pt-5">
-                <span class="material-icons align-middle"> done </span>
-                <span class="pl-2">
-                  Full <span class="text-white">support 24/7</span>
-                </span>
-              </p>
-
-              <p class="font-semibold text-gray-400 text-left pt-5">
-                <span class="material-icons align-middle"> done </span>
-                <span class="pl-2">
-                  Appendix's <span class="text-white">in cloud</span>
-                </span>
-              </p>
-
-              <p class="font-semibold text-gray-400 text-left pt-5">
-                <span class="material-icons align-middle"> done </span>
-                <span class="pl-2">
-                  All <span class="text-white">integrations</span>
-                </span>
-              </p>
-
-              <p class="font-semibold text-gray-400 text-left pt-5">
-                <span class="material-icons align-middle"> done </span>
-                <span class="pl-2">
-                  Personal <span class="text-white">accountant</span>
-                </span>
-              </p>
-
-              <p class="font-semibold text-gray-400 text-left pt-5">
-                <span class="material-icons align-middle"> done </span>
-                <span class="pl-2">
-                  Advanced
-                  <span class="text-white underline"
-                    >blockchain technology</span
-                  >
-                </span>
-              </p>
-
-              <a href="#" class="">
-                <p
-                  class="
-                    w-full
-                    py-4
-                    bg-indigo-600
-                    hover:bg-indigo-700
-                    mt-8
-                    rounded-xl
-                    text-white
-                    transition
-                    duration-500
-                    ease-in-out
-                    transform
-                    hover:-translate-y-1
-                    hover:scale-105
-                  "
-                >
-                  <span class="font-medium"> Choose Plan </span>
-                  <span class="pl-2 material-icons align-middle text-sm">
-                    east
-                  </span>
-                </p>
-              </a>
-            </div>
-            <div class="absolute top-4 right-4">
-              <p
-                class="
-                  bg-blue-700
-                  font-semibold
-                  px-4
-                  py-1
-                  rounded-full
-                  uppercase
-                  text-xs
-                "
-              >
-                Popular
-              </p>
-            </div>
+        </div>
+        <div class="flex items-center">
+          <img
+            src="https://images.unsplash.com/photo-1502791451862-7bd8c1df43a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            class="w-8 h-8 object-cover rounded-full"
+            alt="avatar"
+          />
+          <div class="mt-1">
+            <a class="pl-6 text-2xl text-gray-700 font-medium" href="#"> 79$/m</a>
           </div>
-          <!-- Enterprise Card -->
-          <div
-            class="
-              w-70
-              pb-20
-              text-center
-              rounded-3xl
-              pr-10
-              p-8
-              bg-gray-100
-              text-black
-              border-4
-              shadow-xl
-              border-white
-              transform
-              scale-120
-            "
+        </div>
+      </div>
+
+      <!-- pro version 1 year -->
+      <div
+        class="
+          mt-6
+          mb-1
+          flex flex-col
+          bg-white
+          px-8
+          py-6
+          max-w-sm
+          mx-auto
+          rounded-lg
+          shadow-lg
+        "
+      >
+        <div class="mt-1">
+          <a class="pl-14 text-lg text-gray-700 font-weight:400" href="#"
+            >1 year Pro version</a
           >
-            <h1 class="text-black font-semibold text-2xl">Enterprise</h1>
-            <p class="pt-2 tracking-wide">
-              <span class="text-gray-400 align-top">$ </span>
-              <span class="text-3xl font-semibold">420</span>
-              <span class="text-gray-400 font-medium">/ year</span>
-            </p>
-            <hr class="mt-4 border-1" />
-            <div class="pt-8">
-              <p class="font-semibold text-gray-400 text-left">
-                <span class="material-icons align-middle"> done </span>
-                <span class="pl-2">
-                  Unlimited <span class="text-black">postings</span>
-                </span>
-              </p>
-              <p class="font-semibold text-gray-400 text-left pt-5">
-                <span class="material-icons align-middle"> done </span>
-                <span class="pl-2">
-                  Invoices <span class="text-black">+ invoice designer</span>
-                </span>
-              </p>
-              <p class="font-semibold text-gray-400 text-left pt-5">
-                <span class="material-icons align-middle"> done </span>
-                <span class="pl-2">
-                  Bill <span class="text-black">management</span>
-                </span>
-              </p>
-
-              <p class="font-semibold text-gray-400 text-left pt-5">
-                <span class="material-icons align-middle"> done </span>
-                <span class="pl-2">
-                  VAT <span class="text-black">financial accounting</span>
-                </span>
-              </p>
-
-              <p class="font-semibold text-gray-400 text-left pt-5">
-                <span class="material-icons align-middle"> done </span>
-                <span class="pl-2">
-                  Full <span class="text-black">support 24/7</span>
-                </span>
-              </p>
-
-              <p class="font-semibold text-gray-400 text-left pt-5">
-                <span class="material-icons align-middle"> done </span>
-                <span class="pl-2">
-                  Appendix's <span class="text-black">in cloud</span>
-                </span>
-              </p>
-
-              <p class="font-semibold text-gray-400 text-left pt-5">
-                <span class="material-icons align-middle"> done </span>
-                <span class="pl-2">
-                  All <span class="text-black">integrations</span>
-                </span>
-              </p>
-
-              <p class="font-semibold text-gray-400 text-left pt-5">
-                <span class="material-icons align-middle"> done </span>
-                <span class="pl-2">
-                  Personal <span class="text-black">accountant</span>
-                </span>
-              </p>
-
-              <p class="font-semibold text-gray-400 text-left pt-5">
-                <span class="material-icons align-middle"> done </span>
-                <span class="pl-2">
-                  Advanced
-                  <span class="text-black underline"
-                    >blockchain technology</span
-                  >
-                </span>
-              </p>
-
-              <a href="#" class="">
-                <p
-                  class="
-                    w-full
-                    py-4
-                    bg-indigo-600
-                    hover:bg-indigo-700
-                    mt-8
-                    rounded-xl
-                    text-white
-                    transition
-                    duration-500
-                    ease-in-out
-                    transform
-                    hover:-translate-y-1
-                    hover:scale-105
-                  "
-                >
-                  <span class="font-medium"> Choose Plan </span>
-                  <span class="pl-2 material-icons align-middle text-sm">
-                    east
-                  </span>
-                </p>
-              </a>
-            </div>
+        </div>
+        <div class="flex items-center">
+          <img
+            src="https://images.unsplash.com/photo-1502791451862-7bd8c1df43a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            class="w-8 h-8 object-cover rounded-full"
+            alt="avatar"
+          />
+          <div class="mt-1">
+            <a class="pl-6 text-2xl text-gray-700 font-medium" href="#"> 805$</a>
           </div>
         </div>
       </div>
     </div>
-  </body>
+  </div>
 </template>
+
+<script>
+const navigation = [
+  { name: "Product", href: "#" },
+  { name: "Features", href: "#" },
+  { name: "Marketplace", href: "#" },
+  { name: "Company", href: "#" },
+];
+
+export default {
+  components: {},
+  setup() {
+    return {
+      navigation,
+    };
+  },
+};
+</script>
