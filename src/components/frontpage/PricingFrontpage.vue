@@ -1,4 +1,34 @@
 <template>
+  <!-- component -->
+  
+<div class="mt-36 mb-36 flex flex-col bg-white px-8 py-6 max-w-sm mx-auto rounded-lg shadow-lg ">
+        
+        <div class="mt-1">
+            <a class="pl-14 text-lg text-gray-700 font-weight:400" href="#">Purchase</a>
+        </div>
+        <div class="flex items-center">
+                <img src="https://images.unsplash.com/photo-1502791451862-7bd8c1df43a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                     class=" w-8 h-8 object-cover rounded-full " alt="avatar">
+               <div class="mt-1">
+            <a class="pl-6 text-2xl text-gray-700 font-medium" href="#">Free</a>
+        </div> 
+          </div>
+        
+        
+    </div>
+    
+</template>
+
+
+
+
+
+
+
+
+
+<!--
+<template>
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -30,8 +60,10 @@
             your team.
           </p>
         </div>
+
+        
         <div class="pt-10 lg:flex flex-row">
-          <!-- Basic Card -->
+          
           <div
             class="
               w-70
@@ -135,7 +167,7 @@
               </a>
             </div>
           </div>
-          <!-- StartUp Card -->
+          
           <div
             class="
               w-70
@@ -266,7 +298,7 @@
               </p>
             </div>
           </div>
-          <!-- Enterprise Card -->
+        
           <div
             class="
               w-70
@@ -374,16 +406,22 @@
                     hover:scale-105
                   "
                 >
+                 
                   <span class="font-medium"> Choose Plan </span>
                   <span class="pl-2 material-icons align-middle text-sm">
                     east
+
                   </span>
                 </p>
+               
               </a>
             </div>
           </div>
         </div>
       </div>
     </div>
+  
   </body>
 </template>
+-->
+
