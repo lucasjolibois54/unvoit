@@ -1,13 +1,19 @@
 <template>
-  <div class="width-hero">
-    <HeaderFrontpage />
-    <HeroFrontpage />
-    <FrontPageAbout />
-    <FrontPageHowWorks />
-    <FrontPageMoneyNotGrowTree />
-    <PricingFrontpage />
-    <FrontPageContactForm />
-    <Footer />
+  <div class="bg-darker-blue">
+    <div class="width-hero">
+      <HeaderFrontpage />
+      <HeroFrontpage />
+      <FrontPageAbout />
+      <FrontPageHowWorks />
+    </div>
+  </div>
+  <div class="bg-off-white">
+    <div class="width-hero">
+      <FrontPageMoneyNotGrowTree />
+      <PricingFrontpage />
+      <FrontPageContactForm />
+      <Footer />
+    </div>
   </div>
 </template>
 
@@ -38,8 +44,14 @@ export default {
 
 <style>
 .width-hero {
-  max-width: 1300px;
+  max-width: 2000px;
   margin: 0 auto !important;
   float: none !important;
+}
+
+@media screen and (min-width: 2000px) {
+  .width-hero {
+    max-width: 2560px;
+  }
 }
 </style>
