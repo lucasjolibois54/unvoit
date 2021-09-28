@@ -66,7 +66,7 @@
             </h1>
             <div class="pt-20">
               <img
-                class="w-full sm:w-full object-cover md:h-96 lg:w-3/4 lg:h-3/4"
+                class="w-screen-full object-cover md:h-96 lg:w-3/4 lg:h-3/4"
                 :src="require('@/assets/b-globe.png')"
                 alt=""
               />
