@@ -1,11 +1,13 @@
+
 <template>
-  <Popover class="z-10 relative bg-darker-blue pb-20">
+  <Popover class="z-10 relative bg-darker-blue">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div
         class="
           flex
           justify-between
           items-center
+          border-b-2 border-gray-100
           py-6
           lg:justify-start
           lg:space-x-10
@@ -61,60 +63,35 @@
               hover:text-gray-500
               hover:bg-gray-100
               focus:outline-none
-              focus:ring-2 focus:ring-inset focus:ring-regular-blue
+              focus:ring-2 focus:ring-inset focus:ring-indigo-500
             "
           >
             <span class="sr-only">Open menu</span>
             <MenuIcon class="h-6 w-6" aria-hidden="true" />
           </PopoverButton>
         </div>
-        <div class="-mr-2 -my-2 lg:hidden"></div>
         <PopoverGroup as="nav" class="hidden lg:flex space-x-10">
           <a
             href="#"
-            class="text-base font-medium text-off-white hover:text-regular-blue"
+            class="text-base font-medium text-gray-500 hover:text-off-grey"
           >
-            Home
-          </a>
-          <a
-            href="#"
-            class="text-base font-medium text-off-white hover:text-regular-blue"
-          >
-            About
+            Pricing
           </a>
 
-          <a
-            href="#"
-            class="text-base font-medium text-off-white hover:text-regular-blue"
+          <router-link
+            class="text-base font-medium text-gray-500 hover:text-gray-900"
+            to="/Support"
+            >Support</router-link
           >
-            Plans
-          </a>
-          <a
-            href="#"
-            class="text-base font-medium text-off-white hover:text-regular-blue"
-          >
-            Support
-          </a>
         </PopoverGroup>
-        <div class="hidden lg:flex items-center justify-end md:flex-1 lg:w-0">
+        <div class="hidden lg:flex items-center justify-end lg:flex-1 lg:w-0">
           <router-link
             class="
-              ml-8
               whitespace-nowrap
-              inline-flex
-              items-center
-              justify-center
-              px-4
-              py-2
-              border border-transparent
-              rounded-full
-              shadow-sm
               text-base
               font-medium
-              text-regular-blue
-              border-regular-blue
-              hover:border-blue-300
-              hover:text-blue-300
+              text-gray-500
+              hover:text-gray-900
             "
             to="/signin"
             >Sign in</router-link
@@ -129,14 +106,13 @@
               px-4
               py-2
               border border-transparent
-              rounded-full
+              rounded-lg
               shadow-sm
               text-base
               font-medium
-              text-regular-green
-              border-regular-green
-              hover:border-green-300
-              hover:text-green-300
+              text-white
+              bg-indigo-600
+              hover:bg-indigo-700
             "
             to="/signup"
             >Sign up</router-link
@@ -197,7 +173,7 @@
                     hover:text-gray-500
                     hover:bg-gray-100
                     focus:outline-none
-                    focus:ring-2 focus:ring-inset focus:ring-regular-blue
+                    focus:ring-2 focus:ring-inset focus:ring-indigo-500
                   "
                 >
                   <span class="sr-only">Close menu</span>
@@ -215,7 +191,7 @@
                 >
                   <component
                     :is="item.icon"
-                    class="flex-shrink-0 h-6 w-6 text-regular-blue"
+                    class="flex-shrink-0 h-6 w-6 text-indigo-600"
                     aria-hidden="true"
                   />
                   <span class="ml-3 text-base font-medium text-gray-900">
@@ -265,8 +241,8 @@
                   text-base
                   font-medium
                   text-white
-                  bg-regular-blue
-                  hover:bg-darker-blue
+                  bg-indigo-600
+                  hover:bg-indigo-700
                 "
               >
                 Sign up
@@ -274,7 +250,7 @@
               <p class="mt-6 text-center text-base font-medium text-gray-500">
                 Existing customer?
                 {{ " " }}
-                <a href="#" class="text-regular-blue hover:text-darker-blue">
+                <a href="#" class="text-indigo-600 hover:text-indigo-500">
                   Sign in
                 </a>
               </p>
