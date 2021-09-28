@@ -79,9 +79,9 @@
                 lg:mx-0
               "
             >
-             At unvoit we put you first. 
-             Join us now and experience out infinite posibilities and features that Unvoit gives you.
-             Start today for free!
+              At unvoit we put you first. Join us now and experience out
+              infinite posibilities and features that Unvoit gives you. Start
+              today for free!
             </p>
             <div
               class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start"
@@ -96,9 +96,8 @@
       <!--h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full-->
       <div
         class="
-          mt-36
-          mb-36
-          pt-1
+          mt-6
+          mb-1
           flex flex-col
           bg-white
           px-8
@@ -109,9 +108,10 @@
           shadow-lg
         "
       >
-        <div class="mt-1 ">
+        <div class="mt-1">
           <a class="pl-14 text-lg text-gray-700 font-weight:400" href="#"
-            >Purchase</a>
+            >Purchase</a
+          >
         </div>
         <div class="flex items-center">
           <img
@@ -123,9 +123,25 @@
             <a class="pl-6 text-2xl text-gray-700 font-medium" href="#">Free</a>
           </div>
         </div>
-        <div class="mt-5 ">
+      </div>
+      <div
+        class="
+          mt-6
+          mb-1
+          flex flex-col
+          bg-white
+          px-8
+          py-6
+          max-w-sm
+          mx-auto
+          rounded-lg
+          shadow-lg
+        "
+      >
+        <div class="mt-1">
           <a class="pl-14 text-lg text-gray-700 font-weight:400" href="#"
-            >Purchase</a>
+            >Purchase</a
+          >
         </div>
         <div class="flex items-center">
           <img
@@ -137,9 +153,25 @@
             <a class="pl-6 text-2xl text-gray-700 font-medium" href="#">Free</a>
           </div>
         </div>
-        <div class="mt-5 ">
+      </div>
+      <div
+        class="
+          mt-6
+          mb-1
+          flex flex-col
+          bg-white
+          px-8
+          py-6
+          max-w-sm
+          mx-auto
+          rounded-lg
+          shadow-lg
+        "
+      >
+        <div class="mt-1">
           <a class="pl-14 text-lg text-gray-700 font-weight:400" href="#"
-            >Purchase</a>
+            >Purchase</a
+          >
         </div>
         <div class="flex items-center">
           <img
@@ -150,14 +182,9 @@
           <div class="mt-1">
             <a class="pl-6 text-2xl text-gray-700 font-medium" href="#">Free</a>
           </div>
-          
         </div>
-
-        
       </div>
     </div>
-
-    
   </div>
 </template>
 
