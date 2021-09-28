@@ -1,18 +1,14 @@
 <template>
     <section class="w-full bg-darker-blue py-36 bg-center bg-cover bg-no-repeat">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 flex items-center justify-center">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 flex">
         
-        <div class="lg:w-3/6 lg:pr-0 pr-0">
+        <div class="lg:w-3/6 lg:pr-0 pr-0 mt-10">
             <h1 class="font-medium text-5xl text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
             <p class="leading-relaxed mt-4 text-white">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
-        <img
-        class="h-auto w-4/12 z-0 absolute left-96"
-        :src="require('@/assets/globus.png')"
-        alt=""
-      />
+        
         <div class="lg:w-3/6 xl:w-2/5 md:w-full bg-gray-50 p-8 pr-20 pl-20 flex flex-col lg:ml-auto w-full mt-10 lg:mt-0 rounded-md">
             <div class="relative mb-4">
                 <label for="full-name" class="leading-7 text-sm text-gray-600">Name</label>
@@ -29,6 +25,11 @@
             </div>
             <button class="text-white bg-indigo-500 rounded-md border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 text-lg">Send Message</button>
         </div>
+        <img
+        class="h-auto w-4/12 z-0 absolute -mt-20"
+        :src="require('@/assets/globus.png')"
+        alt=""
+      />
     </div>
 </section>
 </template>
