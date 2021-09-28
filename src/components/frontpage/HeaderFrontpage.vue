@@ -1,5 +1,5 @@
 <template>
-  <Popover class="z-10 relative bg-darker-blue">
+  <Popover class="z-10 relative bg-darker-blue pb-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div
         class="
@@ -7,8 +7,8 @@
           justify-between
           items-center
           py-6
-          md:justify-start
-          md:space-x-10
+          lg:justify-start
+          lg:space-x-10
         "
       >
         <div class="flex justify-start lg:w-0 lg:flex-1">
@@ -48,11 +48,11 @@
             </div>
           </router-link>
         </div>
-        <div class="-mr-2 -my-2 md:hidden">
+        <div class="-mr-2 -my-2 lg:hidden">
           <PopoverButton
             class="
               bg-white
-              rounded-md
+              rounded-lg
               p-2
               inline-flex
               items-center
@@ -68,8 +68,8 @@
             <MenuIcon class="h-6 w-6" aria-hidden="true" />
           </PopoverButton>
         </div>
-        <div class="-mr-2 -my-2 md:hidden"></div>
-        <PopoverGroup as="nav" class="hidden md:flex space-x-10">
+        <div class="-mr-2 -my-2 lg:hidden"></div>
+        <PopoverGroup as="nav" class="hidden lg:flex space-x-10">
           <a
             href="#"
             class="text-base font-medium text-off-white hover:text-regular-blue"
@@ -96,7 +96,7 @@
             Support
           </a>
         </PopoverGroup>
-        <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+        <div class="hidden lg:flex items-center justify-end md:flex-1 lg:w-0">
           <router-link
             class="
               ml-8
@@ -163,7 +163,7 @@
           transition
           transform
           origin-top-right
-          md:hidden
+          lg:hidden
         "
       >
         <div
@@ -188,7 +188,7 @@
                 <PopoverButton
                   class="
                     bg-white
-                    rounded-md
+                    rounded-lg
                     p-2
                     inline-flex
                     items-center
@@ -211,7 +211,7 @@
                   v-for="item in solutions"
                   :key="item.name"
                   :href="item.href"
-                  class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
+                  class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50"
                 >
                   <component
                     :is="item.icon"
@@ -260,7 +260,7 @@
                   px-4
                   py-2
                   border border-transparent
-                  rounded-md
+                  rounded-lg
                   shadow-sm
                   text-base
                   font-medium
