@@ -25,7 +25,7 @@
         </h2>
         <p class="mt-2 text-center text-sm text-gray-600">
           Or
-          <a href="#" class="font-medium text-regular-blue hover:text-light-blue">
+          <a href="#" class="font-medium text-regular-blue hover:text-light-regular-blue">
             start your 14-day free trial
           </a>
         </p>
@@ -61,7 +61,7 @@
                 text-gray-900
                 rounded-t-md
                 focus:outline-none
-                focus:ring-light-blue
+                focus:ring-light-regular-blue
                 focus:border-regular-blue
                 focus:z-10
                 sm:text-sm
@@ -91,7 +91,7 @@
                 text-gray-900
                 rounded-b-md
                 focus:outline-none
-                focus:ring-light-blue
+                focus:ring-light-regular-blue
                 focus:border-regular-blue
                 focus:z-10
                 sm:text-sms
@@ -111,7 +111,7 @@
                 h-4
                 w-4
                 focus:ring-regular-blue
-                focus:border-light-blue
+                focus:border-light-regular-blue
                 border-gray-300
                 rounded
               "
@@ -124,7 +124,7 @@
           <div class="text-sm">
             <a
               href="#"
-              class="font-medium text-regular-blue hover:text-light-blue"
+              class="font-medium text-regular-blue hover:text-light-regular-blue"
             >
               Forgot your password?
             </a>
@@ -149,7 +149,7 @@
               rounded-md
               text-white
               bg-regular-blue
-              hover:bg-light-blue
+              hover:bg-light-regular-blue
               focus:outline-none
               focus:ring-2 focus:ring-offset-2 focus:regular-blue
             "
