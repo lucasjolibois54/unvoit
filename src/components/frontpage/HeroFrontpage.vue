@@ -1,7 +1,7 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
   <div class="bg-darker-blue">
-    <div class="z-0 relative bg-darker-blue overflow-hidden pb-10 width-hero">
+    <div class="z-0 relative bg-darker-blue overflow-hidden pb-10">
       <div class="max-w-7xl mx-auto">
         <div
           class="
@@ -189,13 +189,6 @@
   </div>
 </template>
 
-<style scoped>
-.width-hero {
-  max-width: 1500px;
-  margin: 0 auto !important;
-  float: none !important;
-}
-</style>
 
 <script>
 const navigation = [
