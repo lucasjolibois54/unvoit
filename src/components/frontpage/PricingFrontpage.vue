@@ -110,7 +110,7 @@
       >
         <div class="mt-1">
           <a class="pl-14 text-lg text-gray-700 font-weight:400" href="#"
-            >Purchase</a
+            >Starter version</a
           >
         </div>
         <div class="flex items-center">
@@ -124,6 +124,7 @@
           </div>
         </div>
       </div>
+      <!-- pro version -->
       <div
         class="
           mt-6
@@ -140,7 +141,7 @@
       >
         <div class="mt-1">
           <a class="pl-14 text-lg text-gray-700 font-weight:400" href="#"
-            >Purchase</a
+            >Pro version </a
           >
         </div>
         <div class="flex items-center">
@@ -150,10 +151,12 @@
             alt="avatar"
           />
           <div class="mt-1">
-            <a class="pl-6 text-2xl text-gray-700 font-medium" href="#">Free</a>
+            <a class="pl-6 text-2xl text-gray-700 font-medium" href="#"> 79$/m</a>
           </div>
         </div>
       </div>
+
+      <!-- pro version 1 year -->
       <div
         class="
           mt-6
@@ -170,7 +173,7 @@
       >
         <div class="mt-1">
           <a class="pl-14 text-lg text-gray-700 font-weight:400" href="#"
-            >Purchase</a
+            >1 year Pro version</a
           >
         </div>
         <div class="flex items-center">
@@ -180,7 +183,7 @@
             alt="avatar"
           />
           <div class="mt-1">
-            <a class="pl-6 text-2xl text-gray-700 font-medium" href="#">Free</a>
+            <a class="pl-6 text-2xl text-gray-700 font-medium" href="#"> 805$</a>
           </div>
         </div>
       </div>
