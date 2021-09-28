@@ -86,7 +86,7 @@
               </h5>
               <h3
                 class="
-                  text-3xl
+                  text-sm
                   font-normal
                   text-light-blue
                   sm:text-4xl
@@ -94,20 +94,14 @@
                   pr-40
                 "
               >
-                <span
-                  class="
-                    block
-                    xl:inline
-                    leading-relaxed
-                    sm:text-4xl sm:text-left
-                  "
-                  >At Unvoit we focus on just that. Join us now and experience
+                
+                  At Unvoit we focus on just that. Join us now and experience
                   the impossible. We have everything that you are seeking for.
                   We got more features than the usual invoice management
                   software, it’s more secure and we focus on putting you in the
                   center, so our whole system is designed just for you. You can
                   start today for free, so why wait. You got nothing to loose.
-                </span>
+                
               </h3>
             </div>
           </main>
