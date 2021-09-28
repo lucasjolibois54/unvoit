@@ -1,4 +1,6 @@
 <template>
+<div class="bg-darker-blue">
+<div class="width-hero">
   <div class="z-0 relative bg-darker-blue overflow-hidden">
     <div class="max-w-4xl mx-auto">
       <div
@@ -101,7 +103,17 @@
       </div>
     </div>
   </div>
+  </div>
+</div>
 </template>
+
+<style scoped>
+.width-hero {
+  max-width: 1500px;
+  margin: 0 auto !important;
+  float: none !important;
+}
+</style>
 
 <script></script>
 
