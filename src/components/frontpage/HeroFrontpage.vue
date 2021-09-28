@@ -1,7 +1,7 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
   <div class="z-0 relative bg-darker-blue overflow-hidden">
-    <div class="max-w-7xl mx-auto">
+    <div class="max-w-7xl mx-auto pb-10">
       <div
         class="
           relative
