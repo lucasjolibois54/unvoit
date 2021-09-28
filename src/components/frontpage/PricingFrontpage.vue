@@ -79,9 +79,9 @@
                 lg:mx-0
               "
             >
-              At unvoit we put you first. Join us now and experience out
-              infinite posibilities and features that Unvoit gives you. Start
-              today for free!
+             At unvoit we put you first. 
+             Join us now and experience out infinite posibilities and features that Unvoit gives you.
+             Start today for free!
             </p>
             <div
               class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start"
@@ -98,6 +98,7 @@
         class="
           mt-36
           mb-36
+          pt-1
           flex flex-col
           bg-white
           px-8
@@ -108,10 +109,9 @@
           shadow-lg
         "
       >
-        <div class="mt-1">
+        <div class="mt-1 ">
           <a class="pl-14 text-lg text-gray-700 font-weight:400" href="#"
-            >Purchase</a
-          >
+            >Purchase</a>
         </div>
         <div class="flex items-center">
           <img
@@ -123,8 +123,41 @@
             <a class="pl-6 text-2xl text-gray-700 font-medium" href="#">Free</a>
           </div>
         </div>
+        <div class="mt-5 ">
+          <a class="pl-14 text-lg text-gray-700 font-weight:400" href="#"
+            >Purchase</a>
+        </div>
+        <div class="flex items-center">
+          <img
+            src="https://images.unsplash.com/photo-1502791451862-7bd8c1df43a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            class="w-8 h-8 object-cover rounded-full"
+            alt="avatar"
+          />
+          <div class="mt-1">
+            <a class="pl-6 text-2xl text-gray-700 font-medium" href="#">Free</a>
+          </div>
+        </div>
+        <div class="mt-5 ">
+          <a class="pl-14 text-lg text-gray-700 font-weight:400" href="#"
+            >Purchase</a>
+        </div>
+        <div class="flex items-center">
+          <img
+            src="https://images.unsplash.com/photo-1502791451862-7bd8c1df43a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            class="w-8 h-8 object-cover rounded-full"
+            alt="avatar"
+          />
+          <div class="mt-1">
+            <a class="pl-6 text-2xl text-gray-700 font-medium" href="#">Free</a>
+          </div>
+          
+        </div>
+
+        
       </div>
     </div>
+
+    
   </div>
 </template>
 
