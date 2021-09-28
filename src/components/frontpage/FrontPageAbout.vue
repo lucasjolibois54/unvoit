@@ -90,18 +90,17 @@
                   font-normal
                   text-light-blue
                   sm:text-4xl
-                  md:text-2xl
+                  md:text-xl
                   pr-40
+                  mb-20
                 "
               >
-                
-                  At Unvoit we focus on just that. Join us now and experience
-                  the impossible. We have everything that you are seeking for.
-                  We got more features than the usual invoice management
-                  software, it’s more secure and we focus on putting you in the
-                  center, so our whole system is designed just for you. You can
-                  start today for free, so why wait. You got nothing to loose.
-                
+                At Unvoit we focus on just that. Join us now and experience the
+                impossible. We have everything that you are seeking for. We got
+                more features than the usual invoice management software, it’s
+                more secure and we focus on putting you in the center, so our
+                whole system is designed just for you. You can start today for
+                free, so why wait. You got nothing to loose.
               </h3>
             </div>
           </main>
