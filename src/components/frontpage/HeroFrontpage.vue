@@ -1,6 +1,6 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <div class="z-0 relative bg-darker-blue overflow-hidden">
+  <div class="z-0 relative bg-darker-blue overflow-hidden pb-10">
     <div class="max-w-7xl mx-auto">
       <div
         class="
@@ -169,9 +169,10 @@
         </main>
       </div>
     </div>
-    <div class="lg:absolute lg:inset-y-0 lg:right-10 lg:w-1/2">
+    <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:-right-48 lg:w-4/6">
+      <!--h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full-->
       <img
-        class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+        class="h-auto w-full"
         :src="require('@/assets/Tablet-hero.png')"
         alt=""
       />
