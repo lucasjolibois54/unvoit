@@ -7,6 +7,7 @@
   <PricingFrontpage />
   <FrontPageContactForm />
   <Footer />
+  <ScrollBtn />
 </template>
 
 <script>
@@ -18,6 +19,7 @@ import FrontPageContactForm from "@/components/frontpage/FrontPageContactForm.vu
 import FrontPageHowWorks from "@/components/frontpage/FrontPageHowWorks.vue";
 import FrontPageAbout from "@/components/frontpage/FrontPageAbout.vue";
 import Footer from "@/components/others/Footer.vue";
+import ScrollBtn from "@/components/frontpage/ScrollBtn.vue";
 
 export default {
   name: "Home",
@@ -30,6 +32,7 @@ export default {
     FrontPageHowWorks,
     FrontPageMoneyNotGrowTree,
     Footer,
+    ScrollBtn,
   },
 };
 </script>
