@@ -1,6 +1,6 @@
 
 <template>
-  <Popover class="z-10 relative bg-darker-blue mb-16">
+  <Popover class="z-10 relative bg-darker-blue">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div
         class="
