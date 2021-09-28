@@ -23,7 +23,6 @@
             max-w-7xl
             px-4
             sm:mt-12
-            sm:px-6
             md:mt-16
             lg:mt-20
             lg:px-8
@@ -38,6 +37,7 @@
                 text-light-blue
                 sm:text-4xl
                 md:text-6xl
+                pr-20
               "
             >
               <span class="block xl:inline"
@@ -52,21 +52,26 @@
                   block
                   xl:inline
                   text-transparent
+                  sm:text-4xl
+                  md:text-6xl
                   bg-clip-text bg-gradient-to-br
                   from-regular-blue
                   to-regular-green
                 "
               >
-                More <br>safety, more features, and<br>a better user experience.
+                More safety, more features, and a better user experience.
               </span>
             </h1>
             <div class="pt-20">
                  <img
-                    class="w-full object-cover sm:h-72 md:h-96 lg:w-3/4 lg:h-3/4"
+                    class="w-full sm:w-full object-cover md:h-96 lg:w-3/4 lg:h-3/4"
                     :src="require('@/assets/b-globe.png')"
                      alt=""
                 />
             </div>
+            <h5 class="text-light-blue absolute bottom-80 -left-96 text-xl hidden">
+              O About Unvoit
+            </h5>
              <h3
               class="
                 text-3xl
@@ -74,17 +79,18 @@
                 text-light-blue
                 sm:text-4xl
                 md:text-2xl
+                pr-40
               "
             >
-              <span class="block xl:inline leading-relaxed"
+              <span class="block xl:inline leading-relaxed sm:text-4xl sm:text-left"
                 >At Unvoit we focus on just that. 
-                Join us now and experience<br> the impossible. 
-                We have everything that you are seeking for.<br> 
+                Join us now and experience the impossible. 
+                We have everything that you are seeking for. 
                 We got more features than the usual invoice 
-                management<br> software, it’s more secure and we 
-                focus on putting you in the<br> center, so our 
+                management software, it’s more secure and we 
+                focus on putting you in the center, so our 
                 whole system is designed just for you. 
-                You can<br> start today for free, so why wait. 
+                You can start today for free, so why wait. 
                 You got nothing to loose.
               </span>
              </h3>
