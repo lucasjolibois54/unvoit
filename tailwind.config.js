@@ -6,10 +6,11 @@ module.exports = {
       colors: {
         'darker-blue': '#052245',
         'regular-blue': '#19ADF9',
+        'light-regular-blue': '#5CC8FF',
         'regular-green': '#30BF80',
         'off-white': '#FFFFFF',
         'off-grey': '#A4BED2',
-        'light-blue': '#A1C2D3',
+        'light-blue': '#A4BED2',
         'about-blue': '#0381C1',
 
       }
