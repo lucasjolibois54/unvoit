@@ -40,8 +40,11 @@
                 pr-20
               "
             >
+            <br>
+            <br>
+            <br>
               <span class="block xl:inline"
-                >In 2021, People are coming together to want:
+                >In 2021, people are coming together to want:
               </span>
 
               <span
