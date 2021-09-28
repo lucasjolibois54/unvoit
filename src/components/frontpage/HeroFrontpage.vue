@@ -1,7 +1,7 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <div class="z-0 relative bg-darker-blue overflow-hidden">
-    <div class="max-w-7xl mx-auto pb-10">
+  <div class="z-0 relative bg-darker-blue overflow-hidden pb-10">
+    <div class="max-w-7xl mx-auto">
       <div
         class="
           relative
@@ -174,6 +174,13 @@
       <img
         class="h-auto w-full"
         :src="require('@/assets/Tablet-hero.png')"
+        alt=""
+      />
+    </div>
+    <div class="">
+      <img
+        class="max-w-screen-lg mx-auto h-auto w-16"
+        :src="require('@/assets/Scroll-icon.png')"
         alt=""
       />
     </div>
