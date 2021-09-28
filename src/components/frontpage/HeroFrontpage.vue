@@ -125,8 +125,8 @@
                         font-medium
                         rounded-md
                         text-white
-                        bg-indigo-600
-                        hover:bg-indigo-700
+                        bg-regular-blue
+                        hover:bg-blue-500
                         md:py-4
                         md:text-lg
                         md:px-10
@@ -155,9 +155,9 @@
                         text-base
                         font-medium
                         rounded-md
-                        text-indigo-700
-                        bg-indigo-100
-                        hover:bg-indigo-200
+                        text-regular-blue
+                        bg-gray-100
+                        hover:bg-gray-200
                         md:py-4
                         md:text-lg
                         md:px-10
