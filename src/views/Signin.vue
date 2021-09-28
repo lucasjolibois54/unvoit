@@ -361,7 +361,6 @@ export default {
 .rounded-lg {
   border-radius: 25px;
 }
-
 </style>
 
 <!--
