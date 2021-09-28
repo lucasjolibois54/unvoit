@@ -177,6 +177,13 @@
         alt=""
       />
     </div>
+    <div class="">
+      <img
+        class="max-w-screen-lg mx-auto h-auto w-16"
+        :src="require('@/assets/Scroll-icon.png')"
+        alt=""
+      />
+    </div>
   </div>
 </template>
 
