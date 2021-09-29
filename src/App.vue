@@ -83,4 +83,42 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+
+/* width */
+::-webkit-scrollbar {
+  height: 300px;
+  width: .45rem!important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  position: absolute;
+    opacity: 0;
+    z-index: 1;
+    background: rgba(222, 222, 222, .75);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: opacity 0.5s 0.5s ease-out;
+    transition: opacity 0.5s 0.5s ease-out;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    position: absolute;
+    top: 0;
+    left: 0;
+        width: .45rem!important;
+    height: 8px;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+</style>
