@@ -1,5 +1,5 @@
 <template>
-  <HeaderFrontpage />
+  <NavSign />
   <div
     class="
       min-h-screen
@@ -524,7 +524,7 @@
 
 <script>
 import firebase from "firebase/app";
-import HeaderFrontpage from "@/components/frontpage/HeaderFrontpage.vue";
+import NavSign from "@/components/others/NavSign.vue";
 
 export default {
   data() {
@@ -556,7 +556,7 @@ export default {
   },
   name: "Signup",
   components: {
-    HeaderFrontpage,
+    NavSign,
   },
 };
 </script>
