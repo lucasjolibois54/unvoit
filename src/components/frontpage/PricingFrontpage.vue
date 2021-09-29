@@ -185,7 +185,7 @@
       >
         <div class="mt-1">
           <a class="pl-14 text-lg text-gray-700 font-weight:400" href="#"
-            >1 year Pro version</a
+            >Pro version</a
           >
         </div>
         <div class="flex items-center">
@@ -196,7 +196,7 @@
           />
           <div class="mt-1">
             <a class="pl-6 text-2xl text-gray-700 font-medium" href="#">
-              805$</a
+              805$/year</a
             >
           </div>
         </div>
