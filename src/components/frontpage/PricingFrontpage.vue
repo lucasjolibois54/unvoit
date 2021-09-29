@@ -9,7 +9,7 @@
           />
         </div>
 
-  <div class="z-0 relative bg-gradient-to-t from-pricing-blue via-pricing-whiteblue-100 to-pricing-white overflow-hidden pb-60 pt-30">
+  <div id="FrontPagePlans" class="z-0 relative bg-gradient-to-t from-pricing-blue via-pricing-whiteblue-100 to-pricing-white overflow-hidden pb-60 pt-30">
     <div class="max-w-7xl mx-auto">
       <div
         class="
