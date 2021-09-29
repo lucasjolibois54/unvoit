@@ -85,6 +85,10 @@ export default {
 
 <style>
 
+html, body{
+  scroll-behavior: smooth;
+}
+
 /* width */
 ::-webkit-scrollbar {
   height: 300px;
