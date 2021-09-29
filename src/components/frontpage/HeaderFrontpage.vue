@@ -78,22 +78,22 @@
             Home
           </a>
           <a
-            href="#"
+            href="#FrontPageAbout"
             class="text-base font-medium text-off-white hover:text-regular-blue"
           >
             About
           </a>
           <a
-            href="#"
+            href="#FrontPagePlans"
             class="text-base font-medium text-off-white hover:text-regular-blue"
           >
             Plans
           </a>
 
-          <router-link
+          <a href="#FrontPageSupport"
             class="text-base font-medium text-off-white hover:text-regular-blue"
             to="/Support"
-            >Support</router-link
+            >Support</a
           >
         </PopoverGroup>
         <div class="hidden lg:flex items-center justify-end lg:flex-1 lg:w-0">
