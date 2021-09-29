@@ -99,7 +99,7 @@
                   "
                 >
                   Take your financial accounting to the next level, and create
-                  invoices in a safe inviroment 🔒
+                  invoices in a safe enviroment 🔒
                 </p>
                 <div
                   class="
@@ -126,7 +126,7 @@
                         rounded-md
                         text-white
                         bg-regular-blue
-                        hover:bg-blue-500
+                        hover:bg-light-regular-blue
                         md:py-4
                         md:text-lg
                         md:px-10
