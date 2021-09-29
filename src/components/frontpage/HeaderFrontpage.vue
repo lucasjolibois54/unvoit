@@ -115,7 +115,7 @@
           >
           <router-link
             class="
-              ml-8
+              ml-4
               whitespace-nowrap
               inline-flex
               items-center
