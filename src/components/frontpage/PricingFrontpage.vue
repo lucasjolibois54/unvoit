@@ -1,9 +1,15 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
 
+        <div class="">
+          <img
+            class=" h-auto w-full "
+            :src="require('@/assets/bg-pricing.png')"
+            alt=""
+          />
+        </div>
 
-
-  <div class="z-0 relative bg-gradient-to-t from-darker-blue via-pricing-blue-200 via-pricing-whiteblue-500 to-tranparent overflow-hidden pb-60 pt-30">
+  <div class="z-0 relative bg-gradient-to-t from-darker-blue via-pricing-blue-200 via-pricing-whiteblue-500 to-pricing-whiteblue overflow-hidden pb-60 pt-30">
     <div class="max-w-7xl mx-auto">
       <div
         class="
@@ -112,7 +118,7 @@
           shadow-lg
         "
       >
-        <div class="mt-1">
+        <div class="mt-1 ">
           <a class="pl-14 text-lg text-gray-700 font-weight:400" href="#"
             >Starter version</a
           >
