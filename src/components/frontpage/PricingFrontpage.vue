@@ -3,7 +3,7 @@
 
 
 
-  <div class="z-0 relative bg-gradient-to-t from-darker-blue via-pricing-blue-200 to-transparent-1000 overflow-hidden pb-60 pt-30">
+  <div class="z-0 relative bg-gradient-to-t from-darker-blue via-pricing-blue-200 via-pricing-whiteblue-500 to-tranparent overflow-hidden pb-60 pt-30">
     <div class="max-w-7xl mx-auto">
       <div
         class="
@@ -56,14 +56,14 @@
               class="
                 text-3xl
                 tracking-tight
-                font-extrabold
+                font-medium
                 text-darker-blue
                 sm:text-4xl
                 md:text-5xl
               "
             >
               <span class="block xl:inline"
-                >Choose a plan that fits
+                >Choose a plan that <br> fits
                 <span class="text-regular-blue">you</span>
               </span>
             </h1>
