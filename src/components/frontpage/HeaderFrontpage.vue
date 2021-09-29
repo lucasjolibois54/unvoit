@@ -225,27 +225,12 @@
           </div>
           <div class="py-6 px-5 space-y-6">
             <div class="grid grid-cols-2 gap-y-4 gap-x-8">
-              <a
-                href="#"
-                class="text-base font-medium text-gray-900 hover:text-gray-700"
-              >
-                Pricing
-              </a>
+              
 
-              <a
-                href="#"
-                class="text-base font-medium text-gray-900 hover:text-gray-700"
-              >
-                Docs
-              </a>
-              <a
-                v-for="item in resources"
-                :key="item.name"
-                :href="item.href"
-                class="text-base font-medium text-gray-900 hover:text-gray-700"
-              >
-                {{ item.name }}
-              </a>
+           
+              
+            
+                
             </div>
             <div>
               <a
@@ -299,7 +284,6 @@ import {
   MenuIcon,
   PhoneIcon,
   PlayIcon,
-  RefreshIcon,
   ShieldCheckIcon,
   SupportIcon,
   ViewGridIcon,
@@ -334,13 +318,7 @@ const solutions = [
     icon: ViewGridIcon,
   },
 
-  {
-    name: "Automations",
-    description:
-      "Build strategic funnels that will drive your customers to convert",
-    href: "#",
-    icon: RefreshIcon,
-  },
+
 ];
 const callsToAction = [
   { name: "Watch Demo", href: "#", icon: PlayIcon },
