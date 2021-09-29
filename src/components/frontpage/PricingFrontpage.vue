@@ -3,7 +3,7 @@
 
 
 
-  <div class="z-0 relative bg-off-white overflow-hidden pb-10">
+  <div class="z-0 relative bg-gradient-to-t from-darker-blue to-transparent overflow-hidden pb-60 pt-30">
     <div class="max-w-7xl mx-auto">
       <div
         class="
@@ -72,7 +72,7 @@
               class="
                 mt-3
                 pt-4
-                text-base text-off-grey
+                text-base text-black
                 sm:mt-5
                 sm:text-lg
                 sm:max-w-xl
