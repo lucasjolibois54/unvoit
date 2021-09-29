@@ -1,5 +1,191 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
+  <div class="">
+    <img
+      class="h-auto w-full"
+      :src="require('@/assets/bg-pricing.png')"
+      alt=""
+    />
+  </div>
+  <div class="bg-darker-blue">
+    <div
+      id="FrontPagePlans"
+      class="
+        z-0
+        relative
+        bg-gradient-to-t
+        from-pricing-blue
+        via-pricing-whiteblue-100
+        to-pricing-white
+        overflow-hidden
+        pb-60
+        pt-30
+      "
+    >
+      <div class="max-w-7xl mx-auto">
+        <div
+          class="
+            relative
+            z-10
+            pb-8
+            sm:pb-16
+            md:pb-20
+            lg:max-w-2xl
+            lg:w-full
+            lg:pb-28
+            xl:pb-32
+          "
+        >
+          <svg
+            class="
+              hidden
+              lg:block
+              absolute
+              right-0
+              inset-y-0
+              h-full
+              w-48
+              text-white
+              transform
+              translate-x-1/2
+            "
+            fill="currentColor"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+          ></svg>
+
+          <main
+            class="
+              mt-10
+              mx-auto
+              max-w-7xl
+              px-4
+              sm:mt-12
+              sm:px-6
+              md:mt-16
+              lg:mt-20
+              lg:px-8
+              xl:mt-28
+            "
+          >
+            <div class="sm:text-center lg:text-left">
+              <h2
+                class="
+                  text-3xl
+                  tracking-tight
+                  font-extrabold
+                  text-off-white
+                  sm:text-4xl
+                  md:text-5xl
+                "
+              >
+                <span class="block xl:inline text-darker-blue"
+                  >Choose a plan that fits
+                  <span class="text-regular-blue">you</span>
+                </span>
+              </h2>
+
+              <p
+                class="
+                  mt-3
+                  pt-4
+                  text-base text-darker-blue
+                  sm:mt-5
+                  sm:text-lg
+                  sm:max-w-xl
+                  sm:mx-auto
+                  md:mt-5
+                  md:text-xl
+                  lg:mx-0
+                "
+              >
+                At unvoit we put you first. Join us now and experience our
+                infinite posibilities and features that Unvoit gives you. Start
+                today for free!
+              </p>
+              <div
+                class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start"
+              ></div>
+            </div>
+          </main>
+        </div>
+      </div>
+      <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:-right-48 lg:w-4/6">
+        <!--h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full-->
+        <plans />
+      </div>
+    </div>
+  </div>
+</template>
+
+
+<script>
+import plans from "@/components/frontpage/plans.vue";
+
+const navigation = [
+  { name: "Product", href: "#" },
+  { name: "Features", href: "#" },
+  { name: "Marketplace", href: "#" },
+  { name: "Company", href: "#" },
+];
+
+export default {
+  components: {
+    plans,
+  },
+  setup() {
+    return {
+      navigation,
+    };
+  },
+};
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<template>
 
         <div class="">
           <img
@@ -103,7 +289,7 @@
    
     </div>
     <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:-right-48 lg:w-4/6">
-      <!--h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full-->
+   h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full
       <div
         class="
           mt-6
@@ -138,9 +324,9 @@
     </button>
     <div v-if="showModal" class="overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center flex">
       <div class="relative w-auto my-6 mx-auto max-w-3xl">
-        <!--content-->
+
         <div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-          <!--header-->
+          
           <div class="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
             <h3 class="text-3xl font-semibold">
               Pro version
@@ -151,13 +337,13 @@
               </span>
             </button>
           </div>
-          <!--body-->
+      
           <div class="relative p-6 flex-auto">
             <p class="my-4 text-blueGray-500 text-lg leading-relaxed">
               The coconut nut is not a nut 
             </p>
           </div>
-          <!--footer-->
+
           <div class="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
             <button class="text-red-500 bg-transparent border border-solid border-red-500 hover:bg-red-500 hover:text-white active:bg-red-600 font-bold uppercase text-sm px-6 py-3 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" v-on:click="toggleModal()">
               Close
@@ -171,7 +357,7 @@
   </div>
         </div>
       </div>
-      <!-- pro version -->
+       pro version
       <div
         class="
           mt-6
@@ -208,9 +394,9 @@
     </button>
     <div v-if="showModal" class="overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center flex">
       <div class="relative w-auto my-6 mx-auto max-w-3xl">
-        <!--content-->
+
         <div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-          <!--header-->
+ 
           <div class="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
             <h3 class="text-3xl font-semibold">
               Pro version
@@ -221,13 +407,13 @@
               </span>
             </button>
           </div>
-          <!--body-->
+
           <div class="relative p-6 flex-auto">
             <p class="my-4 text-blueGray-500 text-lg leading-relaxed">
               The coconut nut is not a nut
             </p>
           </div>
-          <!--footer-->
+  
           <div class="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
             <button class="text-red-500 bg-transparent border border-solid border-red-500 hover:bg-red-500 hover:text-white active:bg-red-600 font-bold uppercase text-sm px-6 py-3 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" v-on:click="toggleModal()">
               Close
@@ -242,7 +428,7 @@
         </div>
       </div>
 
-      <!-- pro version 1 year -->
+       pro version 1 year 
       <div
         class="
           mt-6
@@ -279,26 +465,26 @@
     </button>
     <div v-if="showModal" class="overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center flex">
       <div class="relative w-auto my-6 mx-auto max-w-3xl">
-        <!--content-->
+  
         <div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-          <!--header-->
+        
           <div class="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
             <h3 class="text-3xl font-semibold">
               Pro version
             </h3>
-            <button class="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none" v-on:click="toggleModal()">
+            <button class="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none" v-on:click="toggleModal('free')">
               <span class="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
                 ×
               </span>
             </button>
           </div>
-          <!--body-->
+       
           <div class="relative p-6 flex-auto">
             <p class="my-4 text-blueGray-500 text-lg leading-relaxed">
               The coconut nut is not a nut
             </p>
           </div>
-          <!--footer-->
+        
           <div class="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
             <button class="text-red-500 bg-transparent border border-solid border-red-500 hover:bg-red-500 hover:text-white active:bg-red-600 font-bold uppercase text-sm px-6 py-3 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" v-on:click="toggleModal()">
               Close
@@ -346,15 +532,11 @@ export default {
     }
   }
 };
-
- 
-
 </script>
 
 
 
-
-
+-->
 
 
 
