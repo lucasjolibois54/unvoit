@@ -88,8 +88,8 @@
                 lg:mx-0
               "
             >
-              At unvoit we put you first. Join us now and experience out
-              infinite posibilities and features that Unvoit gives you. Start
+              At unvoit we put you first. Join us now and experience our
+              infinite posibilities and features that Unvoit has to offer. Start
               today for free!
             </p>
             <div
