@@ -112,7 +112,7 @@
           shadow-lg
         "
       >
-        <div class="mt-1">
+        <div class="mt-1 ">
           <a class="pl-14 text-lg text-gray-700 font-weight:400" href="#"
             >Starter version</a
           >
