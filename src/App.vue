@@ -100,7 +100,7 @@ html, body{
   position: absolute;
     opacity: 0;
     z-index: 1;
-    background: rgba(222, 222, 222, .75);
+    background: #052245;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -116,13 +116,13 @@ html, body{
     left: 0;
         width: .45rem!important;
     height: 8px;
-    background: rgba(0, 0, 0, .5);
+    background: #b1e5ff;
     border-radius: 4px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #d8f2ff; 
 }
 
 </style>

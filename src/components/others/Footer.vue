@@ -38,7 +38,7 @@
                 ease-in-out
                 transform
                 hover:scale-105
-                hover:bg-indigo-700
+                hover:bg-regular-blue
               "
             >
               subscribe
@@ -60,7 +60,7 @@
               duration-500
               ease-in-out
               transform
-              hover:text-indigo-500
+              hover:text-regular-blue
             "
             >UNVOIT</a
           >
@@ -76,7 +76,7 @@
                 duration-500
                 ease-in-out
                 transform
-                hover:text-indigo-500
+                hover:text-regular-blue
               "
               >Our offers</a
             >
@@ -89,7 +89,7 @@
                 duration-500
                 ease-in-out
                 transform
-                hover:text-indigo-500
+                hover:text-regular-blue
               "
               >Pricing</a
             >
@@ -97,11 +97,12 @@
               href="#"
               class="
                 px-4
-                text-smtransition
+                text-sm
+                transition
                 duration-500
                 ease-in-out
                 transform
-                hover:text-indigo-500
+                hover:text-regular-blue
               "
               >About us</a
             >
@@ -114,7 +115,7 @@
                 duration-500
                 ease-in-out
                 transform
-                hover:text-indigo-500
+                hover:text-regular-blue
               "
               >Sign up</a
             >
