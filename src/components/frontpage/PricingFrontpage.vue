@@ -9,7 +9,7 @@
           />
         </div>
 
-  <div class="z-0 relative bg-gradient-to-t from-darker-blue via-pricing-blue-200 via-pricing-whiteblue-500 to-pricing-whiteblue overflow-hidden pb-60 pt-30">
+  <div class="z-0 relative bg-gradient-to-t from-pricing-blue via-pricing-whiteblue-100 to-pricing-white overflow-hidden pb-60 pt-30">
     <div class="max-w-7xl mx-auto">
       <div
         class="
@@ -185,7 +185,7 @@
       >
         <div class="mt-1">
           <a class="pl-14 text-lg text-gray-700 font-weight:400" href="#"
-            >1 year Pro version</a
+            >Pro version</a
           >
         </div>
         <div class="flex items-center">
@@ -196,7 +196,7 @@
           />
           <div class="mt-1">
             <a class="pl-6 text-2xl text-gray-700 font-medium" href="#">
-              805$</a
+              805$/year</a
             >
           </div>
         </div>

@@ -149,13 +149,13 @@
           <button
             class="
               text-white
-              bg-indigo-500
+              bg-regular-blue
               rounded-md
               border-0
               py-2
               px-8
               focus:outline-none
-              hover:bg-indigo-600
+              hover:light-regular-blue
               text-lg
             "
           >
