@@ -22,6 +22,8 @@
           items-center
           justify-center
           px-2
+           mb-28
+          mt-8
         "
       >
         <div
