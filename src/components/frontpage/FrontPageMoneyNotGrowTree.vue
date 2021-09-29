@@ -1,6 +1,6 @@
 
 <template>
-  <div class="z-0 relative bg-off-white overflow-hidden pb-10 pt-1">
+  <div class="z-0 relative bg-pricing-whiteblue overflow-hidden pb-10 pt-1">
     <div class="max-w-7xl mx-auto">
       <div
         class="
