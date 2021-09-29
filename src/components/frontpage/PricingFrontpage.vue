@@ -3,7 +3,7 @@
 
 
 
-  <div class="z-0 relative bg-gradient-to-t from-darker-blue to-transparent overflow-hidden pb-60 pt-30">
+  <div class="z-0 relative bg-gradient-to-t from-darker-blue via-pricing-blue-200 to-transparent-1000 overflow-hidden pb-60 pt-30">
     <div class="max-w-7xl mx-auto">
       <div
         class="
