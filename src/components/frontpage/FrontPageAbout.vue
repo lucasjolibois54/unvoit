@@ -38,6 +38,7 @@
                   text-light-blue
                   sm:text-4xl
                   md:text-6xl
+                  mr-20
                   lg:pr-20
                 "
               >
@@ -93,7 +94,7 @@
                   sm:text-4xl
                   md:text-xl
                   lg:pr-40
-                  mb-20
+                  ml-25
                 "
               >
                 At Unvoit we focus on just that. Join us now and experience the
@@ -114,3 +115,4 @@
 <script></script>
 
 <style></style>
+
