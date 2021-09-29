@@ -122,7 +122,7 @@ html, body{
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #d8f2ff; 
 }
 
 </style>
