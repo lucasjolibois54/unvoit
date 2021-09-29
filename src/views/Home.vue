@@ -4,12 +4,12 @@
       <HeaderFrontpage />
       <HeroFrontpage />
       <FrontPageAbout />
-      <FrontPageHowWorks />
+      <FrontPageHowWorks class="bg-regular-blue" />
     </div>
   </div>
   <div class="bg-off-white">
     <div class="width-hero">
-      <FrontPageMoneyNotGrowTree />
+      <FrontPageMoneyNotGrowTree class="bg-regular-blue"/>
       <PricingFrontpage />
       <FrontPageContactForm />
       <Footer />
