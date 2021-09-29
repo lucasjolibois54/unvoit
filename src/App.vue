@@ -100,7 +100,7 @@ html, body{
   position: absolute;
     opacity: 0;
     z-index: 1;
-    background: #19ADF9;
+    background: #052245;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
