@@ -186,11 +186,14 @@
           />
         </div>
         <div class="">
+        <a href="#FrontPageAbout">
           <img
+          
             class="max-w-screen-lg mx-auto h-auto w-16 animate-bounce"
             :src="require('@/assets/Scroll-icon.png')"
             alt=""
           />
+          </a>
         </div>
       </div>
     </div>
