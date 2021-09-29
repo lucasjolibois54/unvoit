@@ -57,7 +57,7 @@
                 text-regular-green
                 sm:text-4xl
                 md:text-7xl
-                mt-64
+                lg:mt-64
               "
             >
               <span class="block xl:inline">Money doesn’t grow on trees </span>
