@@ -187,7 +187,7 @@
         </div>
         <div class="">
           <img
-            class="max-w-screen-lg mx-auto h-auto w-16"
+            class="max-w-screen-lg mx-auto h-auto w-16 animate-bounce"
             :src="require('@/assets/Scroll-icon.png')"
             alt=""
           />
