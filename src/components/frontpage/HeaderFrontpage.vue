@@ -20,7 +20,9 @@
               <h2
                 class="text-4xl font-extrabold w-auto h-8 flex text-off-white"
               >
+              <router-link to="/">
                 UNVOIT
+                </router-link>
                 <div class="mt-5">
                   <span
                     class="
