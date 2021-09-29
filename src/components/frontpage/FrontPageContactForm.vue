@@ -1,6 +1,6 @@
 <template>
   <div class="bg-darker-blue">
-    <section
+    <section id="FrontPageSupport" 
       class="w-full bg-darker-blue py-36 bg-center bg-cover bg-no-repeat"
     >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 lg:flex">
