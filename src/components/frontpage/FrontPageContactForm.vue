@@ -3,10 +3,10 @@
     <section
       class="w-full bg-darker-blue py-36 bg-center bg-cover bg-no-repeat"
     >
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 flex">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 lg:flex">
         <div class="lg:w-3/6 lg:pr-0 pr-0">
           <h1 class="font-medium text-5xl text-white">Send a request</h1>
-          <p class="text-2xl leading-relaxed mt-10 text-white pr-60">
+          <p class="text-2xl leading-relaxed mt-10 text-white lg:pr-60">
             Fill up the form and we will get back to you within 24 hours
           </p>
           <p class="flex mt-20 font-medium text-2xl text-white">
@@ -44,7 +44,7 @@
             />
           </div>
         </div>
-
+      
         <div
           class="
             lg:w-3/6
@@ -57,7 +57,7 @@
             pl-20
             flex flex-col
             lg:ml-auto
-            w-full
+            lg:w-full
             mt-10
             lg:mt-0
             rounded-md
@@ -163,7 +163,7 @@
           </button>
         </div>
         <img
-          class="h-auto w-4/12 z-0 absolute -mt-20 md:w-96 md:mt-2"
+          class="hidden md:inline-block h-auto w-4/12 z-0 absolute -mt-20 md:w-96 md:mt-2"
           :src="require('@/assets/globus.png')"
           alt=""
         />
