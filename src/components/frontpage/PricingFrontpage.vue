@@ -133,7 +133,7 @@
             <a class="pl-6 text-2xl text-gray-700 font-medium" href="#">Free</a>
           </div>
            <div>
-    <button class="ml-4 bg-regular-blue text-white active:bg-regular-blue font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" v-on:click="toggleModal()">
+    <button class="ml-20 bg-regular-blue text-white active:bg-regular-blue font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" v-on:click="toggleModal()">
       <p class="text-xs">Learn more</p>
     </button>
     <div v-if="showModal" class="overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center flex">
@@ -154,7 +154,7 @@
           <!--body-->
           <div class="relative p-6 flex-auto">
             <p class="my-4 text-blueGray-500 text-lg leading-relaxed">
-              The coconut nut is not a nut
+              The coconut nut is not a nut 
             </p>
           </div>
           <!--footer-->
@@ -203,7 +203,7 @@
             >
           </div>
            <div>
-    <button class="ml-4 bg-regular-blue text-white active:bg-regular-blue font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" v-on:click="toggleModal()">
+    <button class="ml-14 bg-regular-blue text-white active:bg-regular-blue font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" v-on:click="toggleModal()">
       <p class="text-xs">Learn more</p>
     </button>
     <div v-if="showModal" class="overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center flex">
