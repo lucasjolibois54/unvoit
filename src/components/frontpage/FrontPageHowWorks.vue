@@ -1,7 +1,7 @@
 <template>
   <div
     class="
-      mb-20
+      mb-0
       flex flex-col
       content-center
       text-off-white text-3xl
