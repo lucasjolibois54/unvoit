@@ -1,4 +1,22 @@
 <template>
+      <DashBoard />
+</template>
+
+<script>
+import DashBoard from "@/components/software/DashBoard.vue";
+
+
+export default {
+  name: "Home",
+  components: {
+    DashBoard,
+    
+  },
+};
+</script>
+
+<!--
+<template>
   <div v-if="!mobile">
     <Banner />
     <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8 ">
@@ -112,3 +130,4 @@ export default {
   transform: translateX(-700px);
 }
 </style>
+-->
