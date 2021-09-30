@@ -264,7 +264,7 @@
         <main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-200">
           <div class="container mx-auto px-6 py-8">
             <h3 class="text-gray-700 text-3xl font-medium">Achievements 🌟</h3>
-            <div>
+            <div class="flex">
               <div
                 class="
                   bg-yellow-500
@@ -304,6 +304,94 @@
                   />
                   <p class="text-xl font-normal text-off-white">
                     You’ve exchanged <br />$1.000.000
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="
+                  ml-3
+                  bg-darker-blue
+                  pt-3
+                  w-72
+                  rounded-md
+                  mt-8
+                  pb-5
+                  hover:bg-blue-900
+                  shadow-lg
+                "
+              >
+                <!--<img
+                  class="h-auto w-16 pb-4 pt-0 absolute float-left"
+                  :src="require('@/assets/Com.png')"
+                  alt=""
+                />
+                <img
+                  class="h-auto w-16 pb-4 pt-0 absolute flex flex-row-reverse"
+                  :src="require('@/assets/Com.png')"
+                  alt=""
+                /> -->
+                <div
+                  class="
+                    text-center
+                    flex flex-col
+                    justify-center
+                    items-center
+                    pr-4
+                    pl-4
+                  "
+                >
+                  <img
+                    class="h-auto w-20 rounded-full pb-4 pt-3"
+                    :src="require('@/assets/prestigelogo.svg')"
+                    alt=""
+                  />
+                  <p class="text-xl font-normal text-off-white">
+                    You’ve Sent <br />5000 Invoices
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="
+                  ml-3
+                  bg-regular-green
+                  pt-3
+                  w-72
+                  rounded-md
+                  mt-8
+                  pb-5
+                  hover:bg-green-600
+                  shadow-lg
+                "
+              >
+                <!--<img
+                  class="h-auto w-16 pb-4 pt-0 absolute float-left"
+                  :src="require('@/assets/Com.png')"
+                  alt=""
+                />
+                <img
+                  class="h-auto w-16 pb-4 pt-0 absolute flex flex-row-reverse"
+                  :src="require('@/assets/Com.png')"
+                  alt=""
+                /> -->
+                <div
+                  class="
+                    text-center
+                    flex flex-col
+                    justify-center
+                    items-center
+                    pr-4
+                    pl-4
+                  "
+                >
+                  <img
+                    class="h-auto w-20 rounded-full pb-4 pt-3"
+                    :src="require('@/assets/prestigelogo.svg')"
+                    alt=""
+                  />
+                  <p class="text-xl font-normal text-off-white">
+                    You’ve upgraded <br />to UNVOIT Pro
                   </p>
                 </div>
               </div>
