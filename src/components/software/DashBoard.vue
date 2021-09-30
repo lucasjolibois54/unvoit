@@ -195,7 +195,8 @@
             class="
               flex
               items-center
-              xl:mt-96
+              lg:mt-60
+              xl:mt-80
               py-2
               px-6
               text-gray-500
