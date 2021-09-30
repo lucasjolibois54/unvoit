@@ -76,8 +76,8 @@
                 bg-white
                 rounded-md
                 border border-gray-300
-                focus:border-indigo-600
-                focus:ring-2 focus:ring-indigo-200
+                focus:border-darker-blue
+                focus:ring-2 focus:ring-darker-blue
                 text-sm
                 outline-none
                 text-gray-900
@@ -103,8 +103,8 @@
                 bg-white
                 rounded-md
                 border border-gray-300
-                focus:border-indigo-600
-                focus:ring-2 focus:ring-indigo-200
+                focus:border-darker-blue
+                focus:ring-2 focus:ring-darker-blue
                 text-sm
                 outline-none
                 text-gray-900
@@ -131,8 +131,8 @@
                 bg-white
                 rounded-md
                 border border-gray-300
-                focus:border-indigo-600
-                focus:ring-2 focus:ring-indigo-200
+                focus:border-darker-blue
+                focus:ring-2 focus:ring-darker-blue
                 text-sm
                 outline-none
                 text-gray-900

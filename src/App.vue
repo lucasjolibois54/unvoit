@@ -5,7 +5,7 @@
       <div
         id="pagetop"
         class="
-          bg-indigo-200
+          bg-off-white
           fixed
           z-10
           p-3
