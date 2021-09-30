@@ -270,7 +270,7 @@
                 class="
                   bg-yellow-500
                   pt-3
-                  w-72
+                  w-56
                   rounded-md
                   mt-8
                   pb-5
@@ -314,7 +314,7 @@
                   ml-3
                   bg-darker-blue
                   pt-3
-                  w-72
+                  w-56
                   rounded-md
                   mt-8
                   pb-5
@@ -358,7 +358,7 @@
                   ml-3
                   bg-regular-green
                   pt-3
-                  w-72
+                  w-56
                   rounded-md
                   mt-8
                   pb-5
@@ -401,24 +401,13 @@
             <div class="mt-8"></div>
 
             <div class="flex flex-col pr-10 mt-8">
-              <div
-                class="
-                  -my-2
-                  py-2
-                  overflow-x-auto
-                  sm:-mx-6
-                  sm:px-6
-                  lg:-mx-8
-                  lg:px-8
-                "
-              >
+              <div class="-my-2 py-2 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
                 <div
                   class="
                     pr-96
                     align-middle
                     inline-block
                     min-w-full
-                    overflow-hidden
                     sm:rounded-lg
                   "
                 >
@@ -877,6 +866,93 @@
                       </tr>
                     </tbody>
                   </table>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-gray-700 text-3xl font-medium mt-8">
+                Ingoing Invoices
+              </h3>
+
+              <div class="flex space-x-3">
+                <div
+                  class="
+                    bg-off-white
+                    pt-1
+                    w-52
+                    rounded-md
+                    mt-8
+                    pb-1
+                    hover:bg-gray-100
+                    shadow-lg
+                  "
+                >
+                  <div class="flex flex-col pr-4 pl-4">
+                    <img
+                      class="h-auto w-20 rounded-full pb-4 pt-3"
+                      :src="require('@/assets/prestigelogo.svg')"
+                      alt=""
+                    />
+                    <p class="text-xl font-normal text-regular-green">
+                      +3200 $
+                    </p>
+                    <p class="mt-3 text-lg font-normal text-off-grey">
+                      PrestigeRentalsdk
+                      <span class="flex flex-row-reverse">&rarr;</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="
+                    bg-off-white
+                    pt-1
+                    w-52
+                    rounded-md
+                    mt-8
+                    pb-1
+                    hover:bg-gray-100
+                    shadow-lg
+                  "
+                >
+                  <div class="flex flex-col pr-4 pl-4">
+                    <img
+                      class="h-auto w-20 rounded-full pb-4 pt-3"
+                      :src="require('@/assets/prestigelogo.svg')"
+                      alt=""
+                    />
+                    <p class="text-xl font-normal text-red-500">-200 $</p>
+                    <p class="mt-3 text-lg font-normal text-off-grey">
+                      Ørstad
+                      <span class="flex flex-row-reverse">&rarr;</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="
+                    bg-off-white
+                    pt-1
+                    w-52
+                    rounded-md
+                    mt-8
+                    pb-1
+                    hover:bg-gray-100
+                    shadow-lg
+                  "
+                >
+                  <div class="flex flex-col pr-4 pl-4">
+                    <img
+                      class="h-auto w-20 rounded-full pb-4 pt-3"
+                      :src="require('@/assets/prestigelogo.svg')"
+                      alt=""
+                    />
+                    <p class="text-xl font-normal text-regular-green">+600 $</p>
+                    <p class="mt-3 text-lg font-normal text-off-grey">
+                      Edc
+                      <span class="flex flex-row-reverse">&rarr;</span>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
