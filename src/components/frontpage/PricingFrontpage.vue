@@ -80,7 +80,7 @@
                   md:text-5xl
                 "
               >
-                <span class="block xl:inline text-darker-blue"
+                <span class="block xl:inline text-darker-blue font-normal"
                   >Choose a plan that fits
                   <span class="text-regular-blue">you</span>
                 </span>
@@ -98,6 +98,7 @@
                   md:mt-5
                   md:text-xl
                   lg:mx-0
+                  font-normal
                 "
               >
                 At unvoit we put you first. Join us now and experience our
