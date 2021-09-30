@@ -196,7 +196,7 @@
               flex
               items-center
               lg:mt-60
-              xl:mt-96
+              xl:mt-80
               py-2
               px-6
               text-gray-500
