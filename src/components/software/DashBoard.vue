@@ -279,7 +279,7 @@
                 2xl:mr-96
               "
             >
-              <p>pute</p>
+              <p>Graf</p>
             </div>
             <h3 class="text-gray-700 text-3xl font-medium">Achievements 🌟</h3>
             <div class="flex">
