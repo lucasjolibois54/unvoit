@@ -9,9 +9,8 @@
   </div>
   <div class="bg-off-white">
     <div class="width-hero">
-      <FrontPageMoneyNotGrowTree class="bg-regular-blue"/>
+      <FrontPageMoneyNotGrowTree class="bg-regular-blue" />
       <PricingFrontpage />
-      <CardModal />
       <FrontPageContactForm />
       <Footer />
     </div>
@@ -23,7 +22,6 @@ import HeaderFrontpage from "@/components/frontpage/HeaderFrontpage.vue";
 import HeroFrontpage from "@/components/frontpage/HeroFrontpage.vue";
 import FrontPageMoneyNotGrowTree from "@/components/frontpage/FrontPageMoneyNotGrowTree.vue";
 import PricingFrontpage from "@/components/frontpage/PricingFrontpage.vue";
-import CardModal from "@/components/frontpage/CardModal.vue";
 import FrontPageContactForm from "@/components/frontpage/FrontPageContactForm.vue";
 import FrontPageHowWorks from "@/components/frontpage/FrontPageHowWorks.vue";
 import FrontPageAbout from "@/components/frontpage/FrontPageAbout.vue";
@@ -35,7 +33,6 @@ export default {
     HeaderFrontpage,
     HeroFrontpage,
     PricingFrontpage,
-    CardModal,
     FrontPageContactForm,
     FrontPageAbout,
     FrontPageHowWorks,
