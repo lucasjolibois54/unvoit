@@ -264,7 +264,20 @@
         </header>
         <main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-200">
           <div class="container mx-auto px-6 py-8">
-            <div class="flex flex-col float-right bg-red-200 w-56 h-96">
+            <div
+              class="
+                flex flex-col
+                float-right
+                bg-red-200
+                w-56
+                h-96
+                pr-40
+                md:mr-96
+                lg:mr-0
+                xl:mr-96
+                2xl:mr-96
+              "
+            >
               <p>pute</p>
             </div>
             <h3 class="text-gray-700 text-3xl font-medium">Achievements 🌟</h3>
@@ -408,6 +421,10 @@
                 <div
                   class="
                     pr-40
+                    md:pr-96
+                    lg:pr-0
+                    xl:pr-96
+                    2xl:pr-96
                     align-middle
                     inline-block
                     min-w-full
