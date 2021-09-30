@@ -99,7 +99,7 @@
               rounded-t
             "
           >
-            <h3 class="text-3xl font-semibold">Goddag</h3>
+            <h3 class="text-3xl font-semibold">Starterpack</h3>
             <button
               class="
                 p-1
@@ -137,11 +137,15 @@
           <!--body-->
           <div class="relative p-6 flex-auto">
             <p class="my-4 text-blueGray-500 text-lg leading-relaxed">
-              I always felt like I could do anything. That’s the main thing
-              people are controlled by! Thoughts- their perception of
-              themselves! They're slowed down by their perception of themselves.
-              If you're taught you can’t do anything, you won’t do anything. I
-              was taught I could do everything.
+              <strong>  Costs Free<br></strong>
+              - Unlimited postings <br>
+              - Invoices + invoice designer <br>
+              - Bill managment <br>
+              - VAT financial accountning <br>
+              - Full support 24/7 <br>
+              - Appendix`s in cloud <br>
+              - All integrations <br>
+              - Personal accountant <br>
             </p>
           </div>
           <!--footer-->
