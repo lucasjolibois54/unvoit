@@ -57,7 +57,7 @@
       type="button"
       v-on:click="toggleModal()"
     >
-      Open large modal
+      Learn More
     </button>
     <div
       v-if="showModal"
@@ -99,7 +99,7 @@
               rounded-t
             "
           >
-            <h3 class="text-3xl font-semibold">Modal Title</h3>
+            <h3 class="text-3xl font-semibold">Goddag</h3>
             <button
               class="
                 p-1
@@ -267,12 +267,12 @@
         ml-4
       "
       type="button"
-      v-on:click="toggleModal()"
+      v-on:click="toggleModal1()"
     >
-      Open large modal
+      Learn More
     </button>
     <div
-      v-if="showModal"
+      v-if="showModal1"
       class="
         overflow-x-hidden overflow-y-auto
         fixed
@@ -311,7 +311,7 @@
               rounded-t
             "
           >
-            <h3 class="text-3xl font-semibold">Modal Title</h3>
+            <h3 class="text-3xl font-semibold">Proversion</h3>
             <button
               class="
                 p-1
@@ -327,7 +327,7 @@
                 outline-none
                 focus:outline-none
               "
-              v-on:click="toggleModal()"
+              v-on:click="toggleModal1()"
             >
               <span
                 class="
@@ -349,11 +349,7 @@
           <!--body-->
           <div class="relative p-6 flex-auto">
             <p class="my-4 text-blueGray-500 text-lg leading-relaxed">
-              I always felt like I could do anything. That’s the main thing
-              people are controlled by! Thoughts- their perception of
-              themselves! They're slowed down by their perception of themselves.
-              If you're taught you can’t do anything, you won’t do anything. I
-              was taught I could do everything.
+             Det her er pro pakken
             </p>
           </div>
           <!--footer-->
@@ -390,7 +386,7 @@
                 duration-150
               "
               type="button"
-              v-on:click="toggleModal()"
+              v-on:click="toggleModal1()"
             >
               Close
             </button>
@@ -412,7 +408,7 @@
                 duration-150
               "
               type="button"
-              v-on:click="toggleModal()"
+              v-on:click="toggleModal1()"
             >
               Save Changes
             </button>
@@ -481,12 +477,12 @@
         ml-8
       "
       type="button"
-      v-on:click="toggleModal()"
+      v-on:click="toggleModal2()"
     >
-      Open large modal
+      Learn More
     </button>
     <div
-      v-if="showModal"
+      v-if="showModal2"
       class="
         overflow-x-hidden overflow-y-auto
         fixed
@@ -525,7 +521,7 @@
               rounded-t
             "
           >
-            <h3 class="text-3xl font-semibold">Modal Title</h3>
+            <h3 class="text-3xl font-semibold">Ged</h3>
             <button
               class="
                 p-1
@@ -541,7 +537,8 @@
                 outline-none
                 focus:outline-none
               "
-              v-on:click="toggleModal()"
+              v-on:click="toggleModal2()"
+              
             >
               <span
                 class="
@@ -604,7 +601,7 @@
                 duration-150
               "
               type="button"
-              v-on:click="toggleModal()"
+              v-on:click="toggleModal2()"
             >
               Close
             </button>
@@ -626,7 +623,7 @@
                 duration-150
               "
               type="button"
-              v-on:click="toggleModal()"
+              v-on:click="toggleModal2()"
             >
               Save Changes
             </button>
@@ -680,12 +677,21 @@ export default {
   data() {
     return {
       showModal: false,
+      showModal1: false,
+      showModal2: false,
     };
   },
   methods: {
     toggleModal: function () {
       this.showModal = !this.showModal;
     },
+    toggleModal1: function () {
+      this.showModal1 = !this.showModal1;
+    },
+    toggleModal2: function () {
+      this.showModal2 = !this.showModal2;
+    },
   },
 };
+
 </script>
