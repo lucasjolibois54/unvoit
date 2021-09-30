@@ -7,6 +7,7 @@ module.exports = {
         'darker-blue': '#052245',
         'regular-blue': '#19ADF9',
         'regular-green': '#30BF80',
+        'light-green': '#59AC61',
         'off-white': '#FFFFFF',
         'off-grey': '#A4BED2',
         'light-blue': '#A1C2D3',
@@ -15,6 +16,7 @@ module.exports = {
         'light-regular-blue': '#4EC3FF',
         'pricing-whiteblue': '#EEF7FF',
         'pricing-white': '#ECF6FF',
+        'darker-orange': '#F59D4B',
         
       }
     },
