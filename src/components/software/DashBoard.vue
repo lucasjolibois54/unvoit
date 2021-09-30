@@ -97,18 +97,22 @@
                         :src="require('@/assets/settingsicon.svg')"
                         alt=""
                     />
-    
+
                     <span class="mx-3">Settings</span>
+                    
                 </a>
                 <a class="flex items-center mt-96 py-2 px-6 text-gray-500 hover:bg-gray-600 hover:bg-opacity-25 hover:text-gray-100"
-                    href="/forms">
+                    href="/signin">
                     <img
                         class="h-auto w-6 h-6 z-0"
                         :src="require('@/assets/signouticon.svg')"
                         alt=""
                     />
-    
-                    <span class="mx-3">Sign out</span>
+                    <router-link to="/signin">
+                    <span class="mx-3">
+                        Sign out
+                        </span>
+                    </router-link>
                 </a>
             </nav>
         </div>
