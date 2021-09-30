@@ -1,6 +1,14 @@
 <template>
   <div class="mt-36">
-    <Card title="Starterpack" name="Starterpack" description="This is a freeplan" price="Free&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" />
+    <Card title="Starterpack" name="Starterpack" description="
+              - Unlimited postings +
+              - Invoices + invoice designer 
+              - Bill managment 
+              - VAT financial accountning 
+              - Full support 24/7 
+              - Appenix`s in cloud 
+              - All integrations 
+              - Personal accountant " price="Free&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" />
 
     <Card title="Proversion" name="Proversion" description="Det her er pro pakken" price="79$/m&nbsp;" />
 
