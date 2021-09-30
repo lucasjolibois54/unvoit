@@ -8,12 +8,14 @@
             z-10
             pb-8
             sm:pb-16
+            p-20
+            md:p-2
             md:pb-20
             lg:max-w-4xl
             lg:w-full
             lg:pb-28
             xl:pb-32
-            ml-28
+            lg:ml-28
           "
         >
           <main
@@ -21,7 +23,6 @@
               mt-10
               mx-auto
               max-w-7xl
-              px-4
               sm:mt-12
               md:mt-16
               lg:mt-20
@@ -37,20 +38,21 @@
                   text-light-blue
                   sm:text-4xl
                   md:text-6xl
-                  pr-20
+                  mr-20
+                  lg:pr-20
                 "
               >
                 <br />
                 <br />
                 <br />
-                <span class="block xl:inline"
+                <span id="FrontPageAbout" class="block xl:inline"
                   >In 2021, people are coming together to want:
                 </span>
 
                 <span
                   class="
                     pt-0
-                    text-6xl
+                    lg:text-6xl
                     font-normal
                     block
                     xl:inline
@@ -91,8 +93,8 @@
                   text-light-blue
                   sm:text-4xl
                   md:text-xl
-                  pr-40
-                  mb-20
+                  lg:pr-40
+                  ml-25
                 "
               >
                 At Unvoit we focus on just that. Join us now and experience the
@@ -113,3 +115,4 @@
 <script></script>
 
 <style></style>
+

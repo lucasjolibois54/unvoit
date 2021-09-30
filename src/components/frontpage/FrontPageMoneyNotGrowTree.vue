@@ -1,6 +1,6 @@
 
 <template>
-  <div class="z-0 relative bg-off-white overflow-hidden pb-10 pt-1">
+  <div class="z-0 relative bg-pricing-whiteblue overflow-hidden pb-10 pt-1">
     <div class="max-w-7xl mx-auto">
       <div
         class="
@@ -57,6 +57,7 @@
                 text-regular-green
                 sm:text-4xl
                 md:text-7xl
+                lg:mt-64
               "
             >
               <span class="block xl:inline">Money doesn’t grow on trees </span>
@@ -93,7 +94,7 @@
     <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-4/6">
       <!--h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full-->
       <img
-        class="h-auto w-full"
+        class="h-auto w-full mt-20"
         :src="require('@/assets/pc-tree.png')"
         alt=""
       />
