@@ -114,7 +114,9 @@
       </div>
       <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:-right-48 lg:w-4/6">
         <!--h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full-->
-        <plans />
+
+        <!-- cards -->
+        <Plans />
       </div>
     </div>
   </div>
@@ -122,7 +124,7 @@
 
 
 <script>
-import plans from "@/components/frontpage/plans.vue";
+import Plans from "@/components/frontpage/Plans.vue";
 
 const navigation = [
   { name: "Product", href: "#" },
@@ -133,7 +135,7 @@ const navigation = [
 
 export default {
   components: {
-    plans,
+    Plans,
   },
   setup() {
     return {
