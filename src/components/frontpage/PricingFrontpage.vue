@@ -116,7 +116,7 @@
         <!--h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full-->
 
         <!-- cards -->
-        <Plans />
+        <plans />
       </div>
     </div>
   </div>
@@ -124,7 +124,7 @@
 
 
 <script>
-import Plans from "@/components/frontpage/Plans.vue";
+import plans from "@/components/frontpage/plans.vue";
 
 const navigation = [
   { name: "Product", href: "#" },
@@ -135,7 +135,7 @@ const navigation = [
 
 export default {
   components: {
-    Plans,
+    plans,
   },
   setup() {
     return {
