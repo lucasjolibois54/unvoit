@@ -268,18 +268,27 @@
               class="
                 flex flex-col
                 float-right
-                bg-red-200
+                bg-white
+                rounded-lg
                 ml-10
-                w-56
-                h-96
+                w-92
+                h-92
                 pr20
                 md:mr-20
                 lg:mr-0
                 xl:mr-40
                 2xl:mr-96
+                shadow-lg
               "
             >
-              <p>Graf</p>
+
+            <img
+                class="h-full w-full rounded-full pb-4 pt-3"
+                :src="require('@/assets/svg/Pie-chart.svg')"
+                alt=""
+            />
+
+              <p></p>
             </div>
             <h3 class="text-gray-700 text-3xl font-medium">Achievements 🌟</h3>
             <div class="flex">
