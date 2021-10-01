@@ -32,7 +32,8 @@
       <div>
         <button
           class="
-            bg-darker-blue
+            bg-regular-blue
+            hover:bg-light-regular-blue
             text-white
             active:bg-pink-600
             font-bold
