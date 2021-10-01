@@ -270,10 +270,11 @@
                 float-right
                 bg-white
                 rounded-lg
+                mt-16
                 ml-10
-                w-92
-                h-92
-                pr20
+                mr-0
+                w-44
+                h-44
                 md:mr-20
                 lg:mr-0
                 xl:mr-40
