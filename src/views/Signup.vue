@@ -47,11 +47,10 @@
           </a>
         </p>
         
-          
 
           <form
-        id="signin-form"
-        @submit.prevent="loginUser"
+        id="signup-form"
+        @submit.prevent="signupRequest"
         class="mt-8 space-y-6 m-10"
         action="#"
         method="POST"
@@ -191,7 +190,7 @@
                 />
               </svg>
             </span>
-            Sign in
+            Sign up
           </button>
           <button
             v-if="xhrRequest"
@@ -333,6 +332,48 @@
     </div>
   </div>
 </template>
+
+<script>
+import firebase from "firebase/app";
+import NavSign from "@/components/others/NavSign.vue";
+
+export default {
+  data() {
+    return {
+      email: "",
+      password: "",
+      xhrRequest: false,
+    };
+  },
+
+  methods: {
+    signupRequest() {
+      let v = this;
+
+      v.xhrRequest = true;
+      firebase
+        .auth()
+        .createUserWithEmailAndPassword(this.email, this.password)
+        .then(
+          () => {
+            this.$router.replace("signin");
+          },
+          (err) => {
+            v.xhrRequest = false;
+            alert(`Error - ${err.message}`);
+          }
+        );
+    },
+  },
+  name: "Signup",
+  components: {
+    NavSign,
+  },
+};
+</script>
+
+<style></style>
+
 <!--
 <template>
   <HeaderFrontpage />
@@ -521,45 +562,4 @@
   </div>
 </template>
 -->
-
-<script>
-import firebase from "firebase/app";
-import NavSign from "@/components/others/NavSign.vue";
-
-export default {
-  data() {
-    return {
-      email: "",
-      password: "",
-      xhrRequest: false,
-    };
-  },
-
-  methods: {
-    signupRequest() {
-      let v = this;
-
-      v.xhrRequest = true;
-      firebase
-        .auth()
-        .createUserWithEmailAndPassword(this.email, this.password)
-        .then(
-          () => {
-            this.$router.replace("signin");
-          },
-          (err) => {
-            v.xhrRequest = false;
-            alert(`Error - ${err.message}`);
-          }
-        );
-    },
-  },
-  name: "Signup",
-  components: {
-    NavSign,
-  },
-};
-</script>
-
-<style></style>
 
