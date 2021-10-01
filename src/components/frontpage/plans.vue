@@ -32,7 +32,7 @@
     />
 
     <Card
-      title="Proversion 1 year"
+      title="Proversion (save 15%)"
       name="Proversion (save 15%)"
       description="
               - Unlimited postings
