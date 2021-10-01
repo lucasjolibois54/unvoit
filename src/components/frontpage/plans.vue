@@ -1,18 +1,18 @@
 <template>
   <div class="mt-36">
     <Card
-      title="Starterpack"
-      name="Starterpack"
+      title="Starter"
+      name="Starter"
       description="
               - Unlimited postings
               - Invoices + invoice designer 
               - Bill managment 
-              - VAT financial accountning 
+              - VAT financial accountning
               - Full support 24/7 
               - Appenix`s in cloud 
               - All integrations 
               - Personal accountant"
-      price="Free&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+      price="0$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
     />
 
     <Card
@@ -33,7 +33,7 @@
 
     <Card
       title="Proversion 1 year"
-      name="Proversion 1 year"
+      name="Proversion (save 15%)"
       description="
               - Unlimited postings
               - Invoices + invoice designer 
