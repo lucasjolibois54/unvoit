@@ -80,8 +80,9 @@
                 shadow-lg
                 relative
                 flex flex-col
-                w-full
-                bg-white
+                w-80
+                h-auto
+              bg-white
                 outline-none
                 focus:outline-none
               "
