@@ -1,5 +1,5 @@
 <template>
-    <div
+  <div
     class="
       mt-4
       mb-1
@@ -82,7 +82,7 @@
                 flex flex-col
                 w-80
                 h-auto
-              bg-white
+                bg-white
                 outline-none
                 focus:outline-none
               "
@@ -191,9 +191,8 @@
 </template>
 
 <script>
-
 export default {
-name: "large-modal",
+  name: "large-modal",
   data() {
     return {
       showModal: false,
@@ -204,7 +203,6 @@ name: "large-modal",
       this.showModal = !this.showModal;
     },
   },
-  props: ["title", "name", "description", "price"]
-}
-
+  props: ["title", "name", "description", "price"],
+};
 </script>
