@@ -32,8 +32,8 @@
     />
 
     <Card
-      title="Proversion (save 15%)"
-      name="Proversion (save 15%)"
+      title="Proversion (-15%)"
+      name="Proversion (-15%)"
       description="
               - Unlimited postings
               - Invoices + invoice designer 

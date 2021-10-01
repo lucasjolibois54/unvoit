@@ -47,7 +47,8 @@
             outline-none
             focus:outline-none
             mr-1
-            mb-4
+            mt-1
+            mb-6
             ml-14
             ease-linear
             transition-all
