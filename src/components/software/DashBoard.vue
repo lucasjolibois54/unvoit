@@ -890,6 +890,79 @@
                 </div>
               </div>
             </div>
+            <div
+              class="
+                flex flex-col
+                lg:float-right
+                ml-10
+                w-56
+                h-80
+                -my-24
+                md:mr-20
+                lg:mr-0
+                xl:mr-40
+                2xl:mr-96
+              "
+            >
+            <h3 class="text-gray-700 text-3xl font-medium mt-8">
+                Upload Invoices
+              </h3>
+              <div class="flex space-x-3">
+            <div
+                  class="
+                    bg-off-white
+                    pt-1
+                    w-52
+                    rounded-md
+                    mt-8
+                    pb-1
+                    hover:bg-off-white
+                    shadow-lg
+                    border
+                    border-black
+                    bg-opacity-10
+                  "
+                >
+                  <div class="flex flex-col pr-4 pl-4">
+                    <h5 class="text-gray-400 mt-4">#1795474</h5>
+                    <h3 class="mt-4 text-xl">PrestigeRentalsdk</h3>
+                    <div class="divide-y divide-black">
+                    <p class="mt-4">4 Apr, 2021</p>
+                    <p class="text-xl font-normal mt-16">DUE</p>
+                    </div>
+                    <p class="text-right text-xl font-normal mt-4 text-regular-green">
+                      +3200 $
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="
+                    bg-off-white
+                    pt-1
+                    w-52
+                    py-20
+                    rounded-md
+                    mt-8
+                    pb-1
+                    shadow-lg
+                    border
+                    border-black
+                    bg-opacity-10
+                  "
+                >
+                <article aria-label="File Upload Modal" class="relative h-full flex flex-col shadow-xl rounded-md" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);" ondragleave="dragLeaveHandler(event);" ondragenter="dragEnterHandler(event);">
+          <section class="h-full overflow-auto p-8 px-20 w-full h-full flex flex-col">
+            <header class="py-12 flex flex-col justify-center items-center">
+              <input id="hidden-input" type="file" multiple class="hidden" />
+              <button id="button" class="mt-4 rounded-sm rounded px-3 bg-darker-blue text-off-white hover:bg-regular-blue focus:shadow-outline focus:outline-none">
+                Upload Invoice
+              </button>
+            </header>
+          </section>
+        </article>
+                </div>
+                </div>
+            </div>
             <div>
               <h3 class="text-gray-700 text-3xl font-medium mt-8">
                 Ingoing Invoices
@@ -984,3 +1057,6 @@
     </div>
   </div>
 </template>
+
+<script>
+</script>
