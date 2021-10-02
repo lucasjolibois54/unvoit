@@ -22,7 +22,10 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      backgroundColor: ['active'],
+      textColor: ['active'],
+    },
   },
   plugins: [
     require('@tailwindcss/forms')

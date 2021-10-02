@@ -2,8 +2,9 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 
 //Member Area
-import Member from '../views/Member.vue'
+import Dashboard from '../views/Dashboard.vue'
 import InvoicePage from '../views/InvoicePage.vue';
+
 
 import HelpCenter from '../views/HelpCenter.vue';
 import Support from '../views/Support.vue'
@@ -31,11 +32,10 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/Signup.vue')
   },
-
   {
-    path: '/Member-area',
-    name: 'Member',
-    component: Member,
+    path: '/Dashboard',
+    name: 'Dashboard',
+    component: Dashboard,
     meta: {
       requiresAuth: true
     },
