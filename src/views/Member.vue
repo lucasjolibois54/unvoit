@@ -1,16 +1,14 @@
 <template>
-      <DashBoard />
+  <TWDashboard />
 </template>
 
 <script>
-import DashBoard from "@/components/software/DashBoard.vue";
-
+import TWDashboard from "@/components/software/TWDashboard.vue";
 
 export default {
   name: "Home",
   components: {
-    DashBoard,
-    
+    TWDashboard,
   },
 };
 </script>
