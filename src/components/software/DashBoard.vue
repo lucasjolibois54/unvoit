@@ -502,7 +502,7 @@ export default {
 
     ...mapState(["invoiceData"]),
   },
-  name: "Member",
+  name: "Dashboard",
   components: {
     Invoice,
     Sidebar,
