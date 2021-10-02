@@ -682,7 +682,7 @@ export default {
           () => {
             v.xhrRequest = false;
             db.collection("invoices");
-            this.$router.replace("member-area");
+            this.$router.replace("dashboard");
           },
           (err) => {
             v.xhrRequest = false;
