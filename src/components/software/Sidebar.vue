@@ -42,7 +42,7 @@
             </svg>
           </button>
         </router-link>
-        <router-link to="/statistics">
+        <router-link to="/statistics" active-link="active">
           <button
             class="h-10 w-12 dark:bg-gray-700 dark:text-white rounded-md flex items-center justify-center"
           >
@@ -60,25 +60,27 @@
             </svg>
           </button>
         </router-link>
-        <button
-          class="h-10 w-12 dark:text-gray-500 rounded-md flex items-center justify-center"
-        >
-          <svg
-            viewBox="0 0 24 24"
-            class="h-5"
-            stroke="currentColor"
-            stroke-width="2"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+        <router-link to="/upload" active-link="active">
+          <button
+            class="h-10 w-12 dark:text-gray-500 rounded-md flex items-center justify-center"
           >
-            <path
-              d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
-            ></path>
-            <line x1="12" y1="11" x2="12" y2="17"></line>
-            <line x1="9" y1="14" x2="15" y2="14"></line>
-          </svg>
-        </button>
+            <svg
+              viewBox="0 0 24 24"
+              class="h-5"
+              stroke="currentColor"
+              stroke-width="2"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+              ></path>
+              <line x1="12" y1="11" x2="12" y2="17"></line>
+              <line x1="9" y1="14" x2="15" y2="14"></line>
+            </svg>
+          </button>
+        </router-link>
         <button
           class="h-10 w-12 dark:text-gray-500 rounded-md flex items-center justify-center"
         >
@@ -139,3 +141,11 @@ export default {
   components: {},
 };
 </script>
+
+<style scoped>
+.active {
+  background-color: #dbeafe;
+  color: #3b82f6;
+  border-radius: 0.375rem;
+}
+</style>
