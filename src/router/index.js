@@ -1,8 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 
-//Member Area
+//Dashboard Area
 import Dashboard from '../views/Dashboard.vue'
+import DashboardStatistics from '../views/Statistics.vue'
 import InvoicePage from '../views/InvoicePage.vue';
 
 
@@ -36,6 +37,14 @@ const routes = [
     path: '/Dashboard',
     name: 'Dashboard',
     component: Dashboard,
+    meta: {
+      requiresAuth: true
+    },
+  },
+  {
+    path: '/Statistics',
+    name: 'Statistics',
+    component: DashboardStatistics,
     meta: {
       requiresAuth: true
     },
