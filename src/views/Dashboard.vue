@@ -13,6 +13,14 @@ export default {
 };
 </script>
 
+<style scoped>
+.router-link-exact-active {
+  background-color: #dbeafe;
+  color: #3b82f6;
+  border-radius: 0.375rem;
+}
+</style>
+
 <!--
 <template>
   <div v-if="!mobile">
