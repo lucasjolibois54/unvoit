@@ -1,7 +1,6 @@
 <template>
   <tbody class="text-gray-600 dark:text-gray-100">
     <!-- Table body content -->
-
     <tr>
       <td
         class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800"
