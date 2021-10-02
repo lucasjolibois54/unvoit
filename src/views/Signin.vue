@@ -26,48 +26,44 @@
           mt-8
         "
       >
-        <div
-          class="bg-white pb-10 mt-10 rounded shadow-md text-black w-full"
-        >
-        
+        <div class="bg-white pb-10 mt-10 rounded shadow-md text-black w-full">
           <div>
-            <img
-              class="w-full"
-              :src="require('@/assets/signin.png')"
-              alt=""
-            />
+            <img class="w-full" :src="require('@/assets/signin.png')" alt="" />
           </div>
-        <div class="px-10">
-          <h1 class="text-3xl text-center">Sign in to</h1>
-          <h1 class="mb-1 text-3xl text-center">begin invoicing.</h1>
-          <p class="mb-10 mt-2 text-center text-sm">
-          Or
-          <a href="#" class="font-medium text-regular-blue hover:text-light-regular-blue">
-            start your 14-day free trial
-          </a>
-        </p>
-        
-          
+          <div class="px-10">
+            <h1 class="text-3xl text-center">Sign in to</h1>
+            <h1 class="mb-1 text-3xl text-center">begin invoicing.</h1>
+            <p class="mb-10 mt-2 text-center text-sm">
+              Or
+              <a
+                href="#"
+                class="font-medium text-regular-blue hover:text-light-regular-blue"
+              >
+                start your 14-day free trial
+              </a>
+            </p>
 
-             <form
-        id="signin-form"
-        @submit.prevent="loginUser"
-        class="mt-8 space-y-6"
-        action="#"
-        method="POST"
-      >
-        <input type="hidden" name="remember" value="true" />
-        <div class="rounded-md shadow-sm -space-y-px">
-          <div>
-            <label for="email-address" class="sr-only">Email address</label>
-            <input
-              id="email"
-              v-model="email"
-              name="email"
-              type="email"
-              autocomplete="email"
-              required
-              class="
+            <form
+              id="signin-form"
+              @submit.prevent="loginUser"
+              class="mt-8 space-y-6"
+              action="#"
+              method="POST"
+            >
+              <input type="hidden" name="remember" value="true" />
+              <div class="rounded-md shadow-sm -space-y-px">
+                <div>
+                  <label for="email-address" class="sr-only"
+                    >Email address</label
+                  >
+                  <input
+                    id="email"
+                    v-model="email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    required
+                    class="
                 appearance-none
                 rounded-none
                 relative
@@ -85,19 +81,19 @@
                 focus:z-10
                 sm:text-sm
               "
-              placeholder="Email address"
-            />
-          </div>
-          <div>
-            <label for="password" class="sr-only">Password</label>
-            <input
-              id="password"
-              v-model="password"
-              name="password"
-              type="password"
-              autocomplete="current-password"
-              required
-              class="
+                    placeholder="Email address"
+                  />
+                </div>
+                <div>
+                  <label for="password" class="sr-only">Password</label>
+                  <input
+                    id="password"
+                    v-model="password"
+                    name="password"
+                    type="password"
+                    autocomplete="current-password"
+                    required
+                    class="
                 appearance-none
                 rounded-none
                 relative
@@ -116,18 +112,18 @@
                 sm:text-sms
                 -mb-4
               "
-              placeholder="Password"
-            />
-          </div>
-        </div>
+                    placeholder="Password"
+                  />
+                </div>
+              </div>
 
-        <div class="flex items-center justify-between">
-          <div class="flex items-center">
-            <input
-              id="remember-me"
-              name="remember-me"
-              type="checkbox"
-              class="
+              <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                  <input
+                    id="remember-me"
+                    name="remember-me"
+                    type="checkbox"
+                    class="
                 h-4
                 w-4
                 focus:ring-regular-blue
@@ -135,27 +131,30 @@
                 border-gray-300
                 rounded
               "
-            />
-            <label for="remember-me" class="ml-2 block text-sm text-gray-900">
-              Remember me
-            </label>
-          </div>
+                  />
+                  <label
+                    for="remember-me"
+                    class="ml-2 block text-sm text-gray-900"
+                  >
+                    Remember me
+                  </label>
+                </div>
 
-                   <div class="text-sm">
-            <a
-              href="#"
-              class="font-medium text-regular-blue hover:text-light-blue"
-            >
-              Forgot your password?
-            </a>
-          </div>
-        </div>
+                <div class="text-sm">
+                  <a
+                    href="#"
+                    class="font-medium text-regular-blue hover:text-light-blue"
+                  >
+                    Forgot your password?
+                  </a>
+                </div>
+              </div>
 
-        <div class="m-4">
-          <button
-            v-if="!xhrRequest"
-            type="submit"
-            class="
+              <div class="m-4">
+                <button
+                  v-if="!xhrRequest"
+                  type="submit"
+                  class="
               group
               relative
               w-full
@@ -173,27 +172,29 @@
               focus:outline-none
               focus:ring-2 focus:ring-offset-2 focus:regular-blue
             "
-           >
-            <span class="absolute left-0 inset-y-0 flex items-center pl-3">
-            <svg
-                class="h-5 w-5 text-white group-hover:text-white"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </span>
-            Sign in
-          </button>
-          <button
-            v-if="xhrRequest"
-            class="
+                >
+                  <span
+                    class="absolute left-0 inset-y-0 flex items-center pl-3"
+                  >
+                    <svg
+                      class="h-5 w-5 text-white group-hover:text-white"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                  Sign in
+                </button>
+                <button
+                  v-if="xhrRequest"
+                  class="
               w-full
               justify-center
               border border-transparent
@@ -201,137 +202,136 @@
               text-white
               bg-gray-600
             "
-          >
-            <span>
-              <svg
-                class="h-9 w-9"
-                xmlns="http://www.w3.org/2000/svg"
-                style="margin:auto;background:0 0"
-                viewBox="0 0 100 100"
-                preserveAspectRatio="xMidYMid"
-                display="block"
-              >
-                <circle cx="84" cy="50" r="10" fill="#4f46e5">
-                  <animate
-                    attributeName="r"
-                    repeatCount="indefinite"
-                    dur="0.3623188405797101s"
-                    calcMode="spline"
-                    keyTimes="0;1"
-                    values="14;0"
-                    keySplines="0 0.5 0.5 1"
-                    begin="0s"
-                  />
-                  <animate
-                    attributeName="fill"
-                    repeatCount="indefinite"
-                    dur="1.4492753623188404s"
-                    calcMode="discrete"
-                    keyTimes="0;0.25;0.5;0.75;1"
-                    values="#4f46e5;#4f46e5;#bab8e3;#8680ea;#4f46e5"
-                    begin="0s"
-                  />
-                </circle>
-                <circle cx="16" cy="50" r="10" fill="#4f46e5">
-                  <animate
-                    attributeName="r"
-                    repeatCount="indefinite"
-                    dur="1.4492753623188404s"
-                    calcMode="spline"
-                    keyTimes="0;0.25;0.5;0.75;1"
-                    values="0;0;14;14;14"
-                    keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
-                    begin="0s"
-                  />
-                  <animate
-                    attributeName="cx"
-                    repeatCount="indefinite"
-                    dur="1.4492753623188404s"
-                    calcMode="spline"
-                    keyTimes="0;0.25;0.5;0.75;1"
-                    values="16;16;16;50;84"
-                    keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
-                    begin="0s"
-                  />
-                </circle>
-                <circle cx="50" cy="50" r="10" fill="#8680ea">
-                  <animate
-                    attributeName="r"
-                    repeatCount="indefinite"
-                    dur="1.4492753623188404s"
-                    calcMode="spline"
-                    keyTimes="0;0.25;0.5;0.75;1"
-                    values="0;0;14;14;14"
-                    keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
-                    begin="-0.3623188405797101s"
-                  />
-                  <animate
-                    attributeName="cx"
-                    repeatCount="indefinite"
-                    dur="1.4492753623188404s"
-                    calcMode="spline"
-                    keyTimes="0;0.25;0.5;0.75;1"
-                    values="16;16;16;50;84"
-                    keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
-                    begin="-0.3623188405797101s"
-                  />
-                </circle>
-                <circle cx="84" cy="50" r="10" fill="#bab8e3">
-                  <animate
-                    attributeName="r"
-                    repeatCount="indefinite"
-                    dur="1.4492753623188404s"
-                    calcMode="spline"
-                    keyTimes="0;0.25;0.5;0.75;1"
-                    values="0;0;14;14;14"
-                    keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
-                    begin="-0.7246376811594202s"
-                  />
-                  <animate
-                    attributeName="cx"
-                    repeatCount="indefinite"
-                    dur="1.4492753623188404s"
-                    calcMode="spline"
-                    keyTimes="0;0.25;0.5;0.75;1"
-                    values="16;16;16;50;84"
-                    keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
-                    begin="-0.7246376811594202s"
-                  />
-                </circle>
-                <circle cx="16" cy="50" r="10" fill="#4f46e5">
-                  <animate
-                    attributeName="r"
-                    repeatCount="indefinite"
-                    dur="1.4492753623188404s"
-                    calcMode="spline"
-                    keyTimes="0;0.25;0.5;0.75;1"
-                    values="0;0;14;14;14"
-                    keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
-                    begin="-1.0869565217391304s"
-                  />
-                  <animate
-                    attributeName="cx"
-                    repeatCount="indefinite"
-                    dur="1.4492753623188404s"
-                    calcMode="spline"
-                    keyTimes="0;0.25;0.5;0.75;1"
-                    values="16;16;16;50;84"
-                    keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
-                    begin="-1.0869565217391304s"
-                  />
-                </circle>
-              </svg>
-            </span>
-          </button>
-        </div>
-      </form>
-        </div>
+                >
+                  <span>
+                    <svg
+                      class="h-9 w-9"
+                      xmlns="http://www.w3.org/2000/svg"
+                      style="margin:auto;background:0 0"
+                      viewBox="0 0 100 100"
+                      preserveAspectRatio="xMidYMid"
+                      display="block"
+                    >
+                      <circle cx="84" cy="50" r="10" fill="#4f46e5">
+                        <animate
+                          attributeName="r"
+                          repeatCount="indefinite"
+                          dur="0.3623188405797101s"
+                          calcMode="spline"
+                          keyTimes="0;1"
+                          values="14;0"
+                          keySplines="0 0.5 0.5 1"
+                          begin="0s"
+                        />
+                        <animate
+                          attributeName="fill"
+                          repeatCount="indefinite"
+                          dur="1.4492753623188404s"
+                          calcMode="discrete"
+                          keyTimes="0;0.25;0.5;0.75;1"
+                          values="#4f46e5;#4f46e5;#bab8e3;#8680ea;#4f46e5"
+                          begin="0s"
+                        />
+                      </circle>
+                      <circle cx="16" cy="50" r="10" fill="#4f46e5">
+                        <animate
+                          attributeName="r"
+                          repeatCount="indefinite"
+                          dur="1.4492753623188404s"
+                          calcMode="spline"
+                          keyTimes="0;0.25;0.5;0.75;1"
+                          values="0;0;14;14;14"
+                          keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
+                          begin="0s"
+                        />
+                        <animate
+                          attributeName="cx"
+                          repeatCount="indefinite"
+                          dur="1.4492753623188404s"
+                          calcMode="spline"
+                          keyTimes="0;0.25;0.5;0.75;1"
+                          values="16;16;16;50;84"
+                          keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
+                          begin="0s"
+                        />
+                      </circle>
+                      <circle cx="50" cy="50" r="10" fill="#8680ea">
+                        <animate
+                          attributeName="r"
+                          repeatCount="indefinite"
+                          dur="1.4492753623188404s"
+                          calcMode="spline"
+                          keyTimes="0;0.25;0.5;0.75;1"
+                          values="0;0;14;14;14"
+                          keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
+                          begin="-0.3623188405797101s"
+                        />
+                        <animate
+                          attributeName="cx"
+                          repeatCount="indefinite"
+                          dur="1.4492753623188404s"
+                          calcMode="spline"
+                          keyTimes="0;0.25;0.5;0.75;1"
+                          values="16;16;16;50;84"
+                          keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
+                          begin="-0.3623188405797101s"
+                        />
+                      </circle>
+                      <circle cx="84" cy="50" r="10" fill="#bab8e3">
+                        <animate
+                          attributeName="r"
+                          repeatCount="indefinite"
+                          dur="1.4492753623188404s"
+                          calcMode="spline"
+                          keyTimes="0;0.25;0.5;0.75;1"
+                          values="0;0;14;14;14"
+                          keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
+                          begin="-0.7246376811594202s"
+                        />
+                        <animate
+                          attributeName="cx"
+                          repeatCount="indefinite"
+                          dur="1.4492753623188404s"
+                          calcMode="spline"
+                          keyTimes="0;0.25;0.5;0.75;1"
+                          values="16;16;16;50;84"
+                          keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
+                          begin="-0.7246376811594202s"
+                        />
+                      </circle>
+                      <circle cx="16" cy="50" r="10" fill="#4f46e5">
+                        <animate
+                          attributeName="r"
+                          repeatCount="indefinite"
+                          dur="1.4492753623188404s"
+                          calcMode="spline"
+                          keyTimes="0;0.25;0.5;0.75;1"
+                          values="0;0;14;14;14"
+                          keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
+                          begin="-1.0869565217391304s"
+                        />
+                        <animate
+                          attributeName="cx"
+                          repeatCount="indefinite"
+                          dur="1.4492753623188404s"
+                          calcMode="spline"
+                          keyTimes="0;0.25;0.5;0.75;1"
+                          values="16;16;16;50;84"
+                          keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
+                          begin="-1.0869565217391304s"
+                        />
+                      </circle>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </template>
-
 
 <!--<template>
   <HeaderFrontpage />
@@ -655,6 +655,12 @@
 import firebase from "firebase/app";
 import NavSign from "@/components/others/NavSign.vue";
 
+//firebase
+import dotenv from "dotenv";
+import db from "../main";
+require("firebase/auth");
+dotenv.config();
+
 export default {
   data() {
     return {
@@ -675,6 +681,7 @@ export default {
         .then(
           () => {
             v.xhrRequest = false;
+            db.collection("invoices");
             this.$router.replace("member-area");
           },
           (err) => {
@@ -696,7 +703,6 @@ export default {
 .rounded-lg {
   border-radius: 25px;
 }
-
 </style>
 
 <!--
