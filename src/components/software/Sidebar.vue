@@ -24,7 +24,7 @@
       <div
         class="flex mx-auto flex-grow mt-4 flex-col  text-gray-400 space-y-4"
       >
-        <router-link to="/dashboard/TWDashboard">
+        <router-link to="/dashboard">
           <button
             class="h-10 w-12 dark:text-gray-500 rounded-md flex items-center justify-center "
           >
@@ -42,9 +42,9 @@
             </svg>
           </button>
         </router-link>
-        <router-link to="/dashboard/TWDashboard">
+        <router-link to="/statistics">
           <button
-            class="h-10 w-12 dark:bg-gray-700 dark:text-white rounded-md flex items-center justify-center active:bg-blue-100 active:text-blue-500"
+            class="h-10 w-12 dark:bg-gray-700 dark:text-white rounded-md flex items-center justify-center"
           >
             <svg
               viewBox="0 0 24 24"
