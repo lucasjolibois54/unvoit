@@ -84,45 +84,50 @@ export default {
 </script>
 
 <style>
-
-html, body{
+html,
+body {
   scroll-behavior: smooth;
 }
 
 /* width */
 ::-webkit-scrollbar {
   height: 300px;
-  width: .45rem!important;
+  width: 0.45rem !important;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   position: absolute;
-    opacity: 0;
-    z-index: 1;
-    background: #052245;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-transition: opacity 0.5s 0.5s ease-out;
-    transition: opacity 0.5s 0.5s ease-out;
+  opacity: 0;
+  z-index: 1;
+  background: #052245;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: opacity 0.5s 0.5s ease-out;
+  transition: opacity 0.5s 0.5s ease-out;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    position: absolute;
-    top: 0;
-    left: 0;
-        width: .45rem!important;
-    height: 8px;
-    background: #b1e5ff;
-    border-radius: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.45rem !important;
+  height: 8px;
+  background: #b1e5ff;
+  border-radius: 4px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #d8f2ff; 
+  background: #d8f2ff;
 }
 
+.router-link-exact-active {
+  background-color: #dbeafe;
+  color: #3b82f6;
+  border-radius: 0.375rem;
+}
 </style>
