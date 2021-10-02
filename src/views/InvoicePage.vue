@@ -1,7 +1,7 @@
 <template>
   <div v-if="currentInvoice" class="invoice-view container">
     <div class="px-4 py-5 sm:px-6">
-      <router-link :to="{ name: 'Member' }">
+      <router-link :to="{ name: 'Dashboard' }">
         <h3 class="px-2 py-4 bg-black text-white">Go back</h3>
       </router-link>
     </div>
@@ -164,7 +164,7 @@ export default {
 
     async deleteInvoice(docId) {
       await this.DELETE_INVOICE(docId);
-      this.$router.push({ name: "Member" });
+      this.$router.push({ name: "Dashboard" });
     },
   },
   computed: {
