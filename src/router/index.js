@@ -3,7 +3,8 @@ import Home from '../views/Home.vue'
 
 //Dashboard Area
 import Dashboard from '../views/Dashboard.vue'
-import DashboardStatistics from '../views/Statistics.vue'
+import Statistics from '../views/Statistics.vue'
+import Upload from '../views/Upload.vue'
 import InvoicePage from '../views/InvoicePage.vue';
 
 
@@ -44,7 +45,15 @@ const routes = [
   {
     path: '/Statistics',
     name: 'Statistics',
-    component: DashboardStatistics,
+    component: Statistics,
+    meta: {
+      requiresAuth: true
+    },
+  },
+  {
+    path: '/upload',
+    name: 'Upload',
+    component: Upload,
     meta: {
       requiresAuth: true
     },
@@ -71,7 +80,9 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
+  routes,
+  linkActiveClass: "active",
+  linkExactActiveClass: "exact-active",
 })
 
 router.beforeEach(( to, from, next) => {
