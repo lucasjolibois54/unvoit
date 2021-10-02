@@ -38,7 +38,11 @@
       </div>
     </transition>
   </div>
-  <router-view />
+  <transition name="route" mode="out-in">
+    <router-view v-slot="{ Component }">
+      <component :is="Component"></component>
+    </router-view>
+  </transition>
 </template>
 
 <script>
@@ -84,6 +88,11 @@ export default {
 </script>
 
 <style>
+#app {
+  overflow: hidden;
+  widows: 100vw;
+}
+
 html,
 body {
   scroll-behavior: smooth;
@@ -125,9 +134,23 @@ body {
   background: #d8f2ff;
 }
 
-.router-link-exact-active {
-  background-color: #dbeafe;
-  color: #3b82f6;
-  border-radius: 0.375rem;
+/* Route transitions */
+
+.route-enter-from {
+  opacity: 0;
+  transform: translateX(2em);
+}
+
+.route-enter-active {
+  transition: all 0.3s ease;
+}
+
+.route-leave-to {
+  opacity: 0;
+  transform: translateX(-2em);
+}
+
+.route-leave-active {
+  transition: all 0.3s ease;
 }
 </style>
