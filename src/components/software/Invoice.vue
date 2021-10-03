@@ -51,15 +51,17 @@
       <td
         class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800 text-red-500"
       >
-        - $120.00
+        ${{ invoice.invoiceTotal }}
       </td>
       <td
         class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800"
       >
         <div class="flex items-center">
           <div class="sm:flex hidden flex-col">
-            24.12.2020
-            <div class="text-gray-400 text-xs">11:16 AM</div>
+            {{ invoice.invoiceDate }}
+            <div class="text-gray-400 text-xs">
+              {{ invoice.paymentDueDate }}
+            </div>
           </div>
           <button
             class="w-8 h-8 inline-flex items-center justify-center text-gray-400 ml-auto"
