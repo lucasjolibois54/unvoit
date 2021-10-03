@@ -212,9 +212,9 @@
           <!-- Top dashboard navbar -->
 
           <div
-            class="sm:px-7 sm:pt-7 px-4 pt-4 flex flex-col w-full border-b border-gray-200 bg-white dark:bg-gray-900 dark:text-white dark:border-gray-800 sticky top-0"
+            class="sm:px-7 sm:pt-7 px-4 pt-4 flex flex-col w-full border-b border-gray-200  dark:bg-gray-900 dark:text-white dark:border-gray-800 sticky top-0"
           >
-            <div class="flex w-full items-center">
+            <div class=" w-full items-center">
               <div
                 class="flex items-center text-3xl text-gray-900 dark:text-white"
               >
@@ -224,6 +224,7 @@
                   alt="profile"
                 />
                 Andreas Erik Eriksen
+                {{ invoiceData.id }}
               </div>
               <div class="ml-auto sm:flex hidden items-center justify-end">
                 <div class="text-right">
@@ -252,6 +253,13 @@
                   </svg>
                 </button>
               </div>
+            </div>
+            <div
+              class="bg-blue-100 text-blue-500 w-36 items-center mt-10 text-2xl text-gray-900 dark:text-white"
+            >
+              You've got
+              <span class="text-blue-900">{{ invoiceData.length }}</span>
+              Invoices
             </div>
             <div class="flex items-center space-x-3 sm:mt-7 mt-4">
               <a
