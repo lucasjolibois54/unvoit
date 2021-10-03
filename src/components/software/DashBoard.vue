@@ -35,7 +35,11 @@
         <!-- Top right navbar links -->
 
         <div class="ml-auto flex items-center space-x-7">
-          <button class="h-8 px-3 rounded-md shadow text-white bg-blue-500">
+          <button
+            class="h-8 px-3 rounded-md shadow text-white bg-blue-500"
+            @click="createInvoice"
+            type="button"
+          >
             Create Invoice
           </button>
 
@@ -468,7 +472,7 @@
 </template>
 
 <script>
-import { mapState, mapActions } from "vuex";
+import { mapState, mapActions, mapMutations } from "vuex";
 
 //components
 import Invoice from "@/components/software/Invoice.vue";
@@ -487,6 +491,7 @@ export default {
   },
   methods: {
     ...mapActions(["GET_INVOICES"]),
+    ...mapMutations(["TOGGLE_INVOICE"]),
 
     checkScreen() {
       const windowWidth = window.innerWidth;
@@ -495,6 +500,9 @@ export default {
         return;
       }
       this.mobile = false;
+    },
+    createInvoice() {
+      this.TOGGLE_INVOICE();
     },
   },
   computed: {
