@@ -63,7 +63,7 @@
               hover:text-gray-500
               hover:bg-gray-100
               focus:outline-none
-              focus:ring-2 focus:ring-inset focus:ring-indigo-500
+              focus:ring-2 focus:ring-inset focus:ring-regular-blue
             "
           >
             <span class="sr-only">Open menu</span>
@@ -175,11 +175,18 @@
           <div class="pt-5 pb-6 px-5">
             <div class="flex items-center justify-between">
               <div>
-                <img
-                  class="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                  alt="Workflow"
-                />
+                <h2
+                  class="
+                    text-4xl
+                    font-extrabold
+                    h-8
+                    w-auto
+                    flex
+                    text-darker-blue
+                  "
+                >
+                  UNVOIT
+                </h2>
               </div>
               <div class="-mr-2">
                 <PopoverButton
@@ -194,7 +201,7 @@
                     hover:text-gray-500
                     hover:bg-gray-100
                     focus:outline-none
-                    focus:ring-2 focus:ring-inset focus:ring-indigo-500
+                    focus:ring-2 focus:ring-inset focus:ring-darker-blue
                   "
                 >
                   <span class="sr-only">Close menu</span>
@@ -212,7 +219,7 @@
                 >
                   <component
                     :is="item.icon"
-                    class="flex-shrink-0 h-6 w-6 text-indigo-600"
+                    class="flex-shrink-0 h-6 w-6 text-regular-blue"
                     aria-hidden="true"
                   />
                   <span class="ml-3 text-base font-medium text-gray-900">
