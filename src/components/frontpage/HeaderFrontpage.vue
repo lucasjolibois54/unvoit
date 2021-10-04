@@ -20,9 +20,7 @@
               <h2
                 class="text-4xl font-extrabold w-auto h-8 flex text-off-white"
               >
-              <router-link to="/">
-                UNVOIT
-                </router-link>
+                <router-link to="/"> UNVOIT </router-link>
                 <div class="mt-5">
                   <span
                     class="
@@ -92,7 +90,8 @@
             Plans
           </a>
 
-          <a href="#FrontPageSupport"
+          <a
+            href="#FrontPageSupport"
             class="text-base font-medium text-off-white hover:text-regular-blue"
             to="/Support"
             >Support</a
@@ -224,14 +223,7 @@
             </div>
           </div>
           <div class="py-6 px-5 space-y-6">
-            <div class="grid grid-cols-2 gap-y-4 gap-x-8">
-              
-
-           
-              
-            
-                
-            </div>
+            <div class="grid grid-cols-2 gap-y-4 gap-x-8"></div>
             <div>
               <a
                 href="#"
@@ -248,8 +240,8 @@
                   text-base
                   font-medium
                   text-white
-                  bg-indigo-600
-                  hover:bg-indigo-700
+                  bg-regular-blue
+                  hover:bg-darker-blue
                 "
               >
                 Sign up
@@ -257,7 +249,7 @@
               <p class="mt-6 text-center text-base font-medium text-gray-500">
                 Existing customer?
                 {{ " " }}
-                <a href="#" class="text-indigo-600 hover:text-indigo-500">
+                <a href="#" class="text-regular-blue hover:text-darker-blue">
                   Sign in
                 </a>
               </p>
@@ -317,8 +309,6 @@ const solutions = [
     href: "#",
     icon: ViewGridIcon,
   },
-
-
 ];
 const callsToAction = [
   { name: "Watch Demo", href: "#", icon: PlayIcon },
