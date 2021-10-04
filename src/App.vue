@@ -5,7 +5,6 @@
       <div
         id="pagetop"
         class="
-          bg-off-white
           fixed
           z-10
           p-3
@@ -16,24 +15,15 @@
           animate-bounce
           cursor-pointer
         "
-        v-show="scY > 300"
+        v-show="scY > 900"
         @click="toTop"
       >
         <div>
-          <svg
-            class="w-8 h-8 cursor-pointer"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2.5"
-              d="M5 10l7-7m0 0l7 7m-7-7v18"
-            ></path>
-          </svg>
+          <img
+            class="w-14 transform rotate-180"
+            :src="require('@/assets/Scroll-icon.png')"
+            alt=""
+          />
         </div>
       </div>
     </transition>
