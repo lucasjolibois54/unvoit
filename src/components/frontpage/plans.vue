@@ -2,7 +2,7 @@
   <div class="mt-36">
     <Card
       title="Starter"
-      name="Starter"
+      name="Starter version"
       description="
               - Unlimited postings
               - Invoices + invoice designer 
@@ -17,7 +17,7 @@
 
     <Card
       title="Proversion"
-      name="Proversion"
+      name="Pro version"
       description="
               - Unlimited postings
               - Invoices + invoice designer 
@@ -33,7 +33,7 @@
 
     <Card
       title="Proversion (-15%)"
-      name="Proversion (-15%)"
+      name="Pro version (-15%)"
       description="
               - Unlimited postings
               - Invoices + invoice designer 
