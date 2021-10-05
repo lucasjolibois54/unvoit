@@ -1,6 +1,6 @@
 <template>
   <section class="py-1 bg-dark-grey">
-    <div class="w-full lg:w-8/12 px-4 mx-auto mt-6">
+    <div class="w-full lg:w-4/6 px-4 mx-auto mt-6">
       <div
         class="
           relative
@@ -9,22 +9,22 @@
           break-words
           w-full
           mb-6
-          bg-blueGray-100
           border-0
         "
       >
-
         <div class="justify-between flex rounded-lg">
           <div class="text-center flex">
-            <div class="bg-black text-center flex justify-between space-x-10 m-8 p-3 rounded-lg">
-            <h6 class="text-white text-xl font-bold">1</h6>
-            <h6 class="text-white text-xl font-bold">2</h6>
-            <h6 class="text-white text-xl font-bold">3</h6>
-            <h6 class="text-white text-xl font-bold">4</h6>
+            <div
+              class="bg-black text-center flex justify-between space-x-10 m-8 p-3 rounded-lg"
+            >
+              <h6 class="text-white text-xl font-bold">1</h6>
+              <h6 class="text-white text-xl font-bold">2</h6>
+              <h6 class="text-white text-xl font-bold">3</h6>
+              <h6 class="text-white text-xl font-bold">4</h6>
             </div>
           </div>
           <button
-          class="
+            class="
             text-white
             active:bg-pink-600
             font-medium
@@ -41,296 +41,158 @@
             transition-all
             duration-150
           "
-          type="button"
-        >
-        <span class="text-sm text-gray-500 flex">
-          #{{ currentInvoice.invoiceId }}
-        </span>
-          UNVOIT
-        </button>
+            type="button"
+          >
+            <span class="text-sm text-gray-500 flex">
+              #{{ currentInvoice.invoiceId }}
+            </span>
+            UNVOIT
+          </button>
         </div>
-        <div class="flex-auto px-4 lg:px-10 py-10 pt-12">
+        <div class="flex-auto px-10 py-10 pt-12">
           <form>
             <div class="flex flex-wrap">
-              <div class="w-full lg:w-6/12 px-4">
+              <div class="w-6/12 px-4">
                 <div class="relative w-full mb-3">
                   <h6 class="text-lg text-white mt-3 mb-6 font-bold uppercase">
                     Bill From:
                   </h6>
-                  <div class="
+                  <div
+                    class="
                       border-0
-                      px-3
                       py-3
                       placeholder-blueGray-300
                       text-white
                       rounded
-                      text-sm
+                      text-lg
                       focus:outline-none
                       focus:ring
                       w-full
                       ease-linear
                       transition-all
-                      duration-150">
-                    <p>Insert object</p>
-                    <p>Insert object, Insert object</p>
-                    <p>Insert object</p>
+                      duration-150"
+                  >
+                    <p>{{ currentInvoice.billerAddress }}</p>
+                    <p>
+                      {{ currentInvoice.billerPostalCode }}
+                      {{ currentInvoice.billerCity }}
+                    </p>
+                    <p>{{ currentInvoice.billerCountry }}</p>
                   </div>
                 </div>
               </div>
-<div class="w-full lg:w-6/12 px-4">
+
+              <span
+                class="h-56 border mr-24 border-gray-500 transform rotate-180"
+              />
+
+              <div class="">
                 <div class="relative w-full mb-3">
                   <h6 class="text-lg text-white mt-3 mb-6 font-bold uppercase">
                     Bill To:
                   </h6>
-                  <div class="
+                  <div
+                    class="
                       border-0
-                      px-3
                       py-3
                       placeholder-blueGray-300
                       text-white
                       rounded
-                      text-sm
+                      text-lg
                       focus:outline-none
                       focus:ring
                       w-full
                       ease-linear
                       transition-all
-                      duration-150">
-                    <p>Insert object</p>
-                    <p>Insert object, Insert object</p>
-                    <p>Insert object</p>
-                    <p>Insert object</p>
+                      duration-150"
+                  >
+                    <p>{{ currentInvoice.clientName }}</p>
+                    <p>
+                      {{ currentInvoice.clientAddress }}
+                    </p>
+                    <p>
+                      {{ currentInvoice.clientPostalCode }}
+                      {{ currentInvoice.clientCity }}
+                    </p>
+                    <p>{{ currentInvoice.clientCountry }}</p>
                   </div>
-                </div>
-              </div>
-              <div class="w-full lg:w-6/12 px-4">
-                <div class="relative w-full mb-3">
-                  <label
-                    class="
-                      block
-                      uppercase
-                      text-blueGray-600 text-xs
-                      font-bold
-                      mb-2
-                    "
-                    htmlfor="grid-password"
-                  >
-                    First Name
-                  </label>
-                  <input
-                    type="text"
-                    class="
-                      border-0
-                      px-3
-                      py-3
-                      placeholder-blueGray-300
-                      text-blueGray-600
-                      bg-white
-                      rounded
-                      text-sm
-                      shadow
-                      focus:outline-none
-                      focus:ring
-                      w-full
-                      ease-linear
-                      transition-all
-                      duration-150
-                    "
-                    value="Lucky"
-                  />
-                </div>
-              </div>
-              <div class="w-full lg:w-6/12 px-4">
-                <div class="relative w-full mb-3">
-                  <label
-                    class="
-                      block
-                      uppercase
-                      text-blueGray-600 text-xs
-                      font-bold
-                      mb-2
-                    "
-                    htmlfor="grid-password"
-                  >
-                    Last Name
-                  </label>
-                  <input
-                    type="text"
-                    class="
-                      border-0
-                      px-3
-                      py-3
-                      placeholder-blueGray-300
-                      text-blueGray-600
-                      bg-white
-                      rounded
-                      text-sm
-                      shadow
-                      focus:outline-none
-                      focus:ring
-                      w-full
-                      ease-linear
-                      transition-all
-                      duration-150
-                    "
-                    value="Jesse"
-                  />
                 </div>
               </div>
             </div>
 
             <hr class="mt-6 border-b-1 border-blueGray-300" />
 
-            <h6 class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
-              Contact Information
-            </h6>
-            <div class="flex flex-wrap">
-              <div class="w-full lg:w-12/12 px-4">
+            <div class="flex flex-wrap w-full">
+              <div class="w-3/12">
                 <div class="relative w-full mb-3">
                   <label
                     class="
                       block
                       uppercase
-                      text-blueGray-600 text-xs
+                      text-white 
+                      text-xs
                       font-bold
                       mb-2
                     "
                     htmlfor="grid-password"
                   >
-                    Address
+                    Item
                   </label>
-                  <input
-                    type="text"
-                    class="
-                      border-0
-                      px-3
-                      py-3
-                      placeholder-blueGray-300
-                      text-blueGray-600
-                      bg-white
-                      rounded
-                      text-sm
-                      shadow
-                      focus:outline-none
-                      focus:ring
-                      w-full
-                      ease-linear
-                      transition-all
-                      duration-150
-                    "
-                    value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09"
-                  />
+                  <p class="text-white">Insert Object</p>
                 </div>
               </div>
-              <div class="w-full lg:w-4/12 px-4">
+              <div class="w-3/12">
                 <div class="relative w-full mb-3">
                   <label
                     class="
                       block
                       uppercase
-                      text-blueGray-600 text-xs
+                      text-white 
+                      text-xs
                       font-bold
                       mb-2
                     "
                     htmlfor="grid-password"
                   >
-                    City
+                    Cost
                   </label>
-                  <input
-                    type="email"
-                    class="
-                      border-0
-                      px-3
-                      py-3
-                      placeholder-blueGray-300
-                      text-blueGray-600
-                      bg-white
-                      rounded
-                      text-sm
-                      shadow
-                      focus:outline-none
-                      focus:ring
-                      w-full
-                      ease-linear
-                      transition-all
-                      duration-150
-                    "
-                    value="New York"
-                  />
+                  <p class="text-white">Insert Object</p>
                 </div>
               </div>
-              <div class="w-full lg:w-4/12 px-4">
+              <div class="w-3/12">
                 <div class="relative w-full mb-3">
                   <label
                     class="
                       block
                       uppercase
-                      text-blueGray-600 text-xs
+                      text-white 
+                      text-xs
                       font-bold
                       mb-2
                     "
                     htmlfor="grid-password"
                   >
-                    Country
+                    QTY
                   </label>
-                  <input
-                    type="text"
-                    class="
-                      border-0
-                      px-3
-                      py-3
-                      placeholder-blueGray-300
-                      text-blueGray-600
-                      bg-white
-                      rounded
-                      text-sm
-                      shadow
-                      focus:outline-none
-                      focus:ring
-                      w-full
-                      ease-linear
-                      transition-all
-                      duration-150
-                    "
-                    value="United States"
-                  />
+                  <p class="text-white">Insert Object</p>
                 </div>
               </div>
-              <div class="w-full lg:w-4/12 px-4">
+              <div class="w-3/12">
                 <div class="relative w-full mb-3">
                   <label
                     class="
                       block
                       uppercase
-                      text-blueGray-600 text-xs
+                      text-white 
+                      text-xs
                       font-bold
                       mb-2
                     "
                     htmlfor="grid-password"
                   >
-                    Postal Code
+                    Price
                   </label>
-                  <input
-                    type="text"
-                    class="
-                      border-0
-                      px-3
-                      py-3
-                      placeholder-blueGray-300
-                      text-blueGray-600
-                      bg-white
-                      rounded
-                      text-sm
-                      shadow
-                      focus:outline-none
-                      focus:ring
-                      w-full
-                      ease-linear
-                      transition-all
-                      duration-150
-                    "
-                    value="Postal Code"
-                  />
+                  <p class="text-white">Insert Object</p>
                 </div>
               </div>
             </div>
