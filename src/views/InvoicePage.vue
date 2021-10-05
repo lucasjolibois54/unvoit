@@ -119,165 +119,108 @@
                 </div>
               </div>
             </div>
-
-            <hr class="mt-6 border-b-1 border-blueGray-300" />
-
-            <div class="flex flex-wrap w-full">
-              <div class="w-3/12">
-                <div class="relative w-full mb-3">
-                  <label
-                    class="
-                      block
-                      uppercase
-                      text-white 
-                      text-xs
-                      font-bold
-                      mb-2
-                    "
-                    htmlfor="grid-password"
-                  >
-                    Item
-                  </label>
-                  <p class="text-white">Insert Object</p>
-                </div>
-              </div>
-              <div class="w-3/12">
-                <div class="relative w-full mb-3">
-                  <label
-                    class="
-                      block
-                      uppercase
-                      text-white 
-                      text-xs
-                      font-bold
-                      mb-2
-                    "
-                    htmlfor="grid-password"
-                  >
-                    Cost
-                  </label>
-                  <p class="text-white">Insert Object</p>
-                </div>
-              </div>
-              <div class="w-3/12">
-                <div class="relative w-full mb-3">
-                  <label
-                    class="
-                      block
-                      uppercase
-                      text-white 
-                      text-xs
-                      font-bold
-                      mb-2
-                    "
-                    htmlfor="grid-password"
-                  >
-                    QTY
-                  </label>
-                  <p class="text-white">Insert Object</p>
-                </div>
-              </div>
-              <div class="w-3/12">
-                <div class="relative w-full mb-3">
-                  <label
-                    class="
-                      block
-                      uppercase
-                      text-white 
-                      text-xs
-                      font-bold
-                      mb-2
-                    "
-                    htmlfor="grid-password"
-                  >
-                    Price
-                  </label>
-                  <p class="text-white">Insert Object</p>
-                </div>
-              </div>
-            </div>
-
-            <hr class="mt-6 border-b-1 border-blueGray-300" />
-
-            <h6 class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
-              About Me
-            </h6>
-            <div class="flex flex-wrap">
-              <div class="w-full lg:w-12/12 px-4">
-                <div class="relative w-full mb-3">
-                  <label
-                    class="
-                      block
-                      uppercase
-                      text-blueGray-600 text-xs
-                      font-bold
-                      mb-2
-                    "
-                    htmlfor="grid-password"
-                  >
-                    About me
-                  </label>
-                  <textarea
-                    type="text"
-                    class="
-                      border-0
-                      px-3
-                      py-3
-                      placeholder-blueGray-300
-                      text-blueGray-600
-                      bg-white
-                      rounded
-                      text-sm
-                      shadow
-                      focus:outline-none
-                      focus:ring
-                      w-full
-                      ease-linear
-                      transition-all
-                      duration-150
-                    "
-                    rows="4"
-                  >
- A beautiful UI Kit and Admin for JavaScript &amp; Tailwind CSS. It is Freeand Open Source.</textarea
-                  >
-                </div>
-              </div>
-            </div>
           </form>
         </div>
       </div>
-      <footer class="relative pt-8 pb-6 mt-2">
-        <div class="container mx-auto px-4">
-          <div
-            class="
-              flex flex-wrap
-              items-center
-              md:justify-between
-              justify-center
-            "
-          >
-            <div class="w-full md:w-6/12 px-4 mx-auto text-center">
-              <div class="text-sm text-blueGray-500 font-semibold py-1">
-                Made with
-                <a
-                  href="https://www.creative-tim.com/product/notus-js"
-                  class="text-blueGray-500 hover:text-gray-800"
-                  target="_blank"
-                  >Notus JS</a
-                >
-                by
-                <a
-                  href="https://www.creative-tim.com"
-                  class="text-blueGray-500 hover:text-blueGray-800"
-                  target="_blank"
-                >
-                  Creative Tim</a
-                >.
-              </div>
+    </div>
+  </section>
+
+  <section
+    v-for="(item, index) in currentInvoice.invoiceItemList"
+    :key="index"
+    class="bg-light-grey"
+  >
+    <div class="w-full lg:w-4/6 px-4 mx-auto">
+      <div
+        class="
+          relative
+          flex flex-col
+          min-w-0
+          break-words
+          w-full
+          mb-6
+          border-0
+        "
+      >
+        <div class="flex flex-wrap w-full mt-8">
+          <div class="w-3/12">
+            <div class="relative w-full mb-3">
+              <label
+                class="
+                      block
+                      uppercase
+                      text-black
+                      text-xs
+                      font-bold
+                      mb-12
+                    "
+                htmlfor="grid-password"
+              >
+                Item
+              </label>
+              <p class="text-black">
+                {{ item.ItemName }}
+              </p>
+            </div>
+          </div>
+          <div class="w-3/12">
+            <div class="relative w-full mb-3">
+              <label
+                class="
+                      block
+                      uppercase
+                      text-black
+                      text-xs
+                      font-bold
+                      mb-12
+                    "
+                htmlfor="grid-password"
+              >
+                Cost
+              </label>
+              <p class="text-black">
+                {{ item.price }}
+              </p>
+            </div>
+          </div>
+          <div class="w-3/12">
+            <div class="relative w-full mb-3">
+              <label
+                class="
+                      block
+                      uppercase
+                      text-black 
+                      text-xs
+                      font-bold
+                      mb-12
+                    "
+                htmlfor="grid-password"
+              >
+                QTY
+              </label>
+              <p class="text-black">{{ item.qty }}</p>
+            </div>
+          </div>
+          <div class="w-3/12">
+            <div class="relative w-full mb-3">
+              <label
+                class="
+                      block
+                      uppercase
+                      text-black 
+                      text-xs
+                      font-bold
+                      mb-12
+                    "
+                htmlfor="grid-password"
+              >
+                Total
+              </label>
+              <p class="text-black">{{ item.total }}</p>
             </div>
           </div>
         </div>
-      </footer>
+      </div>
     </div>
   </section>
   <div id="invoice">
