@@ -12,7 +12,7 @@
               - Appenix`s in cloud 
               - All integrations 
               - Personal accountant"
-      price="0$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+      price="FREE&nbsp;&nbsp;&nbsp;&nbsp;"
     />
 
     <Card
