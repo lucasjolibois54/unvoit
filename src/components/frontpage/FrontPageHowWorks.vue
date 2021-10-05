@@ -20,7 +20,7 @@
         already signed
       </h2>
     </div>
-    <div class="w-full bg-darker-blue pt-10 pb-20 sm:w-2/6">
+    <div class="w-full bg-darker-blue-one pt-10 pb-20 sm:w-2/6">
       <h2 class="pl-8 text-5xl pb-10">03</h2>
       <h2 class="pl-10">Invoice sent if verified</h2>
     </div>
