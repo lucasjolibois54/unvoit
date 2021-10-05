@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         'darker-blue': '#052245',
+        'darker-blue-one': '#154C8E',
         'regular-blue': '#19ADF9',
         'regular-green': '#30BF80',
         'light-green': '#59AC61',
@@ -17,7 +18,7 @@ module.exports = {
         'pricing-whiteblue': '#EEF7FF',
         'pricing-white': '#ECF6FF',
         'darker-orange': '#F59D4B',
-        
+
       }
     },
   },
