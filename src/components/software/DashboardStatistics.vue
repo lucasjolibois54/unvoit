@@ -38,7 +38,13 @@
               </div>
             </div>
             <div
-              class="items-center mt-2 text-sm text-gray-400 dark:text-white"
+              class="
+                items-center
+                mt-0
+                pb-4
+                text-sm text-gray-400
+                dark:text-white
+              "
             >
               Manage your statistical overview
             </div>
@@ -46,7 +52,7 @@
 
           <!-- grid start-->
 
-          <div class="flex mb-8 mt-10">
+          <div class="flex mb-8">
             <div class="w-1/3 px-2">
               <div
                 class="
@@ -55,27 +61,83 @@
                   lg:flex-row
                   h-full
                   bg-off-white
+                  shadow-sm
+                  rounded-md
                 "
               >
-                <img
-                  class="w-64 h-auto"
-                  :src="require('@/assets/pie-chart-1.png')"
-                />
-                <h2 class="mt-0 lg:mt-14 flex flex-col">
-                  <span class="text-2xl">Sent</span
-                  ><span class="text-indigo-700 text-2xl"> 444 </span>
-                  <span class="mt-3 text-2xl">Recieved</span>
-                  <span class="text-regular-blue text-2xl">36 </span>
-                </h2>
+                <div class="flex justify-center">
+                  <img
+                    class="w-60 h-full pb-0 lg:pb-10 lg:pt-10 lg:pl-5"
+                    :src="require('@/assets/pie-chart-1.png')"
+                  />
+                </div>
+                <div class="flex justify-center">
+                  <h2
+                    class="
+                      flex
+                      justify-center
+                      -mt-3
+                      lg:mt-0
+                      mb-3
+                      lg:mb-0
+                      flex-col
+                      pr-5
+                    "
+                  >
+                    <span class="flex lg:flex-col"
+                      ><span class="text-2xl"
+                        >Sent<span class="inline-block lg:hidden"
+                          >: &nbsp;
+                        </span> </span
+                      ><span class="text-indigo-700 text-2xl"> 444 </span></span
+                    ><span class="flex lg:flex-col">
+                      <span class="mt-0 text-2xl"
+                        >Recieved<span class="inline-block lg:hidden"
+                          >: &nbsp;
+                        </span>
+                      </span>
+                      <span class="text-regular-blue text-2xl">36 </span></span
+                    >
+                  </h2>
+                </div>
               </div>
             </div>
             <div class="w-1/3 px-2">
-              <div class="bg-grey h-full bg-off-white">nam</div>
+              <div class="bg-grey h-full bg-off-white rounded-md shadow-sm">
+                <div>
+                  <div class="flex justify-center">
+                    <img
+                      class="w-64 h-auto"
+                      :src="require('@/assets/pie-chart-1.png')"
+                    />
+                  </div>
+                  <div class="flex justify-center">
+                    <button
+                      class="
+                        bg-indigo-700
+                        text-off-white
+                        pt-2
+                        pb-2
+                        pl-4
+                        pr-4
+                        rounded-md
+                        shadow-md
+                        mb-2
+                        lg:-mt-3
+                      "
+                    >
+                      Try PRO for free
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="w-1/3 px-2">
               <div class="bg-grey-light h-full">
-                <div class="w-1/2 bg-off-white">nam</div>
-                <div class="w-1/2 bg-off-white mt-10">nam</div>
+                <div class="w-1/2 bg-off-white shadow-sm rounded-md">nam</div>
+                <div class="w-1/2 bg-off-white mt-10 shadow-sm rounded-md">
+                  nam
+                </div>
               </div>
             </div>
           </div>
