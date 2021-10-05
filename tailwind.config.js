@@ -18,7 +18,7 @@ module.exports = {
         'pricing-whiteblue': '#EEF7FF',
         'pricing-white': '#ECF6FF',
         'darker-orange': '#F59D4B',
-
+        'dark-grey':  '#19181A',
       }
     },
   },
