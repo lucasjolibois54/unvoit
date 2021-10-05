@@ -1,14 +1,14 @@
 <template>
-  <Dashboard />
+  <DashBoard />
 </template>
 
 <script>
-import Dashboard from "@/components/software/Dashboard.vue";
+import DashBoard from "@/components/software/DashBoard.vue";
 
 export default {
   name: "Home",
   components: {
-    Dashboard,
+    DashBoard,
   },
 };
 </script>
