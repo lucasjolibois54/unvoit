@@ -3,16 +3,232 @@
     class="bg-gray-100 dark:bg-gray-900 dark:text-white text-gray-600 h-screen flex overflow-hidden text-sm"
   >
     <Sidebar />
+    <div class="flex-grow overflow-hidden h-full sm:flex sm:flex-col">
+      <div class="flex-grow flex overflow-x-hidden xl:p-44">
+        <div class="flex-grow overflow-y-auto">
+          <div
+            class="
+              sm:px-7
+              sm:pt-7
+              px-4
+              pt-4
+              flex flex-col
+              w-full
+              dark:bg-gray-900
+              dark:text-white
+              dark:border-gray-800
+              top-0
+            "
+          >
+            <div class="w-full items-center">
+              <div
+                class="flex items-center text-3xl text-gray-900 dark:text-white"
+              >
+                Blockchain Storage
+              </div>
+            </div>
+            <div
+              class="
+                items-center
+                mt-0
+                pb-4
+                text-sm text-gray-400
+                dark:text-white
+              "
+            >
+              Upload your invoices to Blockchain
+            </div>
+          </div>
+
+          <!-- grid start-->
+          <div class="max-w-screen-xl">
+            <div class="flex mb-8">
+              <div class="w-1/3 px-2">
+                <div
+                  class="
+                    bg-grey-light
+                    flex flex-col
+                    lg:flex-row
+                    h-full
+                    bg-off-white
+                    shadow-xl
+                    rounded-md
+                  "
+                >
+                  <div class="flex justify-center">
+                    <img
+                      class="w-60 h-full pb-0 lg:pb-10 lg:pt-10 lg:pl-5"
+                      :src="require('@/assets/pie-chart-1.png')"
+                    />
+                  </div>
+                  <div class="flex justify-center">
+                    <h2
+                      class="
+                        flex
+                        justify-center
+                        -mt-3
+                        lg:mt-0
+                        mb-3
+                        lg:mb-0
+                        flex-col
+                        pr-5
+                      "
+                    >
+                      <span class="flex lg:flex-col"
+                        ><span class="text-2xl"
+                          >Sent<span class="inline-block lg:hidden"
+                            >: &nbsp;
+                          </span> </span
+                        ><span class="text-indigo-700 text-2xl">
+                          444
+                        </span></span
+                      ><span class="flex lg:flex-col">
+                        <span class="mt-0 text-2xl"
+                          >Recieved<span class="inline-block lg:hidden"
+                            >: &nbsp;
+                          </span>
+                        </span>
+                        <span class="text-regular-blue text-2xl"
+                          >36
+                        </span></span
+                      >
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="w-1/3 px-2">
+                <div class="bg-grey h-full bg-off-white rounded-md shadow-sm">
+                  <div>
+                    <div class="flex justify-center">
+                      <img
+                        class="w-64 h-auto"
+                        :src="require('@/assets/pie-chart-1.png')"
+                      />
+                    </div>
+                    <div class="flex justify-center">
+                      <button
+                        class="
+                          bg-indigo-700
+                          text-off-white
+                          pt-2
+                          pb-2
+                          pl-4
+                          pr-4
+                          rounded-md
+                          shadow-md
+                          mb-2
+                          lg:-mt-3
+                        "
+                      >
+                        Try PRO for free
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-1/3 px-2">
+                <div class="bg-grey-light h-full">
+                  <div class="w-3/4 bg-off-white shadow-sm rounded-md">
+                    <div
+                      class="
+                        flex flex-col
+                        lg:flex-row
+                        pb-4
+                        lg:pb-4
+                        pt-2
+                        pl-2
+                        pr-2
+                      "
+                    >
+                      <div class="flex justify-center lg:content-start">
+                        <img
+                          class="w-24 h-full pt-2 lg:pt-5 pl-1 pr-1"
+                          :src="require('@/assets/card-stats.png')"
+                          alt=""
+                        />
+                      </div>
+
+                      <div class="pt-2 lg:pt-8">
+                        <div class="flex justify-center lg:content-start">
+                          <h2 class="pr-3 pl-4">
+                            <span class="flex flex-col">
+                              <span class="font-semibold text-2xl">$3,599 </span
+                              ><span
+                                class="text-thin text-gray-400 text-xs lg:sm"
+                                >Earned this month</span
+                              ></span
+                            >
+                          </h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="
+                      w-3/4
+                      bg-off-white
+                      shadow-sm
+                      rounded-md
+                      mt-3
+                      lg:mt-10
+                    "
+                  >
+                    <div
+                      class="
+                        flex flex-col
+                        lg:flex-row
+                        pb-4
+                        lg:pb-4
+                        pt-2
+                        pl-2
+                        pr-2
+                      "
+                    >
+                      <div class="flex justify-center lg:content-start">
+                        <img
+                          class="w-24 h-full pt-2 lg:pt-5 pl-1 pr-1"
+                          :src="require('@/assets/doc-stats.png')"
+                          alt=""
+                        />
+                      </div>
+
+                      <div class="pt-2 lg:pt-8">
+                        <div class="flex justify-center lg:content-start">
+                          <h2 class="pr-3 pl-4">
+                            <span class="flex flex-col">
+                              <span class="font-semibold text-2xl">sent </span
+                              ><span
+                                class="text-thin text-gray-400 text-xs lg:sm"
+                                >Invoices this month</span
+                              ></span
+                            >
+                          </h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-100%">
+              <img
+                class="w-1/2 h-full pt-2 lg:pt-5 pl-1 pr-1"
+                :src="require('@/assets/graf-stats.png')"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- grid slut -->
+        </div>
+      </div>
+    </div>
     <div class="flex-grow overflow-hidden h-full flex flex-col">
       <div
-        class="h-16 lg:flex w-full border-b border-gray-200 dark:border-gray-800 hidden px-10"
+        class="h-16 lg:flex w-full hidden px-10"
       >
         <!-- Top right navbar links -->
-
-        <div class="ml-auto flex items-center space-x-7">
-          <button class="h-8 px-3 rounded-md shadow text-white bg-blue-500">
-            Upload Invoice
-          </button>
 
           <button class="flex items-center">
             <span class="relative flex-shrink-0">
@@ -38,57 +254,6 @@
               <polyline points="6 9 12 15 18 9"></polyline>
             </svg>
           </button>
-        </div>
-      </div>
-
-      <div class="flex-grow flex overflow-x-hidden">
-        <div class="flex-grow bg-white dark:bg-gray-900 overflow-y-auto">
-          <div
-            class="sm:px-7 sm:pt-7 px-4 pt-4 flex flex-col w-full border-b border-gray-200 bg-white dark:bg-gray-900 dark:text-white dark:border-gray-800 sticky top-0"
-          >
-            <div class="flex w-full items-center">
-              <div
-                class="flex items-center text-3xl text-gray-900 dark:text-white"
-              >
-                <h2 class="w-80 rounded-md p-5 bg-blue-100 text-blue-500">
-                  Welcome to your Blockchain Storage,
-                  <span class="font-bold">NAME</span>
-                </h2>
-              </div>
-              <div class="ml-auto sm:flex hidden items-center justify-end">
-                <div class="text-right">
-                  <div class="text-xs text-gray-400 dark:text-gray-400">
-                    Account balance:
-                  </div>
-                  <div class="text-gray-900 text-lg dark:text-white">
-                    $2,794.00
-                  </div>
-                </div>
-                <button
-                  class="w-8 h-8 ml-4 text-gray-400 shadow dark:text-gray-400 rounded-full flex items-center justify-center border border-gray-200 dark:border-gray-700"
-                >
-                  <svg
-                    viewBox="0 0 24 24"
-                    class="w-4"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <circle cx="12" cy="12" r="1"></circle>
-                    <circle cx="19" cy="12" r="1"></circle>
-                    <circle cx="5" cy="12" r="1"></circle>
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div class="flex items-center space-x-3 sm:mt-7 mt-4" />
-          </div>
-
-          <!-- top dashboard buttons navbar -->
-          <UploadFiles />
-        </div>
       </div>
     </div>
   </div>
@@ -99,7 +264,6 @@ import { mapState, mapActions } from "vuex";
 
 //components
 import Sidebar from "@/components/software/Sidebar.vue";
-import UploadFiles from "@/components/software/blockchain/UploadFiles.vue";
 
 export default {
   data() {
@@ -132,7 +296,6 @@ export default {
   name: "Dashboard",
   components: {
     Sidebar,
-    UploadFiles,
   },
 };
 </script>
