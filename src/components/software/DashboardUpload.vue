@@ -4,7 +4,7 @@
   >
     <Sidebar />
     <div class="flex-grow overflow-hidden h-full sm:flex sm:flex-col">
-      <div class="flex-grow flex overflow-x-hidden xl:p-44 -mt-12">
+      <div class="flex-grow flex overflow-x-hidden xl:p-40 -mt-12">
         <div class="flex-grow overflow-y-auto">
           <div
             class="
@@ -30,20 +30,34 @@
             <div
               class="
                 items-center
-                mt-0
-                pb-20
+                mt-1
+                pb-12
                 text-sm text-gray-400
                 dark:text-white
               "
             >
               Upload your invoices to Blockchain
+            <div style="width: 29rem" class="overflow-hidden h-6 text-xs flex rounded bg-regular-blue bg-opacity-20 mt-10">
+              <div style="width:30%"
+              class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-regular-blue">
+              </div>
+            </div>
+            <div class="
+                items-center
+                mt-2
+                text-sm text-gray-400
+                dark:text-white"
+                >
+                2GB of 10GB used
+              
             </div>
           </div>
+        </div>
 
           <!-- grid start-->
           <div class="max-w-screen-xl">
-            <div class="flex mb-8">
-              <div class="w-10/12 px-4 pr-10">
+            <div class="flex">
+              <div class="w-10/12 px-4 mr-20">
                 <div
                   class="
                     bg-grey-light
@@ -53,7 +67,6 @@
                     bg-opacity-10
                     border-4 border-regular-blue
                     rounded-md
-                    pb-12
                   "
                 >
                 <UploadFiles />
@@ -61,14 +74,19 @@
               </div>
               <div class="w-10/12 px-2">
                 <div class="bg-grey h-full bg-off-white rounded-md shadow-sm">
-                  <div>
-                    <div class="flex justify-center">
-                      <img
-                        class="w-64 h-auto"
-                        :src="require('@/assets/pie-chart-1.png')"
-                      />
-                    </div>
-                  </div>
+                  <div class="sm:p-7 p-4">
+            <div class="flex w-full items-center mb-7">
+            </div>
+
+              <!-- Table body content -->
+            <table class="w-full text-left">
+              <Invoice
+                v-for="(invoice, index) in invoiceData"
+                :invoice="invoice"
+                :key="index"
+              />
+            </table>
+          </div>
                 </div>
               </div>
             </div>
@@ -116,6 +134,7 @@
 import { mapState, mapActions } from "vuex";
 
 //components
+import Invoice from "@/components/software/Invoice.vue";
 import Sidebar from "@/components/software/Sidebar.vue";
 import UploadFiles from "@/components/software/blockchain/UploadFiles.vue";
 
@@ -149,6 +168,7 @@ export default {
   },
   name: "Dashboard",
   components: {
+    Invoice,
     Sidebar,
     UploadFiles,
   },
