@@ -61,7 +61,7 @@
                     lg:flex-row
                     h-full
                     bg-off-white
-                    shadow-sm
+                    shadow-xl
                     rounded-md
                   "
                 >
