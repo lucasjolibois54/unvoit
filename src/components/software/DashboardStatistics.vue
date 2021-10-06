@@ -26,7 +26,6 @@
               dark:bg-gray-900
               dark:text-white
               dark:border-gray-800
-              sticky
               top-0
             "
           >
