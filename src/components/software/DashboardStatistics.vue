@@ -169,8 +169,40 @@
                     </div>
                   </div>
                 </div>
-                <div class="w-1/2 bg-off-white mt-10 shadow-sm rounded-md">
-                  nam
+
+                <div class="w-3/4 bg-off-white shadow-sm rounded-md mt-10">
+                  <div
+                    class="
+                      flex flex-col
+                      lg:flex-row
+                      pb-4
+                      lg:pb-4
+                      pt-2
+                      pl-2
+                      pr-2
+                    "
+                  >
+                    <div class="flex justify-center lg:content-start">
+                      <img
+                        class="w-24 h-full pt-2 lg:pt-5 pl-1 pr-1"
+                        :src="require('@/assets/doc-stats.png')"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="pt-2 lg:pt-8">
+                      <div class="flex justify-center lg:content-start">
+                        <h2 class="pr-3 pl-4">
+                          <span class="flex flex-col">
+                            <span class="font-semibold text-2xl">sent </span
+                            ><span class="text-thin text-gray-400 text-xs lg:sm"
+                              >Invoices this month</span
+                            ></span
+                          >
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
