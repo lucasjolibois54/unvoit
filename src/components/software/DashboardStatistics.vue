@@ -12,7 +12,7 @@
     "
   >
     <Sidebar />
-    <div class="flex-grow overflow-hidden h-full flex flex-col">
+    <div class="flex-grow overflow-hidden h-full sm:flex sm:flex-col">
       <div class="flex-grow flex overflow-x-hidden xl:p-44">
         <div class="flex-grow overflow-y-auto">
           <div
