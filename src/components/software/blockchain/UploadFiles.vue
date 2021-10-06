@@ -3,28 +3,17 @@
   <div class="sm:p-7 p-4">
     <table class="w-full text-center">
       <thead>
-        <tr class="text-regular-blue">
-          <th class="p-20 pb-44 rounded-md">
-            <svg
-              viewBox="0 0 24 24"
-              class="h-8 mx-auto"
-              stroke="currentColor"
-              stroke-width="2"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path
-                d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
-              ></path>
-              <line x1="12" y1="11" x2="12" y2="17"></line>
-              <line x1="9" y1="14" x2="15" y2="14"></line>
-            </svg>
+        <tr class="text-about-blue">
+          <th class="p-20 rounded-md">
+              <img
+                        class="w-28 mx-auto"
+                        :src="require('@/assets/upload.svg')"
+                      />
             <h2 class="mx-auto font-bold mt-2">
               <h1>{{ title }}</h1>
-              <div class="space-x-2 mx-auto mt-20">
+              <div class="space-x-2 mx-auto mt-10">
                 <button
-                  class="bg-blue-100 rounded-md p-1"
+                  class="rounded-md p-1 text-lg"
                   :type="my_thumbs !== null ? 'warning' : 'black'"
                   outlined
                   @click="onPickFile"
