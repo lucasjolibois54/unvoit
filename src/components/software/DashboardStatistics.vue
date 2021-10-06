@@ -221,12 +221,14 @@
                 </div>
               </div>
             </div>
-            <div class="w-100%">
-              <img
-                class="w-1/2 h-full pt-2 lg:pt-5 pl-1 pr-1"
-                :src="require('@/assets/graf-stats.png')"
-                alt=""
-              />
+            <div class="ml-20 grid grid-flow-col grid-cols-2 grid-rows-3 gap-4">
+              <div>
+                <img
+                  class=""
+                  :src="require('@/assets/graf-stats.png')"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
           <!-- grid slut -->

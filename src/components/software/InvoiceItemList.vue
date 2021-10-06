@@ -1,109 +1,80 @@
 <template>
-  <section
-    v-for="(item, index) in currentInvoice.invoiceItemList"
-    :key="index"
-    class="bg-light-grey"
-  >
-    <div class="w-full lg:w-4/6 px-4 mx-auto">
-      <div
-        class="
-          relative
-          flex flex-col
-          min-w-0
-          break-words
-          w-full
-          mb-6
-          border-0
-        "
+  <thead v-for="(item, index) in currentInvoice.invoiceItemList" :key="index">
+    <tr class="text-gray-400">
+      <th
+        class="font-normal w-full px-3 pt-0 pb-3 border-b border-gray-200 dark:border-gray-800"
       >
-        <div class="flex flex-wrap w-full mt-8">
-          <div class="w-3/12">
-            <div class="relative w-full mb-3">
-              <label
-                class="
-                      block
-                      uppercase
-                      text-black
-                      text-xs
-                      font-bold
-                      mb-12
-                    "
-                htmlfor="grid-password"
-              >
-                Item
-              </label>
-              <p class="text-black">
-                {{ item.ItemName }}
-              </p>
-            </div>
-          </div>
-          <div class="w-3/12">
-            <div class="relative w-full mb-3">
-              <label
-                class="
-                      block
-                      uppercase
-                      text-black
-                      text-xs
-                      font-bold
-                      mb-12
-                    "
-                htmlfor="grid-password"
-              >
-                Cost
-              </label>
-              <p class="text-black">
-                {{ item.price }}
-              </p>
-            </div>
-          </div>
-          <div class="w-3/12">
-            <div class="relative w-full mb-3">
-              <label
-                class="
-                      block
-                      uppercase
-                      text-black 
-                      text-xs
-                      font-bold
-                      mb-12
-                    "
-                htmlfor="grid-password"
-              >
-                QTY
-              </label>
-              <p class="text-black">{{ item.qty }}</p>
-            </div>
-          </div>
-          <div class="w-3/12">
-            <div class="relative w-full mb-3">
-              <label
-                class="
-                      block
-                      uppercase
-                      text-black 
-                      text-xs
-                      font-bold
-                      mb-12
-                    "
-                htmlfor="grid-password"
-              >
-                Total
-              </label>
-              <p class="text-black">{{ item.total }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        {{ item.ItemName }}
+      </th>
+      <th
+        class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 dark:border-gray-800"
+      >
+        {{ item.price }}
+      </th>
+      <th
+        class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 dark:border-gray-800 hidden md:table-cell"
+      >
+        {{ item.qty }}
+      </th>
+      <th
+        class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 dark:border-gray-800"
+      >
+        {{ item.total }}
+      </th>
+    </tr>
+  </thead>
 </template>
 
 <script>
+import { mapMutations, mapState, mapActions } from "vuex";
+
+//components
+
 export default {
-  name: "invoice",
-  props: ["invoice"],
+  name: "invoiceView",
   components: {},
+  data() {
+    return {
+      currentInvoice: null,
+    };
+  },
+  created() {
+    this.getCurrentInvoice();
+  },
+  methods: {
+    ...mapMutations([
+      "SET_CURRENT_INVOICE",
+      "TOGGLE_EDIT_INVOICE",
+      "TOGGLE_INVOICE",
+    ]),
+
+    ...mapActions(["DELETE_INVOICE"]),
+
+    getCurrentInvoice() {
+      this.SET_CURRENT_INVOICE(this.$route.params.invoiceId);
+      this.currentInvoice = this.currentInvoiceArray[0];
+    },
+
+    toggleEditInvoice() {
+      this.TOGGLE_EDIT_INVOICE();
+      this.TOGGLE_INVOICE();
+    },
+
+    async deleteInvoice(docId) {
+      await this.DELETE_INVOICE(docId);
+      this.$router.push({ name: "Dashboard" });
+    },
+  },
+  computed: {
+    ...mapState(["currentInvoiceArray", "editInvoice"]),
+  },
+  watch: {
+    editInvoice() {
+      if (!this.editInvoice) {
+        this.currentInvoice = this.currentInvoiceArray[0];
+      }
+    },
+  },
 };
 </script>
 
