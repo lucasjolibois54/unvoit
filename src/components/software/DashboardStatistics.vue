@@ -12,7 +12,7 @@
     "
   >
     <Sidebar />
-    <div class="flex-grow overflow-hidden h-full flex flex-col">
+    <div class="flex-grow overflow-hidden h-full sm:flex sm:flex-col">
       <div class="flex-grow flex overflow-x-hidden xl:p-44">
         <div class="flex-grow overflow-y-auto">
           <div
@@ -26,7 +26,6 @@
               dark:bg-gray-900
               dark:text-white
               dark:border-gray-800
-              sticky
               top-0
             "
           >
@@ -175,7 +174,16 @@
                     </div>
                   </div>
 
-                  <div class="w-3/4 bg-off-white shadow-sm rounded-md mt-10">
+                  <div
+                    class="
+                      w-3/4
+                      bg-off-white
+                      shadow-sm
+                      rounded-md
+                      mt-3
+                      lg:mt-10
+                    "
+                  >
                     <div
                       class="
                         flex flex-col
@@ -211,6 +219,15 @@
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+            <div class="ml-20 grid grid-flow-col grid-cols-2 grid-rows-3 gap-4">
+              <div>
+                <img
+                  class=""
+                  :src="require('@/assets/graf-stats.png')"
+                  alt=""
+                />
               </div>
             </div>
           </div>
