@@ -1,10 +1,10 @@
 <!--UploadFiles.vue-->
 <template>
   <div class="sm:p-7 p-4">
-    <table class="w-1/5 text-center">
+    <table class="w-full text-center">
       <thead>
-        <tr class="text-red-400">
-          <th class=" border-4 border-red-400 p-14 rounded-md">
+        <tr class="text-regular-blue">
+          <th class="p-20 pb-44 rounded-md">
             <svg
               viewBox="0 0 24 24"
               class="h-8 mx-auto"
@@ -22,14 +22,14 @@
             </svg>
             <h2 class="mx-auto font-bold mt-2">
               <h1>{{ title }}</h1>
-              <div class="space-x-2 mx-auto">
+              <div class="space-x-2 mx-auto mt-20">
                 <button
                   class="bg-blue-100 rounded-md p-1"
                   :type="my_thumbs !== null ? 'warning' : 'black'"
                   outlined
                   @click="onPickFile"
                 >
-                  Select {{ my_thumbs !== null ? "New " : "" }}Files
+                 Drag & drop your {{ my_thumbs !== null ? "New " : "" }}files here
                 </button>
                 <button
                   class="bg-red-100 rounded-md p-1"
