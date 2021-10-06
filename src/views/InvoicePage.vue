@@ -145,36 +145,26 @@
                 <th
                   class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 dark:border-gray-800"
                 >
-                  Type
+                  Item
                 </th>
                 <th
                   class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 dark:border-gray-800"
                 >
-                  Where
+                  Cost
                 </th>
                 <th
                   class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 dark:border-gray-800 hidden md:table-cell"
                 >
-                  Description
+                  QTY
                 </th>
                 <th
                   class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 dark:border-gray-800"
                 >
-                  Amount
-                </th>
-                <th
-                  class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 dark:border-gray-800 sm:text-gray-400 text-white"
-                >
-                  Date
+                  Total
                 </th>
               </tr>
             </thead>
-
-            <!-- Table body content -->
-            <InvoiceItemList
-              v-for="(item, index) in currentInvoice.invoiceItemList"
-              :key="index"
-            />
+            <InvoiceItemList />
           </table>
         </div>
       </div>
@@ -343,6 +333,7 @@ import { mapMutations, mapState, mapActions } from "vuex";
 //components
 import DownloadFiles from "@/components/software/blockchain/DownloadFiles.vue";
 import InvoiceItemList from "@/components/software/InvoiceItemList.vue";
+
 export default {
   name: "invoiceView",
   components: {
