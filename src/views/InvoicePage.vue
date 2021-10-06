@@ -125,11 +125,7 @@
     </div>
   </section>
 
-  <section
-    v-for="(item, index) in currentInvoice.invoiceItemList"
-    :key="index"
-    class="bg-light-grey"
-  >
+  <section class="bg-light-grey">
     <div class="w-full lg:w-4/6 px-4 mx-auto">
       <div
         class="
@@ -143,82 +139,43 @@
         "
       >
         <div class="flex flex-wrap w-full mt-8">
-          <div class="w-3/12">
-            <div class="relative w-full mb-3">
-              <label
-                class="
-                      block
-                      uppercase
-                      text-black
-                      text-xs
-                      font-bold
-                      mb-12
-                    "
-                htmlfor="grid-password"
-              >
-                Item
-              </label>
-              <p class="text-black">
-                {{ item.ItemName }}
-              </p>
-            </div>
-          </div>
-          <div class="w-3/12">
-            <div class="relative w-full mb-3">
-              <label
-                class="
-                      block
-                      uppercase
-                      text-black
-                      text-xs
-                      font-bold
-                      mb-12
-                    "
-                htmlfor="grid-password"
-              >
-                Cost
-              </label>
-              <p class="text-black">
-                {{ item.price }}
-              </p>
-            </div>
-          </div>
-          <div class="w-3/12">
-            <div class="relative w-full mb-3">
-              <label
-                class="
-                      block
-                      uppercase
-                      text-black 
-                      text-xs
-                      font-bold
-                      mb-12
-                    "
-                htmlfor="grid-password"
-              >
-                QTY
-              </label>
-              <p class="text-black">{{ item.qty }}</p>
-            </div>
-          </div>
-          <div class="w-3/12">
-            <div class="relative w-full mb-3">
-              <label
-                class="
-                      block
-                      uppercase
-                      text-black 
-                      text-xs
-                      font-bold
-                      mb-12
-                    "
-                htmlfor="grid-password"
-              >
-                Total
-              </label>
-              <p class="text-black">{{ item.total }}</p>
-            </div>
-          </div>
+          <table class="w-full text-left">
+            <thead>
+              <tr class="text-gray-400">
+                <th
+                  class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 dark:border-gray-800"
+                >
+                  Type
+                </th>
+                <th
+                  class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 dark:border-gray-800"
+                >
+                  Where
+                </th>
+                <th
+                  class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 dark:border-gray-800 hidden md:table-cell"
+                >
+                  Description
+                </th>
+                <th
+                  class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 dark:border-gray-800"
+                >
+                  Amount
+                </th>
+                <th
+                  class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 dark:border-gray-800 sm:text-gray-400 text-white"
+                >
+                  Date
+                </th>
+              </tr>
+            </thead>
+
+            <!-- Table body content -->
+            <InvoiceItemList
+              v-for="(item, index) in currentInvoice.invoiceItemList"
+              :key="index"
+            />
+          </table>
         </div>
       </div>
     </div>
@@ -385,11 +342,12 @@ import { mapMutations, mapState, mapActions } from "vuex";
 
 //components
 import DownloadFiles from "@/components/software/blockchain/DownloadFiles.vue";
-
+import InvoiceItemList from "@/components/software/InvoiceItemList.vue";
 export default {
   name: "invoiceView",
   components: {
     DownloadFiles,
+    InvoiceItemList,
   },
   data() {
     return {
