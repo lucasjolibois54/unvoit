@@ -175,7 +175,16 @@
                     </div>
                   </div>
 
-                  <div class="w-3/4 bg-off-white shadow-sm rounded-md mt-10">
+                  <div
+                    class="
+                      w-3/4
+                      bg-off-white
+                      shadow-sm
+                      rounded-md
+                      mt-3
+                      lg:mt-10
+                    "
+                  >
                     <div
                       class="
                         flex flex-col
@@ -212,6 +221,13 @@
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="w-100%">
+              <img
+                class="w-1/2 h-full pt-2 lg:pt-5 pl-1 pr-1"
+                :src="require('@/assets/graf-stats.png')"
+                alt=""
+              />
             </div>
           </div>
           <!-- grid slut -->
