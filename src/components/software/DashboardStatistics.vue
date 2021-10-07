@@ -12,8 +12,8 @@
     "
   >
     <Sidebar />
-    <div class="flex-grow overflow-hidden h-full sm:flex sm:flex-col">
-      <div class="flex-grow flex overflow-x-hidden xl:p-44">
+    <div class="flex-grow overflow-hidden h-full sm:flex sm:flex-col sm:ml-10">
+      <div class="flex-grow flex overflow-x-hidden mt-12">
         <div class="flex-grow overflow-y-auto">
           <div
             class="
@@ -51,7 +51,7 @@
 
           <!-- grid start-->
           <div class="max-w-screen-xl">
-            <div class="flex mb-8">
+            <div class="flex">
               <div class="w-1/3 px-2">
                 <div
                   class="
@@ -60,13 +60,13 @@
                     lg:flex-row
                     h-full
                     bg-off-white
-                    shadow-xl
                     rounded-md
+                    -mb-10
                   "
                 >
                   <div class="flex justify-center">
                     <img
-                      class="w-60 h-full pb-0 lg:pb-10 lg:pt-10 lg:pl-5"
+                      class="w-56 h-full pb-0 lg:pb-10 lg:pt-10 lg:pl-5"
                       :src="require('@/assets/pie-chart-1.png')"
                     />
                   </div>
@@ -81,18 +81,19 @@
                         lg:mb-0
                         flex-col
                         pr-5
+                        lg:ml-10
                       "
                     >
                       <span class="flex lg:flex-col"
-                        ><span class="text-2xl"
+                        ><span class="text-xl text-darker-grey"
                           >Sent<span class="inline-block lg:hidden"
                             >: &nbsp;
                           </span> </span
-                        ><span class="text-indigo-700 text-2xl">
+                        ><span class="text-blue-stat text-2xl">
                           444
                         </span></span
-                      ><span class="flex lg:flex-col">
-                        <span class="mt-0 text-2xl"
+                      ><span class="flex lg:flex-col lg:mt-5">
+                        <span class="mt-0 text-xl text-darker-grey"
                           >Recieved<span class="inline-block lg:hidden"
                             >: &nbsp;
                           </span>
@@ -110,23 +111,24 @@
                   <div>
                     <div class="flex justify-center">
                       <img
-                        class="w-64 h-auto"
-                        :src="require('@/assets/pie-chart-1.png')"
+                        class="w-36 h-auto mt-7"
+                        :src="require('@/assets/Ellipse.png')"
                       />
                     </div>
                     <div class="flex justify-center">
                       <button
                         class="
-                          bg-indigo-700
+                          bg-blue-stat
                           text-off-white
                           pt-2
                           pb-2
                           pl-4
                           pr-4
                           rounded-md
-                          shadow-md
                           mb-2
-                          lg:-mt-3
+                          lg:
+                          mt-7
+                          text-lg
                         "
                       >
                         Try PRO for free
@@ -138,7 +140,7 @@
 
               <div class="w-1/3 px-2">
                 <div class="bg-grey-light h-full">
-                  <div class="w-3/4 bg-off-white shadow-sm rounded-md">
+                  <div class="w-4/6 bg-off-white shadow-sm rounded-md">
                     <div
                       class="
                         flex flex-col
@@ -152,7 +154,7 @@
                     >
                       <div class="flex justify-center lg:content-start">
                         <img
-                          class="w-24 h-full pt-2 lg:pt-5 pl-1 pr-1"
+                          class="w-16 h-12 px-2 lg:mt-9 lg:ml-7"
                           :src="require('@/assets/card-stats.png')"
                           alt=""
                         />
@@ -160,9 +162,9 @@
 
                       <div class="pt-2 lg:pt-8">
                         <div class="flex justify-center lg:content-start">
-                          <h2 class="pr-3 pl-4">
+                          <h2 class="pr-3 pl-4 mb-5">
                             <span class="flex flex-col">
-                              <span class="font-semibold text-2xl">$3,599 </span
+                              <span class="font-semibold text-3xl">$3,599 </span
                               ><span
                                 class="text-thin text-gray-400 text-xs lg:sm"
                                 >Earned this month</span
@@ -174,16 +176,7 @@
                     </div>
                   </div>
 
-                  <div
-                    class="
-                      w-3/4
-                      bg-off-white
-                      shadow-sm
-                      rounded-md
-                      mt-3
-                      lg:mt-10
-                    "
-                  >
+                  <div class="w-4/6 bg-off-white shadow-sm rounded-md">
                     <div
                       class="
                         flex flex-col
@@ -193,11 +186,12 @@
                         pt-2
                         pl-2
                         pr-2
+                        mt-6
                       "
                     >
                       <div class="flex justify-center lg:content-start">
                         <img
-                          class="w-24 h-full pt-2 lg:pt-5 pl-1 pr-1"
+                          class="w-16 h-12 px-2 lg:mt-9 lg:ml-7"
                           :src="require('@/assets/doc-stats.png')"
                           alt=""
                         />
@@ -205,9 +199,9 @@
 
                       <div class="pt-2 lg:pt-8">
                         <div class="flex justify-center lg:content-start">
-                          <h2 class="pr-3 pl-4">
+                          <h2 class="pr-3 pl-4 mb-5">
                             <span class="flex flex-col">
-                              <span class="font-semibold text-2xl">sent </span
+                              <span class="font-semibold text-3xl">670 sent </span
                               ><span
                                 class="text-thin text-gray-400 text-xs lg:sm"
                                 >Invoices this month</span
@@ -218,6 +212,7 @@
                       </div>
                     </div>
                   </div>
+
                 </div>
               </div>
             </div>
