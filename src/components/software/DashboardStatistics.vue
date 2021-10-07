@@ -74,13 +74,13 @@
                     -mb-10
                   "
                 >
-                  <div class="flex justify-center">
+                  <div class="flex justify-center mt-6 lg:mt-0">
                     <img
                       class="w-56 h-full pb-0 lg:pb-10 lg:pt-10 lg:pl-5"
                       :src="require('@/assets/pie-chart-1.png')"
                     />
                   </div>
-                  <div class="flex justify-center">
+                  <div class="flex justify-center mt-3 lg:mt-0">
                     <h2
                       class="
                         flex
@@ -121,7 +121,7 @@
                   <div>
                     <div class="flex justify-center">
                       <img
-                        class="w-36 h-auto mt-7"
+                        class="w-36 h-auto mt-12 lg:mt-7"
                         :src="require('@/assets/Ellipse.png')"
                       />
                     </div>
@@ -136,8 +136,8 @@
                           pr-4
                           rounded-md
                           mb-2
-                          lg:
-                          mt-7
+                          mt-9
+                          lg:mt-7
                           text-lg
                         "
                       >
