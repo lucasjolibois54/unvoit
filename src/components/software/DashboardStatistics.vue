@@ -12,7 +12,17 @@
     "
   >
     <Sidebar />
-    <div class="flex-grow overflow-hidden h-full sm:flex sm:flex-col sm:ml-10 lg:ml-32 lg:mt-20">
+    <div
+      class="
+        flex-grow
+        overflow-hidden
+        h-full
+        sm:flex sm:flex-col
+        sm:ml-10
+        lg:ml-32
+        lg:mt-20
+      "
+    >
       <div class="flex-grow flex overflow-x-hidden mt-12">
         <div class="flex-grow overflow-y-auto">
           <div
@@ -154,17 +164,25 @@
                     >
                       <div class="flex justify-center lg:content-start">
                         <img
-                          class="w-16 h-12 px-2 lg:mt-9 lg:ml-7"
+                          class="w-16 h-12 px-2 mt-2 lg:mt-9 lg:ml-7"
                           :src="require('@/assets/card-stats.png')"
                           alt=""
                         />
                       </div>
 
                       <div class="pt-2 lg:pt-8">
-                        <div class="flex justify-center lg:content-start">
+                        <div
+                          class="
+                            flex
+                            justify-center
+                            lg:content-start
+                            text-center
+                          "
+                        >
                           <h2 class="pr-3 pl-4 mb-5">
                             <span class="flex flex-col">
-                              <span class="font-semibold text-3xl">$3,599 </span
+                              <span class="font-semibold text-xl lg:text-3xl"
+                                >$3,599 </span
                               ><span
                                 class="text-thin text-gray-400 text-xs lg:sm"
                                 >Earned this month</span
@@ -191,17 +209,24 @@
                     >
                       <div class="flex justify-center lg:content-start">
                         <img
-                          class="w-16 h-12 px-2 lg:mt-9 lg:ml-7"
+                          class="w-16 h-12 px-2 lg:mt-9 lg:ml-7 mt-2"
                           :src="require('@/assets/doc-stats.png')"
                           alt=""
                         />
                       </div>
 
                       <div class="pt-2 lg:pt-8">
-                        <div class="flex justify-center lg:content-start">
+                        <div
+                          class="
+                            flex
+                            justify-center
+                            lg:content-start
+                            text-center
+                          "
+                        >
                           <h2 class="pr-3 pl-4 mb-5">
                             <span class="flex flex-col">
-                              <span class="font-semibold text-3xl"
+                              <span class="font-semibold text-xl lg:text-3xl"
                                 >670 sent </span
                               ><span
                                 class="text-thin text-gray-400 text-xs lg:sm"
