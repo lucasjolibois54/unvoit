@@ -12,7 +12,17 @@
     "
   >
     <Sidebar />
-    <div class="flex-grow overflow-hidden h-full sm:flex sm:flex-col sm:ml-10">
+    <div
+      class="
+        flex-grow
+        overflow-hidden
+        h-full
+        sm:flex sm:flex-col
+        sm:ml-10
+        lg:ml-32
+        lg:mt-20
+      "
+    >
       <div class="flex-grow flex overflow-x-hidden mt-12">
         <div class="flex-grow overflow-y-auto">
           <div
@@ -64,13 +74,13 @@
                     -mb-10
                   "
                 >
-                  <div class="flex justify-center">
+                  <div class="flex justify-center mt-6 lg:mt-0">
                     <img
                       class="w-56 h-full pb-0 lg:pb-10 lg:pt-10 lg:pl-5"
                       :src="require('@/assets/pie-chart-1.png')"
                     />
                   </div>
-                  <div class="flex justify-center">
+                  <div class="flex justify-center mt-3 lg:mt-0">
                     <h2
                       class="
                         flex
@@ -111,7 +121,7 @@
                   <div>
                     <div class="flex justify-center">
                       <img
-                        class="w-36 h-auto mt-7"
+                        class="w-36 h-auto mt-12 lg:mt-7"
                         :src="require('@/assets/Ellipse.png')"
                       />
                     </div>
@@ -126,8 +136,8 @@
                           pr-4
                           rounded-md
                           mb-2
-                          lg:
-                          mt-7
+                          mt-9
+                          lg:mt-7
                           text-lg
                         "
                       >
@@ -154,17 +164,25 @@
                     >
                       <div class="flex justify-center lg:content-start">
                         <img
-                          class="w-16 h-12 px-2 lg:mt-9 lg:ml-7"
+                          class="w-16 h-12 px-2 mt-2 lg:mt-9 lg:ml-7"
                           :src="require('@/assets/card-stats.png')"
                           alt=""
                         />
                       </div>
 
                       <div class="pt-2 lg:pt-8">
-                        <div class="flex justify-center lg:content-start">
+                        <div
+                          class="
+                            flex
+                            justify-center
+                            lg:content-start
+                            text-center
+                          "
+                        >
                           <h2 class="pr-3 pl-4 mb-5">
                             <span class="flex flex-col">
-                              <span class="font-semibold text-3xl">$3,599 </span
+                              <span class="font-semibold text-xl lg:text-3xl"
+                                >$3,599 </span
                               ><span
                                 class="text-thin text-gray-400 text-xs lg:sm"
                                 >Earned this month</span
@@ -191,17 +209,24 @@
                     >
                       <div class="flex justify-center lg:content-start">
                         <img
-                          class="w-16 h-12 px-2 lg:mt-9 lg:ml-7"
+                          class="w-16 h-12 px-2 lg:mt-9 lg:ml-7 mt-2"
                           :src="require('@/assets/doc-stats.png')"
                           alt=""
                         />
                       </div>
 
                       <div class="pt-2 lg:pt-8">
-                        <div class="flex justify-center lg:content-start">
+                        <div
+                          class="
+                            flex
+                            justify-center
+                            lg:content-start
+                            text-center
+                          "
+                        >
                           <h2 class="pr-3 pl-4 mb-5">
                             <span class="flex flex-col">
-                              <span class="font-semibold text-3xl"
+                              <span class="font-semibold text-xl lg:text-3xl"
                                 >670 sent </span
                               ><span
                                 class="text-thin text-gray-400 text-xs lg:sm"
@@ -218,7 +243,7 @@
             </div>
             <div
               class="
-                ml-10
+                ml-0
                 mr-10
                 grid grid-flow-col grid-cols-1 grid-rows-1
                 gap-4
@@ -226,7 +251,7 @@
             >
               <div>
                 <img
-                  class="w-96 pt-5"
+                  class="sm:w-screen sm:pr-8 lg:w-11/12 pt-5"
                   :src="require('@/assets/the-graf.png')"
                   alt=""
                 />
