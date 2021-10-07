@@ -57,7 +57,7 @@
           <!-- grid start-->
           <div class="max-w-screen-xl">
             <div class="flex">
-              <div class="w-10/12 px-4 mr-20">
+              <div class="w-full px-4 mr-20">
                 <div
                   class="
                     bg-grey-light
@@ -72,19 +72,172 @@
                 <UploadFiles />
                 </div>
               </div>
-              <div class="w-10/12 px-2">
-                <div class="bg-grey h-full bg-off-white rounded-md shadow-sm">
-                  <div class="sm:p-7 p-4">
-            <div class="flex w-full items-center mb-7">
-            </div>
+              <div class="w-full px-2 ">
+                <div class="bg-grey h-full rounded-md">
+                  <div class="sm:p-7">
 
               <!-- Table body content -->
-           <div>
-             <h5 class="text-dark-grey">#1795474</h5>
-             <h3 class="text-xl">Google, inc.</h3>
-             <h5>4 Apr, 2021</h5>
-           </div>
-          </div>
+                <div class="sm:rounded-md">
+                  <ul class="-mt-8">
+                    <li>
+                      <a class="block -mb-4">
+                        <div class="py-2 sm:px-6">
+                          <div class="flex items-center justify-between">
+                            <p class="text-sm font-thin text-darker-grey">
+                              #1795474
+                            </p>
+                          </div>
+                          <div class="flex justify-between">
+                            <p class="text-lg font-bold">Google, inc.</p>
+                            <p class="font-bold text-lg">$744,00</p>
+                            <button
+                              class="w-8 h-8 ml-4 shadow rounded-full flex items-center justify-center"
+                            >
+                            <img
+                        class="w-6"
+                        :src="require('@/assets/downloadpdf.svg')"
+                      />
+                            </button>
+                          </div>
+                          <div class="sm:flex sm:justify-between">
+                            <div class="sm:flex">
+                              <p class="flex items-center text-sm font-light">
+                                <time datetime="2020-01-07">4 Apr, 2021</time>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a class="block -mb-6">
+                        <div class="px-4 py-4 sm:px-6">
+                          <div class="flex items-center justify-between">
+                            <p class="text-sm font-thin text-darker-grey">
+                              #1795474
+                            </p>
+                          </div>
+                          <div class="flex justify-between">
+                            <p class="text-lg font-bold">Google, inc.</p>
+                            <p class="font-bold text-lg">$744,00</p>
+                            <button
+                              class="w-8 h-8 ml-4 shadow rounded-full flex items-center justify-center"
+                            >
+                            <img
+                        class="w-6"
+                        :src="require('@/assets/downloadpdf.svg')"
+                      />
+                            </button>
+                          </div>
+                          <div class="sm:flex sm:justify-between">
+                            <div class="sm:flex">
+                              <p class="flex items-center text-sm font-light text-gray-500">
+                                <time datetime="2020-01-07">4 Apr, 2021</time>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a class="block -mb-6">
+                        <div class="px-4 py-4 sm:px-6">
+                          <div class="flex items-center justify-between">
+                            <p class="text-sm font-thin text-darker-grey">
+                              #1795474
+                            </p>
+                          </div>
+                          <div class="flex justify-between">
+                            <p class="text-lg font-bold">Google, inc.</p>
+                            <p class="font-bold text-lg">$744,00</p>
+                            <button
+                              class="w-8 h-8 ml-4 shadow rounded-full flex items-center justify-center"
+                            >
+                            <img
+                        class="w-6"
+                        :src="require('@/assets/downloadpdf.svg')"
+                      />
+                            </button>
+                          </div>
+                          <div class="sm:flex sm:justify-between">
+                            <div class="sm:flex">
+                              <p class="flex items-center text-sm font-light text-gray-500">
+                                <time datetime="2020-01-07">4 Apr, 2021</time>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="block -mb-6">
+                        <div class="px-4 py-4 sm:px-6">
+                          <div class="flex items-center justify-between">
+                            <p class="text-sm font-thin text-darker-grey">
+                              #1795474
+                            </p>
+                          </div>
+                          <div class="flex justify-between">
+                            <p class="text-lg font-bold">Google, inc.</p>
+                            <p class="font-bold text-lg">$744,00</p>
+                            <button
+                              class="w-8 h-8 ml-4 shadow rounded-full flex items-center justify-center"
+                            >
+                            <img
+                        class="w-6"
+                        :src="require('@/assets/downloadpdf.svg')"
+                      />
+                            </button>
+                          </div>
+                          <div class="sm:flex sm:justify-between">
+                            <div class="sm:flex">
+                              <p class="flex items-center text-sm font-light text-gray-500">
+                                <time datetime="2020-01-07">4 Apr, 2021</time>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a class="block ">
+                        <div class="px-4 py-4 sm:px-6 -mb-6">
+                          <div class="flex items-center justify-between">
+                            <p class="text-sm font-thin text-darker-grey">
+                              #1795474
+                            </p>
+                          </div>
+                          <div class="flex justify-between">
+                            <p class="text-lg font-bold">Google, inc.</p>
+                            <p class="font-bold text-lg">$744,00</p>
+                            <button
+                              class="w-8 h-8 ml-4 shadow rounded-full flex items-center justify-center"
+                            >
+                            <img
+                        class="w-6"
+                        :src="require('@/assets/downloadpdf.svg')"
+                      />
+                            </button>
+                          </div>
+                          <div class="sm:flex sm:justify-between">
+                            <div class="sm:flex">
+                              <p class="flex items-center text-sm font-light text-gray-500">
+                                <time datetime="2020-01-07">4 Apr, 2021</time>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                
+              
+                  </ul>      
+                </div>
+           
+                  </div>
                 </div>
               </div>
             </div>
