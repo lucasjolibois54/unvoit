@@ -3,7 +3,7 @@
     class="bg-gray-100 dark:bg-gray-900 dark:text-white text-gray-600 h-screen flex overflow-hidden text-sm"
   >
     <Sidebar />
-    <div class="flex-grow overflow-hidden h-full sm:flex sm:flex-col lg:ml-32 lg:mt-20">
+    <div class="flex-grow overflow-hidden h-full sm:flex sm:flex-col lg:ml-32 lg:mt-32 lg:mr-32">
       <div class="flex-grow flex overflow-x-hidden mt-12">
         <div class="flex-grow overflow-y-auto">
           <div
@@ -248,36 +248,7 @@
       </div>
     </div>
     <div class="flex-grow overflow-hidden h-full flex flex-col">
-      <div
-        class="h-16 lg:flex w-full hidden"
-      >
-        <!-- Top right navbar links -->
-
-          <button class="flex items-center">
-            <span class="relative flex-shrink-0">
-              <img
-                class="w-7 h-7 rounded-full"
-                src="https://avatars.githubusercontent.com/u/47341968?v=4"
-                alt="profile"
-              />
-              <span
-                class="absolute right-0 -mb-0.5 bottom-0 w-2 h-2 rounded-full bg-green-500 border border-white dark:border-gray-900"
-              ></span>
-            </span>
-            <span class="ml-2">Andreas Eriksen</span>
-            <svg
-              viewBox="0 0 24 24"
-              class="w-4 ml-1 flex-shrink-0"
-              stroke="currentColor"
-              stroke-width="2"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <polyline points="6 9 12 15 18 9"></polyline>
-            </svg>
-          </button>
-      </div>
+      
     </div>
   </div>
 </template>
