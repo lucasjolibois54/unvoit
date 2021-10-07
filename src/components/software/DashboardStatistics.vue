@@ -12,8 +12,8 @@
     "
   >
     <Sidebar />
-    <div class="flex-grow overflow-hidden h-full sm:flex sm:flex-col">
-      <div class="flex-grow flex overflow-x-hidden">
+    <div class="flex-grow overflow-hidden h-full sm:flex sm:flex-col sm:ml-10">
+      <div class="flex-grow flex overflow-x-hidden mt-12">
         <div class="flex-grow overflow-y-auto">
           <div
             class="
@@ -51,7 +51,7 @@
 
           <!-- grid start-->
           <div class="max-w-screen-xl">
-            <div class="flex mb-8">
+            <div class="flex">
               <div class="w-1/3 px-2">
                 <div
                   class="
@@ -61,11 +61,12 @@
                     h-full
                     bg-off-white
                     rounded-md
+                    -mb-10
                   "
                 >
                   <div class="flex justify-center">
                     <img
-                      class="w-64 h-full pb-0 lg:pb-10 lg:pt-10 lg:pl-5"
+                      class="w-56 h-full pb-0 lg:pb-10 lg:pt-10 lg:pl-5"
                       :src="require('@/assets/pie-chart-1.png')"
                     />
                   </div>
@@ -110,7 +111,7 @@
                   <div>
                     <div class="flex justify-center">
                       <img
-                        class="w-40 h-auto mt-7"
+                        class="w-36 h-auto mt-7"
                         :src="require('@/assets/Ellipse.png')"
                       />
                     </div>
@@ -139,7 +140,7 @@
 
               <div class="w-1/3 px-2">
                 <div class="bg-grey-light h-full">
-                  <div class="w-3/4 bg-off-white shadow-sm rounded-md">
+                  <div class="w-4/6 bg-off-white shadow-sm rounded-md">
                     <div
                       class="
                         flex flex-col
@@ -153,7 +154,7 @@
                     >
                       <div class="flex justify-center lg:content-start">
                         <img
-                          class="w-16 h-full pt-2 lg:pt-5 pl-1 pr-1"
+                          class="w-16 h-12 px-2 lg:mt-9 lg:ml-7"
                           :src="require('@/assets/card-stats.png')"
                           alt=""
                         />
@@ -175,16 +176,7 @@
                     </div>
                   </div>
 
-                  <div
-                    class="
-                      w-3/4
-                      bg-off-white
-                      shadow-sm
-                      rounded-md
-                      mt-3
-                      lg:mt-10
-                    "
-                  >
+                  <div class="w-4/6 bg-off-white shadow-sm rounded-md">
                     <div
                       class="
                         flex flex-col
@@ -194,11 +186,12 @@
                         pt-2
                         pl-2
                         pr-2
+                        mt-6
                       "
                     >
                       <div class="flex justify-center lg:content-start">
                         <img
-                          class="w-18 h-20 pt-2 lg:pt-5 lg:ml-5 pl-1 pr-1"
+                          class="w-16 h-12 px-2 lg:mt-9 lg:ml-7"
                           :src="require('@/assets/doc-stats.png')"
                           alt=""
                         />
@@ -206,9 +199,9 @@
 
                       <div class="pt-2 lg:pt-8">
                         <div class="flex justify-center lg:content-start">
-                          <h2 class="pr-3 pl-10 pb-5 mb-0">
+                          <h2 class="pr-3 pl-4 mb-5">
                             <span class="flex flex-col">
-                              <span class="font-semibold text-3xl">sent </span
+                              <span class="font-semibold text-3xl">670 sent </span
                               ><span
                                 class="text-thin text-gray-400 text-xs lg:sm"
                                 >Invoices this month</span
@@ -219,6 +212,7 @@
                       </div>
                     </div>
                   </div>
+
                 </div>
               </div>
             </div>
