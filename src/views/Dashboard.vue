@@ -42,7 +42,7 @@ export default {
         <img
           class="mx-24 h-48 w-auto mt-16"
           :src="require('@/assets/images/illustration_addinvoice.svg')"
-        />
+        /> 
         <h3
           class="px-6 py-3 text-center text-md font-semibold text-black tracking-wider"
         >
