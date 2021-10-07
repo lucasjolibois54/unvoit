@@ -3,9 +3,11 @@
     class="bg-gray-100 dark:bg-gray-900 dark:text-white text-gray-600 h-screen flex overflow-hidden text-sm"
   >
     <Sidebar />
-    <div class="flex-grow overflow-hidden h-full flex flex-col">
+    <div
+      class="flex-grow overflow-hidden h-full sm:flex sm:flex-col lg:ml-32 lg:mt-32 lg:mr-32"
+    >
       <div class="flex-grow flex overflow-x-hidden">
-        <div class="flex-grow bg-white dark:bg-gray-900 overflow-y-auto">
+        <div class="flex-grow dark:bg-gray-900 overflow-y-auto">
           <!-- Top dashboard navbar -->
 
           <div
@@ -13,19 +15,24 @@
           >
             <div class=" w-full items-center">
               <div
+                class="lex items-center text-3xl text-gray-900 dark:text-whitef"
+              >
+                Dashboard
+              </div>
+              <div
                 class="flex items-center text-3xl text-gray-900 dark:text-white"
               >
-                <img
-                  src="https://avatars.githubusercontent.com/u/47341968?v=4"
-                  class="w-12 mr-4 rounded-full"
-                  alt="profile"
-                />
-                Andreas Erik Eriksen
-                {{ invoiceData.length }}
+                Manage your
+                <span
+                  class="text-lg bg-blue-100 text-blue-500 px-3 py-1 rounded-full"
+                >
+                  {{ invoiceData.length }}
+                </span>
+                invoices
               </div>
             </div>
             <button
-              class="h-8 px-3 py-1 rounded-md shadow text-white bg-blue-500"
+              class="h-8 px-3 py-1 text-right rounded-md shadow text-white bg-blue-500"
               @click="createInvoice"
               type="button"
             >
@@ -36,14 +43,24 @@
           <!-- top dashboard buttons navbar -->
 
           <div class="sm:p-7 p-4">
-            <table class="w-full text-left">
-              <!-- Table body content -->
-              <Invoice
-                v-for="(invoice, index) in invoiceData"
-                :invoice="invoice"
-                :key="index"
-              />
-            </table>
+            <div class="xl:flex bg-white rounded-3xl">
+              <table class="w-full xl:w-1/2 text-left">
+                <!-- Table body content -->
+                <Invoice
+                  v-for="(invoice, index) in invoiceData"
+                  :invoice="invoice"
+                  :key="index"
+                />
+              </table>
+              <table class="w-full xl:w-1/2 text-left">
+                <!-- Table body content -->
+                <Invoice
+                  v-for="(invoice, index) in invoiceData"
+                  :invoice="invoice"
+                  :key="index"
+                />
+              </table>
+            </div>
             <div class="flex w-full mt-5 space-x-2 justify-end">
               <button
                 class="inline-flex items-center h-8 w-8 justify-center text-gray-400 rounded-md shadow border border-gray-200 dark:border-gray-800 leading-none"
