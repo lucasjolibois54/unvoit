@@ -221,11 +221,18 @@
                 </div>
               </div>
             </div>
-            <div class="ml-20 grid grid-flow-col grid-cols-2 grid-rows-3 gap-4">
+            <div
+              class="
+                ml-10
+                mr-10
+                grid grid-flow-col grid-cols-1 grid-rows-1
+                gap-4
+              "
+            >
               <div>
                 <img
-                  class=""
-                  :src="require('@/assets/graf-stats.png')"
+                  class="w-11/12 pt-5"
+                  :src="require('@/assets/the-graf.png')"
                   alt=""
                 />
               </div>
