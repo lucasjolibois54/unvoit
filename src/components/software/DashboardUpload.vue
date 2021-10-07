@@ -3,8 +3,8 @@
     class="bg-gray-100 dark:bg-gray-900 dark:text-white text-gray-600 h-screen flex overflow-hidden text-sm"
   >
     <Sidebar />
-    <div class="flex-grow overflow-hidden h-full sm:flex sm:flex-col">
-      <div class="flex-grow flex overflow-x-hidden p-20 pl-40 mt-12">
+    <div class="flex-grow overflow-hidden h-full sm:flex sm:flex-col lg:ml-32 lg:mt-20">
+      <div class="flex-grow flex overflow-x-hidden mt-12">
         <div class="flex-grow overflow-y-auto">
           <div
             class="
@@ -37,8 +37,8 @@
               "
             >
               Upload your invoices to Blockchain
-            <div style="width: 29rem" class="overflow-hidden h-6 text-xs flex rounded bg-regular-blue bg-opacity-20 mt-10">
-              <div style="width:30%"
+            <div style="width: 45%" class="overflow-hidden h-6 text-xs flex rounded bg-regular-blue bg-opacity-20 mt-10">
+              <div style="width: 30%"
               class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-regular-blue">
               </div>
             </div>
@@ -55,9 +55,9 @@
         </div>
 
           <!-- grid start-->
-          <div class="max-w-screen-xl">
-            <div class="flex">
-              <div class="w-full px-4 mr-20">
+          <div class="max-w-full lg:w-full">
+            <div class="lg:flex">
+              <div class="w-full px-4 mr-20 mb-10">
                 <div
                   class="
                     bg-grey-light
@@ -72,11 +72,12 @@
                 <UploadFiles />
                 </div>
               </div>
-              <div class="w-full px-2 ">
-                <div class="bg-grey h-full rounded-md">
-                  <div class="sm:p-7">
 
               <!-- Table body content -->
+              <div class="w-full px-2 bg-off-white rounded-md sm:ml-4 sm:mb-10">
+                <div class="bg-grey h-full">
+                  <div class="sm:p-7">
+
                 <div class="sm:rounded-md">
                   <ul class="-mt-8">
                     <li>
