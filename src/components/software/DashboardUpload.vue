@@ -4,7 +4,7 @@
   >
     <Sidebar />
     <div class="flex-grow overflow-hidden h-full sm:flex sm:flex-col">
-      <div class="flex-grow flex overflow-x-hidden xl:p-40 -mt-12">
+      <div class="flex-grow flex overflow-x-hidden p-20 pl-40 mt-12">
         <div class="flex-grow overflow-y-auto">
           <div
             class="
@@ -79,13 +79,11 @@
             </div>
 
               <!-- Table body content -->
-            <table class="w-full text-left">
-              <Invoice
-                v-for="(invoice, index) in invoiceData"
-                :invoice="invoice"
-                :key="index"
-              />
-            </table>
+           <div>
+             <h5 class="text-dark-grey">#1795474</h5>
+             <h3 class="text-xl">Google, inc.</h3>
+             <h5>4 Apr, 2021</h5>
+           </div>
           </div>
                 </div>
               </div>
@@ -134,7 +132,6 @@
 import { mapState, mapActions } from "vuex";
 
 //components
-import Invoice from "@/components/software/Invoice.vue";
 import Sidebar from "@/components/software/Sidebar.vue";
 import UploadFiles from "@/components/software/blockchain/UploadFiles.vue";
 
@@ -168,7 +165,6 @@ export default {
   },
   name: "Dashboard",
   components: {
-    Invoice,
     Sidebar,
     UploadFiles,
   },
