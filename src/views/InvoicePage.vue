@@ -126,7 +126,7 @@
   </section>
 
   <section class="bg-light-grey">
-    <div class="w-full lg:w-4/6 px-4 mx-auto">
+    <div class="w-full lg:w-1/2 mx-auto">
       <div
         class="
           relative
@@ -139,26 +139,26 @@
         "
       >
         <div class="flex flex-wrap w-full mt-8">
-          <table class="w-full text-left">
+          <table class="w-full">
             <thead>
-              <tr class="text-gray-400">
+              <tr class="text-black text-lg">
                 <th
-                  class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 dark:border-gray-800"
+                  class="font-bold pb-8 border-b border-gray-200 dark:border-gray-800"
                 >
                   Item
                 </th>
                 <th
-                  class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 dark:border-gray-800"
+                  class="font-bold px-24 pb-8 border-b border-gray-200 dark:border-gray-800"
                 >
                   Cost
                 </th>
                 <th
-                  class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 dark:border-gray-800 hidden md:table-cell"
+                  class="font-bold px-24 pb-8 border-b border-gray-200 dark:border-gray-800 hidden md:table-cell"
                 >
                   QTY
                 </th>
                 <th
-                  class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 dark:border-gray-800"
+                  class="font-bold px-24 pb-8 border-b border-gray-200 dark:border-gray-800"
                 >
                   Total
                 </th>
