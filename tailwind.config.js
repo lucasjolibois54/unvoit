@@ -20,6 +20,7 @@ module.exports = {
         'darker-orange': '#F59D4B',
         'dark-grey': '#19181A',
         'light-grey': '#F5F5F5',
+        'light-gray': '#FCFCFC',
         'darker-grey': '#949494',
         'blue-stat': '#482DFA',
       }
