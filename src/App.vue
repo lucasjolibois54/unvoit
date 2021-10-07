@@ -80,7 +80,7 @@ export default {
 <style>
 #app {
   overflow: hidden;
-  widows: 100vw;
+  width: 100vw;
 }
 
 html,
