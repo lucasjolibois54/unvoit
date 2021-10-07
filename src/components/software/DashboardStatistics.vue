@@ -12,7 +12,7 @@
     "
   >
     <Sidebar />
-    <div class="flex-grow overflow-hidden h-full sm:flex sm:flex-col sm:ml-10">
+    <div class="flex-grow overflow-hidden h-full sm:flex sm:flex-col sm:ml-10 lg:ml-32 lg:mt-20">
       <div class="flex-grow flex overflow-x-hidden mt-12">
         <div class="flex-grow overflow-y-auto">
           <div
@@ -218,7 +218,7 @@
             </div>
             <div
               class="
-                ml-10
+                ml-0
                 mr-10
                 grid grid-flow-col grid-cols-1 grid-rows-1
                 gap-4
@@ -226,7 +226,7 @@
             >
               <div>
                 <img
-                  class="w-96 pt-5"
+                  class="sm:w-screen sm:pr-8 lg:w-11/12 pt-5"
                   :src="require('@/assets/the-graf.png')"
                   alt=""
                 />
