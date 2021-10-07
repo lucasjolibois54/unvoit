@@ -10,41 +10,84 @@
         <div class="flex-grow dark:bg-gray-900 overflow-y-auto">
           <!-- Top dashboard navbar -->
 
-          <div
-            class="sm:px-7 sm:pt-7 px-4 pt-4 flex flex-col border-b border-gray-200  dark:bg-gray-900 dark:text-white dark:border-gray-800 sticky top-0"
-          >
-            <div class=" w-full items-center">
-              <div
-                class="lex items-center text-3xl text-gray-900 dark:text-whitef"
-              >
-                Dashboard
+          <div class="sm:px-7 sm:pt-7 px-4 pt-4 flex flex-col">
+            <div
+              class="
+              sm:px-7
+              sm:pt-7
+              px-4
+              pt-4
+              flex flex-col
+              w-full
+              dark:bg-gray-900
+              dark:text-white
+              dark:border-gray-800
+              top-0
+            "
+            >
+              <div class="w-full items-center">
+                <div
+                  class="flex items-center text-3xl text-gray-900 dark:text-white"
+                >
+                  Dashboard
+                </div>
               </div>
               <div
-                class="flex items-center text-3xl text-gray-900 dark:text-white"
+                class="
+                items-center
+                mt-0
+                pb-4
+                text-sm text-gray-400
+                dark:text-white
+              "
               >
-                Manage your
-                <span
-                  class="text-lg bg-blue-100 text-blue-500 px-3 py-1 rounded-full"
+                Manage your statistical overview
+              </div>
+
+              <div class="flex justify-between">
+                <button
+                  class="px-5 py-2 text-lg rounded-md font-medium text-indigo-600 bg-indigo-100"
+                  type="button"
                 >
-                  {{ invoiceData.length }}
-                </span>
-                invoices
+                  Filter By
+                </button>
+                <button
+                  class="px-5 py-2 text-lg rounded-md font-medium text-indigo-600 bg-indigo-100"
+                  @click="createInvoice"
+                  type="button"
+                >
+                  Create Invoice
+                </button>
               </div>
             </div>
-            <button
-              class="h-8 px-3 py-1 text-right rounded-md shadow text-white bg-blue-500"
-              @click="createInvoice"
-              type="button"
-            >
-              Create Invoice
-            </button>
           </div>
 
           <!-- top dashboard buttons navbar -->
-
-          <div class="sm:p-7 p-4">
-            <div class="xl:flex bg-white rounded-3xl">
-              <table class="w-full xl:w-1/2 text-left">
+          <div
+            class="
+              sm:px-7
+              sm:pt-7
+              px-4
+              pt-4
+              flex flex-col
+              w-full
+              dark:bg-gray-900
+              dark:text-white
+              dark:border-gray-800
+              top-0
+            "
+          >
+            <div class="w-full items-center">
+              <div
+                class="flex items-center text-3xl text-gray-900 dark:text-white"
+              >
+                Recent transactions
+              </div>
+            </div>
+          </div>
+          <div class="p-8 -mt-3">
+            <div class="xl:flex bg-light-gray rounded-3xl">
+              <table class="w-full m-5 xl:w-1/2 text-right">
                 <!-- Table body content -->
                 <Invoice
                   v-for="(invoice, index) in invoiceData"
@@ -52,7 +95,7 @@
                   :key="index"
                 />
               </table>
-              <table class="w-full xl:w-1/2 text-left">
+              <table class="w-full m-5 xl:w-1/2 text-right">
                 <!-- Table body content -->
                 <Invoice
                   v-for="(invoice, index) in invoiceData"
@@ -78,7 +121,7 @@
                 </svg>
               </button>
               <button
-                class="inline-flex items-center h-8 w-8 justify-center text-gray-500 rounded-md shadow border border-gray-200 dark:border-gray-800 leading-none"
+                class="inline-flex bg-blue-100 items-center h-8 w-8 justify-center text-blue-500 rounded-md shadow border border-gray-200 dark:border-gray-800 leading-none"
               >
                 1
               </button>
