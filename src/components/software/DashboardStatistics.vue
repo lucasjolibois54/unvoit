@@ -201,7 +201,8 @@
                         <div class="flex justify-center lg:content-start">
                           <h2 class="pr-3 pl-4 mb-5">
                             <span class="flex flex-col">
-                              <span class="font-semibold text-3xl">670 sent </span
+                              <span class="font-semibold text-3xl"
+                                >670 sent </span
                               ><span
                                 class="text-thin text-gray-400 text-xs lg:sm"
                                 >Invoices this month</span
@@ -212,7 +213,6 @@
                       </div>
                     </div>
                   </div>
-
                 </div>
               </div>
             </div>
@@ -226,7 +226,7 @@
             >
               <div>
                 <img
-                  class="w-11/12 pt-5"
+                  class="w-96 pt-5"
                   :src="require('@/assets/the-graf.png')"
                   alt=""
                 />
