@@ -1,26 +1,14 @@
 <template>
   <thead v-for="(item, index) in currentInvoice.invoiceItemList" :key="index">
-    <tr class="text-gray-400">
-      <th
-        class="font-normal w-full px-3 pt-0 pb-3 border-b border-gray-200 dark:border-gray-800"
-      >
+    <tr class="text-black">
+      <th class="font-normal w-full px-3 pt-6 pb-6  ">
         {{ item.ItemName }}
       </th>
-      <th
-        class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 dark:border-gray-800"
-      >
-        {{ item.price }}
+      <th class="font-normal px-3 pt-6 pb-6">${{ item.price }}</th>
+      <th class="font-normal px-3 pt-6 pb-6 hidden md:table-cell">
+        x {{ item.qty }}
       </th>
-      <th
-        class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 dark:border-gray-800 hidden md:table-cell"
-      >
-        {{ item.qty }}
-      </th>
-      <th
-        class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 dark:border-gray-800"
-      >
-        {{ item.total }}
-      </th>
+      <th class="font-normal px-3 pt-6 pb-6 ">${{ item.total }}</th>
     </tr>
   </thead>
 </template>
