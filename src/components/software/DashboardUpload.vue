@@ -74,9 +74,9 @@
               </div>
 
               <!-- Table body content -->
-              <div class="w-full px-2 bg-off-white rounded-md sm:ml-4 sm:mb-10">
+              <div class="w-full bg-off-white rounded-md sm:ml-4 sm:mb-10">
                 <div class="bg-grey h-full">
-                  <div class="sm:p-7">
+                  <div class="sm:p-8">
 
                 <div class="sm:rounded-md">
                   <ul class="-mt-8">
