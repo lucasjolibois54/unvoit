@@ -13,7 +13,7 @@
               <h1>{{ title }}</h1>
               <div class="space-x-2 mx-auto mt-10">
                 <button
-                  class="rounded-md p-1 text-lg"
+                  class="rounded-md p-1 text-md"
                   :type="my_thumbs !== null ? 'warning' : 'black'"
                   outlined
                   @click="onPickFile"
