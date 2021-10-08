@@ -35,13 +35,19 @@
               <div
                 class="
                 items-center
-                mt-0
+                mt-2
                 pb-4
                 text-sm text-gray-400
                 dark:text-white
               "
               >
-                Manage your statistical overview
+                Manage your
+                <span
+                  class="w-10 bg-blue-100 px-2 py-1 rounded-full hover:bg-blue-500 hover:text-white transition-all text-black"
+                >
+                  {{ invoiceData.length }}
+                </span>
+                invoices
               </div>
 
               <div class="flex justify-between">
@@ -79,7 +85,7 @@
           >
             <div class="w-full items-center">
               <div
-                class="flex items-center text-3xl text-gray-900 dark:text-white"
+                class="flex items-center text-3xl text-gray-900 dark:text-white ml-8"
               >
                 Recent transactions
               </div>
