@@ -1,14 +1,47 @@
 <template>
-  <DashBoard />
+  <div v-if="!mobile">
+    <DashBoard />
+  </div>
+  <div v-else class="grid w-full min-h-screen bg-gray-900 place-content-center">
+    <h2 class="text-3xl font-bold text-gray-100 text center md:text-6xl">
+      Sorry, this app is not supported on Mobile Devices
+    </h2>
+    <p class="text-2xl text-gray-100 text center md:text-6xl">
+      To use this app, please use a Computer or Tablet
+    </p>
+  </div>
 </template>
 
 <script>
 import DashBoard from "@/components/software/DashBoard.vue";
 
+import { mapState } from "vuex";
+
 export default {
   name: "Home",
   components: {
     DashBoard,
+  },
+  data() {
+    return {
+      mobile: null,
+    };
+  },
+  created() {
+    window.addEventListener("resize", this.checkScreen);
+  },
+  methods: {
+    checkScreen() {
+      const windowWidth = window.innerWidth;
+      if (windowWidth <= 750) {
+        this.mobile = true;
+        return;
+      }
+      this.mobile = false;
+    },
+  },
+  computed: {
+    ...mapState(["invoiceData"]),
   },
 };
 </script>
