@@ -86,23 +86,42 @@
             </div>
           </div>
           <div class="p-8 -mt-3">
-            <div class="xl:flex bg-light-gray rounded-3xl">
-              <table class="w-full m-5 xl:w-1/2 text-right">
-                <!-- Table body content -->
-                <Invoice
-                  v-for="(invoice, index) in invoiceData"
-                  :invoice="invoice"
-                  :key="index"
-                />
-              </table>
-              <table class="w-full m-5 xl:w-1/2 text-right">
-                <!-- Table body content -->
-                <Invoice
-                  v-for="(invoice, index) in invoiceData"
-                  :invoice="invoice"
-                  :key="index"
-                />
-              </table>
+            <div v-if="invoiceData.length > 0">
+              <div class="xl:flex bg-light-gray rounded-3xl">
+                <table class="w-full m-5 xl:w-1/2 text-right">
+                  <!-- Table body content -->
+                  <Invoice
+                    v-for="(invoice, index) in invoiceData"
+                    :invoice="invoice"
+                    :key="index"
+                  />
+                </table>
+                <table class="w-full m-5 xl:w-1/2 text-right">
+                  <!-- Table body content -->
+                  <Invoice
+                    v-for="(invoice, index) in invoiceData"
+                    :invoice="invoice"
+                    :key="index"
+                  />
+                </table>
+              </div>
+            </div>
+            <div v-else class="empty flex flex-col">
+              <img
+                class="mx-24 h-48 w-auto mt-16"
+                :src="require('@/assets/images/illustration_addinvoice.svg')"
+              />
+              <h3
+                class="px-6 py-3 text-center text-md font-semibold text-black tracking-wider"
+              >
+                There is nothing here
+              </h3>
+              <p
+                class="px-6 text-center text-xs font-medium text-black tracking-wider"
+              >
+                Click the Create Invoice button and<br />
+                get started
+              </p>
             </div>
             <div class="flex w-full mt-5 space-x-2 justify-end">
               <button
