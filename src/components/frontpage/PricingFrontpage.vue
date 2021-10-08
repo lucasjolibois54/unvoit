@@ -18,7 +18,7 @@
         via-pricing-whiteblue-100
         to-pricing-white
         overflow-hidden
-        pb-60
+        pb-72
         pt-30
       "
     >
