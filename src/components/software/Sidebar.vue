@@ -7,7 +7,7 @@
       class="bg-white dark:bg-gray-900 dark:border-gray-800 w-20 flex-shrink-0 border-r border-gray-200 flex-col hidden sm:flex"
     >
       <div class="h-16 text-blue-500 flex items-center justify-center">
-        <img class="w-16" :src="require('@/assets/svg/UNVOIT.svg')" />
+        <img class="w-9 mt-5 ml-2" :src="require('@/assets/U.svg')" />
       </div>
       <div
         class="flex mx-auto flex-grow mt-4 flex-col  text-gray-400 space-y-4"
