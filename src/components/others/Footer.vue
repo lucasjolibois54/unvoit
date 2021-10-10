@@ -1,6 +1,6 @@
 <template>
   <!-- component -->
-  <footer class="flex justify-center px-4 text-gray-100 bg-gray-800">
+  <footer class="flex justify-center px-4 text-gray-100 bg-darker-blue">
     <div class="container py-6">
       <h1 class="text-center text-lg font-bold lg:text-2xl">
         Subscribe so that you never have to manage your invoices<br />
