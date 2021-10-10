@@ -70,44 +70,45 @@
             "
           >
             <div class="sm:text-center lg:text-left">
-              <h2
+              <h1
                 class="
-                  text-3xl
-                  tracking-tight
-                  font-extrabold
-                  text-off-white
-                  sm:text-4xl
-                  md:text-5xl
-                "
+                text-3xl
+                tracking-tight
+                font-extrabold
+                text-darker-blue
+                sm:text-4xl
+                md:text-7xl
+                
+              "
               >
-                <span class="block xl:inline text-darker-blue font-normal"
+                <span class="block xl:inline"
                   >Choose a plan that fits
-                  <span class="text-regular-blue">you</span>
+                  <span class="text-regular-blue">
+                    you
+                  </span>
                 </span>
-              </h2>
-
+              </h1>
+              <p>
+                {{ " " }}
+              </p>
               <p
                 class="
-                  mt-3
-                  pt-4
-                  text-base text-darker-blue
-                  sm:mt-5
-                  sm:text-lg
-                  sm:max-w-xl
-                  sm:mx-auto
-                  md:mt-5
-                  md:text-xl
-                  lg:mx-0
-                  font-normal
-                "
+                mt-3
+                pt-4
+                text-base text-darker-blue
+                sm:mt-5
+                sm:text-lg
+                sm:max-w-xl
+                sm:mx-auto
+                md:mt-5
+                md:text-xl
+                lg:mx-0
+              "
               >
                 At unvoit we put you first. Join us now and experience our
                 infinite posibilities and features that Unvoit gives you. Start
                 today for free!
               </p>
-              <div
-                class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start"
-              ></div>
             </div>
           </main>
         </div>
@@ -121,7 +122,6 @@
     </div>
   </div>
 </template>
-
 
 <script>
 import plans from "@/components/frontpage/plans.vue";
@@ -144,48 +144,6 @@ export default {
   },
 };
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!-- 
 <template>
@@ -540,6 +498,3 @@ export default {
 
 
 -->
-
-
-
