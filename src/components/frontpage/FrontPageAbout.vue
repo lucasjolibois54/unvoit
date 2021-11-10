@@ -21,7 +21,7 @@
         >
           <main
             class="
-              mt-0
+              -mt-10
               mx-auto
               max-w-7xl
               sm:mt-12
