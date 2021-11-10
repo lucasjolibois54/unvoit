@@ -8,7 +8,8 @@
             z-10
             pb-8
             sm:pb-16
-            p-20
+            p-10
+            sm:p-20
             md:p-2
             md:pb-20
             lg:max-w-4xl
@@ -20,7 +21,7 @@
         >
           <main
             class="
-              mt-10
+              mt-0
               mx-auto
               max-w-7xl
               sm:mt-12
@@ -38,7 +39,8 @@
                   text-light-blue
                   sm:text-4xl
                   md:text-6xl
-                  mr-20
+                  mr-0
+                  sm:mr-20
                   lg:pr-20
                 "
               >
