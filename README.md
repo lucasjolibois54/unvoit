@@ -90,16 +90,6 @@ In this section you'll see a list os any major frameworks/libraries used to boot
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-_Bhis is how to install the project.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
 ### Installation
 
 _Below is shown how to install and and set up the project._
