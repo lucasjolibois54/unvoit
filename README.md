@@ -11,7 +11,7 @@
   <h3 align="center">UNVOIT readme</h3>
 
   <p align="center">
-    Your local business based invoice management.
+    Your local business based invoice management system.
     <br />
     <a href="https://github.com/lucasjolibois54/unvoit/"><strong>Explore the docs »</strong></a>
     <br />
