@@ -52,7 +52,7 @@
 <br/>
 <div align="center">
   <a href="planner-x.netlify.app">
-    <img src="https://www.lucasjolibois.com/static/f175e34456981e1477c946086d5f508a/b4241/BLACK_II_desktop-1.webp" alt="Logo" width="90%" height="auto">
+    <img src="https://www.lucasjolibois.com/static/unvoit-mockup-2-ce48265bb86a9e02a118ff42a602e601.webp" alt="Logo" width="90%" height="auto">
   </a></div>
   <br/>
 
