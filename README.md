@@ -76,7 +76,9 @@ Use the `README.md` to get started.
 
 In this section you'll see a list os any major frameworks/libraries used to bootstrap the project.
 
-
+* [Vue.js](https://vuejs.org/)
+* [Tailwind css](https://tailwindcss.com/)
+* [Firebase](https://firebase.google.com/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
